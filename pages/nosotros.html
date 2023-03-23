@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Brawl Stars</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="./nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="./personajes.html">PERSONAJES</a>
+                </li>
+                <li>
+                    <a href="../index.html"><img class="logoBrawl" src="../img/logo-brawl.png" alt="logo del juego brawl stars"></a>
+                </li>
+                <li>
+                    <a href="./multimedia.html">MULTIMEDIA</a>
+                </li>
+                <li>
+                    <a href="./temporadas.html">TEMPORADAS</a>
+                </li>
+                <li>
+                    <a href="./actualizaciones.html">ACTUALIZACIONES</a>
+                </li>
+            </ul>
+            <div class="hide">
+                <img src="../img/icono-menu20px.png" alt="icono del menu">
+                MENU
+        </nav>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(".hide").on('click', function() {
+                $("nav ul").toggle('slow');
+            })
+        </script>
+    </header>
+
+    <main>
+        <img class="portada" src="../img/portada-giftshop.png" alt="portada de la pagina noosotros">
+        <h1>
+            BATALLAS
+        </h1>
+        <section class="contenedorServidores">
+            <img class="imageServidores" src="../img/servidores.png" alt="servidores del juego">
+            <section class="textoServidores">
+                <h2 class="tituloServidores">
+                    SERVIDORES
+                </h2>
+                <p class="parrafoServidores">
+                    Brawl Stars se juega a nivel mundial, y, para garantizar una experiencia de juego óptima a todos por igual, tenemos diferentes servidores ubicados por todo el planeta. Esto reduce los retrasos y los problemas de conexión para poder jugar en condiciones óptimas.
+                </p>
+            </section>
+        </section>
+    </main>
+
+    <section class="contenedorServidores2">
+        <p class="parrafoServidores2">
+            Siempre nos esforzamos por ofrecer a nuestros jugadores el mejor sistema de emparejamiento posible. Debido a que Brawl Stars es, en esencia, diferente a otros juegos de Supercell, hay diversos factores que hay que tener en cuenta en lo que al emparejamiento se refiere.
+        </p>
+        <section class="carouselServidores2">
+            <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="8000">
+                        <img class="imagesCarousel" src="../img/emparejamiento-individual2.png" class="d-block w-100" alt="emparejamiento individual">
+                        <img class="imagesCarousel2" src="../img/emparejamiento-individual3.png" class="d-block w-100" alt="brawlers duplicados">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="tituloCarousel">Emparejamiento Individual</h5>
+                            <p class="parrafoCarausel">Se basa en los trofeos del brawler seleccionado</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="8000">
+                        <img class="imagesCarousel" src="../img/emparejamiento-modo-equipo2.png" class="d-block w-100" alt="emparejamiento de equipos">
+                        <img class="imagesCarousel2" src="../img/emparejamiento-modo-equipo3.png" class="d-block w-100" alt="brawlers duplicados">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="tituloCarousel">Emparejamiento de Equipos</h5>
+                            <p class="parrafoCarausel">Se basa en el brawler que tenga la mayor cantidad de trofeos en el equipo</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="8000">
+                        <img class="imagesCarousel" class="" src="../img/ubicacion-region2.png" class="d-block w-100" alt="Ubicación y Región">
+                        <img class="imagesCarousel2" src="../img/ubicacion-region3.png" class="d-block w-100" alt="brawlers duplicados">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="tituloCarousel">Ubicación y Región</h5>
+                            <p class="parrafoCarausel">Se prioriza las búsquedas de jugadores en la misma región</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="8000">
+                        <img class="imagesCarousel" src="../img/brawler-duplicado2.png" class="d-block w-100" alt="brawlers duplicados">
+                        <img class="imagesCarousel2" src="../img/brawler-duplicado3.png" class="d-block w-100" alt="brawlers duplicados">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="tituloCarousel">Brawlers Duplicados</h5>
+                            <p class="parrafoCarausel">El sistema no permite a los jugadores de un mismo equipo usar el mismo brawler</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </section>
+
+    <h2>
+        MODOS DE JUEGO
+    </h2>
+    <section class="contenedorModos">
+        <img class="imageGenio" src="../img/genio-malvado.png" alt="personaje genio">
+        <p class="parrafoModos">
+            Brawl Stars ofrece una gran variedad de modos de juego divididos en distintos huecos de eventos que se actualizan a diario y ofrecen nuevos mapas o modos. <br>
+            Al participar en eventos, conseguirás trofeos, puntos de maestría y fichas. 
+        </p>
+        <img class="imageTick" src="../img/tick-cangrejo.png" alt="personaje tick">
+        <img class="imageElprimo" src="../img/baner-primo.png" alt="baner del personaje el primo">
+    </section>
+
+    <section class="contenedorJuegos">
+        <section class="juego atrapaGemas">
+            <img class="image Gemas" src="../img/atrapagemas.png" alt="modo de juego atrapa gemas">
+            <div class="textoJuegos">
+                <h3 class="tituloJuegos">
+                    ATRAPA GEMAS
+                </h3>
+                <p class="parrafoJuegos">
+                    Es una batalla 3c3 en la que el objetivo es tener 10 gemas en tu poder antes de que acabe la partida. Cuando se acabe el tiempo, el equipo que haya conseguido acumular más gemas gana.
+                </p>
+            </div>
+        </section>
+        <section class="juego supervivencia">
+            <img class="image Supervivencia" src="../img/supervivencia.png" alt="modo de juego supervivencia">
+            <div class="textoJuegos">
+                <h3 class="tituloJuegos">
+                    SUPERVIVENCIA (SOLO Y DÚO)
+                </h3>
+                <p class="parrafoJuegos">
+                    Juega en solitario o de a dos y trata de sobrevivir a esta agitada batalla campal.
+                </p>
+            </div>
+        </section>
+        <section class="juego balonBrawl">
+            <img class="image balonBrawl" src="../img/balonbrawl.png" alt="modo de juego balon brawl">
+            <div class="textoJuegos">
+                <h3 class="tituloJuegos">
+                    BALON BRAWL
+                </h3>
+                <p class="parrafoJuegos">
+                    ¡Marca un gol en la portería del equipo rival! Marca 2 goles para ganar.
+                </p>
+            </div>
+        </section>
+        <section class="juego cazaEstelar">
+            <img class="image cazaEstelar" src="../img/cazaestelar.png" alt="modo de juego caza estelar">
+            <div class="textoJuegos">
+                <h3 class="tituloJuegos">
+                    CAZA ESTELAR
+                </h3>
+                <p class="parrafoJuegos">
+                    Una batalla 3c3 en la que tendrás que derrotar a tus rivales para cazar el mayor número de estrellas. Si se produce un empate, la estrella azul servirá para desempatar. 
+                </p>
+            </div>
+        </section>
+        <section class="juego zonaRestringida">
+            <img class="image zonaRestringida" src="../img/ubicacion-region.png" alt="modo de juego zona restringida">
+            <div class="textoJuegos">
+                <h3 class="tituloJuegos">
+                    ZONA RESTRIGIDA
+                </h3>
+                <p class="parrafoJuegos">
+                    Una batalla 3c3 en la que deberás controlar una o más zonas antes que el equipo rival para ganar.
+                </p>
+            </div>
+        </section>
+        <section class="juego atraco">
+            <img class="image atraco" src="../img/atraco.png" alt="modo de juego atraco">
+            <div class="textoJuegos">
+                <h3 class="tituloJuegos">
+                    ATRACO
+                </h3>
+                <p class="parrafoJuegos">
+                    Una contienda 3c3 en la que tendrás que destrozar la caja fuerte del equipo rival antes de que destruyan la tuya.
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <article>
+            <h3>
+                Siguenos en:
+            </h3>
+            <a target="_blank" href="https://www.youtube.com/@BrawlStars">
+                <img class="redes" src="../img/logo-youtube-blanco.svg" alt="logo de youtube">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/brawlstarsspanish">
+                <img class="redes" src="../img/logo-facebook-blanco.svg" alt="logo de facebook">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/brawlstars/">
+                <img class="redes" src="../img/logo-instagram-blanco.svg" alt="logo de instagram">
+            </a>
+            <a target="_blank" href="https://twitter.com/BrawlStarsES">
+                <img class="redes" src="../img/logo-twitter-blanco.svg" alt="logo de twiter">
+            </a>
+        </article>
+        <article class="descargar">
+            <a target="_blank" href="https://apps.apple.com/us/app/brawl-stars/id1229016807">
+                <img class="descargas" src="../img/app-store-link.webp" alt="descargar desde la app store">
+            </a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=en">
+                <img class="descargas" src="../img/google-play-link.webp" alt="descargar desde la play store">
+            </a>
+        </article>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

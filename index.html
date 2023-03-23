@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Brawl Stars</title>
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACION -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="./pages/nosotros.html">NOSOTROS</a>
+                </li>
+                <li>
+                    <a href="./pages/personajes.html">PERSONAJES</a>
+                </li>        
+                <li>
+                    <a href="index.html"><img class="logoBrawl" src="./img/logo-brawl.png" alt="logo del juego brawl stars"></a>
+                </li>
+                <li>
+                    <a href="./pages/multimedia.html">MULTIMEDIA</a>
+                </li>
+                <li>
+                    <a href="./pages/temporadas.html">TEMPORADAS</a>
+                </li>
+                <li>
+                    <a href="./pages/actualizaciones.html">ACTUALIZACIONES</a>
+                </li>
+            </ul>
+            <div class="hide">
+                <img src="./img/icono-menu20px.png" alt="icono del menu">
+                MENU
+            </div>
+        </nav>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(".hide").on('click', function() {
+                $("nav ul").toggle('slow');
+            })
+        </script>
+    </header>
+    
+    <main>
+        <img class="portada" src="./img/portada3-brawl.jpg" alt="portada del juego brawl stars">
+        <section class="contenedorMain">
+            <h1 class="contMain tituloMain">
+                3V3, BATLE ROYAL Y MAS ...
+            </h1>
+            <section class="contMain contenidoMain">
+                <p class="parrafoMain">
+                    ¡Únete a tus amigos y prepárate para un CAOS multijugador épico!
+                    Brawl Stars es uno de los juegos mas aclamados de la compañia desarrolladora SuperCell. 
+                    Salta a tu modo de juego favorito y juega partidas rápidas con tus amigos. 
+                    Dispárales, hazlos explotar, golpéalos y gana la PELEA.<br>
+                    <a target="_blank" href="https://apps.apple.com/us/app/brawl-stars/id1229016807">
+                        <img class="descargasP" src="./img/app-store-link.webp" alt="redirección a la app store">
+                    </a>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=en">
+                        <img class="descargasP" src="./img/google-play-link.webp" alt="redirección a la play store">
+                    </a>
+                </p>
+            </section>
+            <section class="contMain carouselMain">
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="./img/balon-brawl.webp" class="d-block w-100" alt="modo de juego balon brawl">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./img/battle-royal.webp" class="d-block w-100" alt="modo de juego battle royal">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./img/brawlers.webp" class="d-block w-100" alt="muchos brawlers y aspectos">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <section class="contenedorNews">
+        <div class="gimageNews">
+            <img class="imageNews" src="./img/news-brawl.webp" alt="noticias dentro del juego">
+        </div>
+        <section class="textoNews">
+            <h2 class="tituloNews">
+                SIEMPRE AL DIA
+            </h2>
+            <p class="parrafoNews">
+                Para mantenerte al tanto de Brawl Stars, no pierdas de vista la sección de noticias del juego. 
+                Síguenos en las redes sociales para conocer las últimas charlas y 
+                adelantos sobre en qué está trabajando el equipo. No seas un extraño y únete a la conversación.
+            </p>
+        </section>
+    </section>
+
+    <article class="contenedorConoce">
+        <img class="superCell" src="./img/supercell.webp" alt="portada de supercell">
+        <img class="superCell2" src="./img/supercell3.png" alt="portada de supercell">
+        <div class="centrado">
+            <h2 class="tituloConoce">
+                CONOCE MAS
+            </h2>
+            <p class="parrafoConoce">
+                Si quieres conoces mas juegos divertidos,
+                sigue en todas sus redes sociales a SuperCell y enterate de todo lo nuevo que desarrolla.
+            </p>
+        </div>
+    </article>
+
+    <footer>
+        <article>
+            <h3>
+                Siguenos en:
+            </h3>
+            <a target="_blank" href="https://www.youtube.com/@BrawlStars">
+                <img class="redes" src="./img/logo-youtube-blanco.svg" alt="logo de youtube">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/brawlstarsspanish">
+                <img class="redes" src="./img/logo-facebook-blanco.svg" alt="logo de facebook">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/brawlstars/">
+                <img class="redes" src="./img/logo-instagram-blanco.svg" alt="logo de instagram">
+            </a>
+            <a target="_blank" href="https://twitter.com/BrawlStarsES">
+                <img class="redes" src="./img/logo-twitter-blanco.svg" alt="logo de twiter">
+            </a>
+        </article>
+        <article class="descargar">
+            <a target="_blank" href="https://apps.apple.com/us/app/brawl-stars/id1229016807">
+                <img class="descargas" src="./img/app-store-link.webp" alt="descargar desde la app store">
+            </a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=en">
+                <img class="descargas" src="./img/google-play-link.webp" alt="descargar desde la play store">
+            </a>
+        </article>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
