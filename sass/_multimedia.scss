@@ -1,3 +1,69 @@
+nav{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto  ;
+    align-items: center;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        gap: 2rem;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                color: #f01919;
+            }
+        }
+    }
+    .toggle_btn{
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+    }
+} 
+header{
+    position: relative;
+    padding: 0 2rem;
+    display: grid;
+    align-items: center;
+}
+
+/* MENU DESPLEGABLE */
+
+.menuDesplegable{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 80px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.363);
+    border-radius: 10px;
+    // border: 2px solid #f01919;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    li{
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            color: black;
+        }
+    }
+}
+
+.menuDesplegable.open{
+    height: 240px;
+}
+
+/* ---------------- */
+
 .galeria{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
