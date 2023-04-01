@@ -112,7 +112,7 @@ p {
   height: 280px;
 }
 
-/* MAIN */
+/* -------MAIN------- */
 .contenedorMain {
   margin: 20px 0;
   display: grid;
@@ -191,32 +191,24 @@ p {
 }
 
 /* -------NOSOTROS------- */
-.imageServidores {
-  width: 500px;
-  height: 300px;
-  margin-top: 44px;
-  margin-bottom: 44px;
-}
-
-.parrafoServidores {
-  margin: 0 30px 30px 30px;
-}
-
-.textoServidores {
-  display: block;
-  width: 550px;
-}
-
 .contenedorServidores {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   border-top: 1px solid #ccc;
+  flex-direction: column-reverse;
 }
-
-.parrafoServidores2 {
-  width: 465px;
-  margin: 30px;
+.contenedorServidores .imageServidores {
+  width: 90%;
+  height: auto;
+  margin: 20px 0;
+}
+.contenedorServidores .textoServidores {
+  display: block;
+  width: 90%;
+}
+.contenedorServidores .textoServidores .parrafoServidores {
+  margin: 10px 0;
 }
 
 .contenedorServidores2 {
@@ -224,82 +216,83 @@ p {
   justify-content: space-evenly;
   align-items: center;
   border-bottom: 1px solid #ccc;
+  flex-direction: column;
 }
-
-.carouselServidores2 {
-  margin: 30px;
-  height: 306px;
-  width: 500px;
+.contenedorServidores2 .parrafoServidores2 {
+  width: 90%;
+  margin: 10px;
+}
+.contenedorServidores2 .carouselServidores2 {
+  margin: 10px;
+  height: 165px;
+  width: 90%;
   border: 3px solid black;
 }
-
-.imagesCarousel2 {
+.contenedorServidores2 .carouselServidores2 .imagesCarousel {
   display: none;
 }
-
-.imageGenio {
-  height: 250px;
-  width: auto;
-}
-
-.imageTick {
-  height: 250px;
-  width: auto;
-}
-
-.imageElprimo {
-  display: none;
+.contenedorServidores2 .carouselServidores2 .imagesCarousel2 {
+  width: 100%;
 }
 
 .contenedorModos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 350px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 170px 100px;
   align-items: center;
   justify-items: center;
   border-top: 1px solid #ccc;
 }
+.contenedorModos .imageGenio {
+  display: none;
+}
+.contenedorModos .parrafoModos {
+  width: 90%;
+  margin: 0%;
+}
+.contenedorModos .imageTick {
+  display: none;
+}
+.contenedorModos .imageElprimo {
+  width: 90%;
+}
 
-.image {
+.contenedorJuegos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 170px);
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.contenedorJuegos .juego {
+  display: flex;
+  width: 90%;
+  height: 160px;
+  border-radius: 6px;
+  background-color: white;
+  align-items: center;
+}
+.contenedorJuegos .juego .image {
   height: 70px;
   width: 70px;
   padding: 10px;
   margin: 10px;
 }
-
-.textoJuegos {
+.contenedorJuegos .juego .textoJuegos {
   display: block;
 }
-
-.tituloJuegos {
+.contenedorJuegos .juego .textoJuegos .tituloJuegos {
   color: black;
   margin: 0;
   font-weight: bolder;
   margin-top: 10px;
+  font-size: 12px;
 }
-
-.parrafoJuegos {
-  font-size: 15px;
+.contenedorJuegos .juego .textoJuegos .parrafoJuegos {
+  font-size: 11px;
   text-align: left;
   margin: 0 10px 10px 10px;
-}
-
-.juego {
-  display: flex;
-  width: 500px;
-  height: 145px;
-  border-radius: 6px;
-  background-color: white;
-  align-items: center;
-}
-
-.contenedorJuegos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 160px);
-  justify-items: center;
-  align-items: center;
-  margin-bottom: 20px;
 }
 
 /* -------MULTIMEDIA------- */

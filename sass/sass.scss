@@ -85,122 +85,13 @@ p{
 
 @import "menuDesplegable";
 
-/* MAIN */
+/* -------MAIN------- */
 
 @import "index";
 
 /* -------NOSOTROS------- */
 
-.imageServidores{
-    width: 500px;
-    height: 300px;
-    margin-top: 44px;
-    margin-bottom: 44px;
-}
-
-.parrafoServidores{
-    margin: 0 30px 30px 30px; 
-}
-
-.textoServidores{
-    display: block;
-    width: 550px;
-}
-
-.contenedorServidores{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-top: 1px solid #ccc;
-}
-
-.parrafoServidores2{
-    width: 465px;
-    margin: 30px;
-}
-
-.contenedorServidores2{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-}
-
-.carouselServidores2{
-    margin: 30px;
-    height: 306px;
-    width: 500px;
-    border: 3px solid black;
-}
-
-.imagesCarousel2{
-    display: none;
-}
-
-.imageGenio{
-    height: 250px;
-    width: auto;
-}
-
-.imageTick{
-    height: 250px;
-    width: auto;
-}
-
-.imageElprimo{
-    display: none;
-}
-
-.contenedorModos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 350px;
-    align-items: center;
-    justify-items: center;
-    border-top: 1px solid #ccc;
-}
-
-.image{
-    height: 70px;
-    width: 70px;
-    padding: 10px;
-    margin: 10px;
-}
-
-.textoJuegos{
-    display: block;
-}
-
-.tituloJuegos{
-    color: black;
-    margin: 0;
-    font-weight: bolder;
-    margin-top: 10px;
-}
-
-.parrafoJuegos{
-    font-size: 15px;
-    text-align: left;
-    margin: 0 10px 10px 10px;
-}
-
-.juego{
-    display: flex;
-    width: 500px;
-    height: 145px;
-    border-radius: 6px;
-    background-color: white;
-    align-items: center;
-}
-
-.contenedorJuegos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 160px);
-    justify-items: center;
-    align-items: center;  
-    margin-bottom: 20px ;
-}
+@import "nosotros";
 
 /* -------MULTIMEDIA------- */
 

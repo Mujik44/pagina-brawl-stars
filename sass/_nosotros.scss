@@ -1,0 +1,107 @@
+.contenedorServidores{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    flex-direction: column-reverse;
+    .imageServidores{
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+    .textoServidores{
+        display: block;
+        width: 90%;
+        .parrafoServidores{
+            margin: 10px 0; 
+        }
+    }
+}
+
+.contenedorServidores2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    flex-direction: column;
+    .parrafoServidores2{
+        width: 90%;
+        margin: 10px;
+    }
+    .carouselServidores2{
+        margin: 10px;
+        height: 165px;
+        width: 90%;
+        border: 3px solid black;
+        .imagesCarousel{
+            display: none;
+        }
+        .imagesCarousel2{
+            width: 100%;
+        }
+    }
+}
+
+.contenedorModos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 170px 100px;
+    align-items: center;
+    justify-items: center;
+    border-top: 1px solid #ccc;
+    .imageGenio{
+        // height: 250px;
+        // width: auto;
+        display: none;
+    }
+    .parrafoModos{
+        width: 90%;
+        margin: 0%;
+    }
+    .imageTick{
+        // height: 250px;
+        // width: auto;
+        display: none;
+    } 
+    .imageElprimo{
+        width: 90%;
+    }
+}
+
+.contenedorJuegos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 170px);
+    justify-items: center;
+    align-items: center;  
+    margin-bottom: 20px ;
+    .juego{
+        display: flex;
+        width: 90%;
+        height: 160px;
+        border-radius: 6px;
+        background-color: white;
+        align-items: center;
+        .image{
+            height: 70px;
+            width: 70px;
+            padding: 10px;
+            margin: 10px;
+        }
+        .textoJuegos{
+            display: block;
+            .tituloJuegos{
+                color: black;
+                margin: 0;
+                font-weight: bolder;
+                margin-top: 10px;
+                font-size: 12px;
+            }      
+            .parrafoJuegos{
+                font-size: 11px;
+                text-align: left;
+                margin: 0 10px 10px 10px;
+            }
+        }
+    }
+}
