@@ -1,0 +1,17 @@
+.allRedes{
+    display: flex;
+    flex-wrap: wrap;
+    .redes{
+        padding: 10px;
+        width: 45px;
+    }
+}
+
+.descargar{
+    display: grid;
+    justify-items: center;
+    .descargas{
+        height: 40px;
+        margin: 10px;
+    }
+}

@@ -22,7 +22,7 @@ nav ul {
   align-items: center;
 }
 
-ul li {
+nav ul li {
   display: inline-block;
   list-style-type: none;
   font-size: 20px;
@@ -39,6 +39,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 15px;
 }
 
 ul, li, h1, h2 {
@@ -47,13 +48,13 @@ ul, li, h1, h2 {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 25px;
   padding: 10px;
-  margin: 30px;
+  margin: 20px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 20px;
   /* padding: 30px; */
   margin: 20px;
 }
@@ -67,7 +68,7 @@ h3 {
 
 p {
   font-family: "Nunito", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -76,75 +77,94 @@ p {
   width: 100px;
 }
 
-.hide {
-  padding: 16px;
-  font-size: 20px;
-  font-family: "Lilita One", cursive;
-  text-align: left;
-  cursor: pointer;
-  color: white;
-  background-color: black;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  display: none;
-}
-
 .portada {
   height: auto;
   width: 100%;
 }
 
-.parrafoMain {
-  margin: 30px;
+.menuDesplegable {
+  position: absolute;
+  right: 2rem;
+  left: 2rem;
+  top: 90px;
+  height: 0;
+  background: rgba(255, 255, 255, 0.363);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.menuDesplegable li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuDesplegable li a {
+  color: black;
+}
+.menuDesplegable li a:hover {
+  color: #f01919;
 }
 
-.carouselMain {
-  height: auto;
-  width: 530px;
-  border: 3px solid black;
+.menuDesplegable.open {
+  height: 280px;
 }
 
+/* MAIN */
 .contenedorMain {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 20px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 65px 280px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 400px 100px 100px;
   place-items: center;
-  grid-template-areas: "titulo carousel" "contenido carousel";
-  gap: 10px;
+  grid-template-areas: "titulo" "contenido" "carousel" "carousel";
+  gap: 5px;
 }
-
-.tituloMain {
+.contenedorMain .tituloMain {
   grid-area: titulo;
 }
-
-.contenidoMain {
+.contenedorMain .contenidoMain {
   grid-area: contenido;
 }
-
-.carouselMain {
-  grid-area: carousel;
+.contenedorMain .contenidoMain .parrafoMain {
+  margin: 0px 20px 20px 20px;
 }
-
-.textoNews {
-  display: block;
-  width: 100%;
+.contenedorMain .contenidoMain .parrafoMain .descargasP {
+  height: 50px;
+  width: auto;
+  margin: 10px;
+}
+.contenedorMain .carouselMain {
+  height: auto;
+  width: 95%;
+  border: 3px solid black;
+  grid-area: carousel;
+  margin-bottom: 20px;
 }
 
 .contenedorNews {
-  padding: 80px 0 80px;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column-reverse;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-
-.parrafoNews {
+.contenedorNews .gimageNews {
+  display: grid;
+  justify-items: center;
+}
+.contenedorNews .gimageNews .imageNews {
+  width: 90%;
+}
+.contenedorNews .textoNews {
+  display: block;
+  width: 100%;
+}
+.contenedorNews .textoNews .parrafoNews {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -153,48 +173,21 @@ p {
   padding-bottom: 30px;
 }
 
-.imageNews {
-  width: 788px;
-  margin-left: -150px;
-}
-
-.superCell {
-  width: 100%;
-  height: auto;
-}
-
-.superCell2 {
-  display: none;
-}
-
 .contenedorConoce {
   position: relative;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.centrado {
-  width: 400px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.contenedorConoce .superCell {
+  display: none;
 }
-
-.descargas, .descargasP {
-  height: 50px;
-  width: 160px;
-  margin: 20px;
+.contenedorConoce .superCell2 {
+  width: 100%;
+  margin-top: -19px;
 }
-
-.descargas {
-  width: 120px;
-  height: auto;
-}
-
-.redes {
-  padding: 10px;
-  width: 45px;
+.contenedorConoce .centrado {
+  width: 90%;
 }
 
 /* -------NOSOTROS------- */
@@ -353,35 +346,6 @@ header {
   align-items: center;
 }
 
-/* MENU DESPLEGABLE */
-.menuDesplegable {
-  position: absolute;
-  right: 2rem;
-  left: 2rem;
-  top: 90px;
-  height: 0;
-  background: rgba(255, 255, 255, 0.363);
-  border-radius: 10px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  overflow: hidden;
-  transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.menuDesplegable li {
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.menuDesplegable li a {
-  color: black;
-}
-
-.menuDesplegable.open {
-  height: 240px;
-}
-
-/* ---------------- */
 .galeria {
   display: grid;
   grid-template-columns: 1fr;
@@ -455,4 +419,22 @@ header {
 .galeria .galeria13 {
   grid-column: 1/2;
   grid-row: 17/19;
+}
+
+.allRedes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.allRedes .redes {
+  padding: 10px;
+  width: 45px;
+}
+
+.descargar {
+  display: grid;
+  justify-items: center;
+}
+.descargar .descargas {
+  height: 40px;
+  margin: 10px;
 }/*# sourceMappingURL=sass.css.map */
