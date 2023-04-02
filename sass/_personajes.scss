@@ -1,0 +1,247 @@
+.mainPersonajes{
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    p{
+        width: 90%;
+        height: auto;
+    }
+}
+.contenedorPersonajes{
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    .contBrawl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 3px solid black;
+        border-radius: 5px;
+        width: 90%;
+        img{
+            width: 100%;
+        }
+        .estadisticasBrawl{
+            background-color: rgba(16,92,229,255);
+            width: 100%;
+            height: 690px;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            gap: 10px;
+            .salud{
+                width: 90%;
+                background-color: rgba(9,136,243,255);
+                border-radius: 5px;
+                display: grid;
+                justify-content: center;
+                justify-items: center;
+                align-items: center;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50px 50px;
+                .tituloSalud1{
+                    font-size: 20px;
+                    position: relative;
+                    left: -25px;
+                    -webkit-text-stroke: 0.9px black;
+                    color: rgba(5,199,5,255);
+                }
+                .tituloSalud2{
+                    font-size: 20px;
+                    position: relative;
+                    left: -10px;
+                    -webkit-text-stroke: 0.9px black;
+                    color: rgba(5,199,5,255);
+                }
+                .infoSalud{
+                    color: rgba(247,251,251,255);
+                    margin-top: -60px;
+                    width: 90%;
+                    height: 90%;
+                    background-color: rgba(2,51,79,255);
+                    border-radius: 5px;
+                    display: grid;
+                    align-items: center;
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+            .ataque{
+                width: 90%;
+                background-color: rgba(9,136,243,255);
+                border-radius: 5px;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 20px 20px 130px 20px 50px 20px 50px;
+                .titleAtaque1{
+                    grid-column: 1/3;
+                    grid-row: 1/2;
+                    font-size: 25px;
+                    color: rgba(253,58,124,255);
+                    -webkit-text-stroke: 0.2px black;
+                    margin-top: -25px;
+                    margin-left: -140px;
+                }
+                .titleAtaque2{
+                    grid-column: 1/3;
+                    grid-row: 2/3;
+                    font-size: 25px;
+                    color: rgba(247,251,251,255);
+                    -webkit-text-stroke: 0.2px black;
+                    margin-top: -20px;
+                    margin-left: -90px;
+                }
+                .parrafoAtaque{
+                    grid-column: 1/3;
+                    grid-row: 3/4;
+                    width: 90%;
+                    color: rgba(247,251,251,255);
+                }
+                .tituloAtaque1{
+                    grid-column: 1/2;
+                    grid-row: 4/5;
+                    color: rgba(253,58,124,255);
+                    -webkit-text-stroke: 0.2px black;
+                    position: relative;
+                    left: -30px;
+                }
+                .tituloAtaque2{
+                    grid-column: 2/3;
+                    grid-row: 4/5;
+                    color: rgba(253,58,124,255);
+                    -webkit-text-stroke: 0.2px black;
+                    position: relative;
+                    left: -20px;
+                }
+                .infoAtaque1{
+                    grid-column: 1/2;
+                    grid-row: 5/6;
+                    color: rgba(247,251,251,255);
+                    width: 90%;
+                    height: 90%;
+                    background-color: rgba(2,51,79,255);
+                    border-radius: 5px;
+                    display: grid;
+                    align-items: center;
+                    margin-top: -25px;
+                }
+                .infoAtaque2{
+                    grid-column: 2/3;
+                    grid-row: 5/6;
+                    color: rgba(247,251,251,255);
+                    width: 90%;
+                    height: 90%;
+                    background-color: rgba(2,51,79,255);
+                    border-radius: 5px;
+                    display: grid;
+                    align-items: center;
+                    margin-top: -25px;
+                }
+                .tituloAtaque3{
+                    grid-column: 1/3;
+                    grid-row: 6/7;
+                    color: rgba(253,58,124,255);
+                    -webkit-text-stroke: 0.2px black;
+                    position: relative;
+                    left: -30px;
+                }
+                .infoAtaque3{
+                    grid-column: 1/3;
+                    grid-row: 7/8;
+                    color: rgba(247,251,251,255);
+                    width: 90%;
+                    height: 90%;
+                    background-color: rgba(2,51,79,255);
+                    border-radius: 5px;
+                    display: grid;
+                    align-items: center;
+                    margin-top: -25px;
+                }
+            }
+            .super{
+                width: 90%;
+                background-color: rgba(9,136,243,255);
+                border-radius: 5px;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 20px 20px 100px 20px 50px;
+                .titleSuper1{
+                    grid-column: 1/3;
+                    grid-row: 1/2;
+                    font-size: 25px;
+                    color: rgba(242,198,60,255);
+                    -webkit-text-stroke: 0.2px black;
+                    margin-top: -25px;
+                    margin-left: -160px;
+                }
+                .titleSuper2{
+                    grid-column: 1/3;
+                    grid-row: 2/3;
+                    font-size: 25px;
+                    color: rgba(247,251,251,255);
+                    -webkit-text-stroke: 0.2px black;
+                    margin-top: -20px;
+                    margin-left: -90px;
+                }
+                .parrafoSuper{
+                    grid-column: 1/3;
+                    grid-row: 3/4;
+                    width: 90%;
+                    color: rgba(247,251,251,255);
+                }
+                .tituloSuper1{
+                    grid-column: 1/2;
+                    grid-row: 4/5;
+                    color: rgba(242,198,60,255);
+                    -webkit-text-stroke: 0.2px black;
+                    position: relative;
+                    left: -30px;
+                }
+                .tituloSuper2{
+                    grid-column: 2/3;
+                    grid-row: 4/5;
+                    color: rgba(242,198,60,255);
+                    -webkit-text-stroke: 0.2px black;
+                    position: relative;
+                    left: -20px;
+                }
+                .infoSuper1{
+                    grid-column: 1/2;
+                    grid-row: 5/6;
+                    color: rgba(247,251,251,255);
+                    width: 90%;
+                    height: 90%;
+                    background-color: rgba(2,51,79,255);
+                    border-radius: 5px;
+                    display: grid;
+                    align-items: center;
+                    margin-top: -25px;
+                }
+                .infoSuper2{
+                    grid-column: 2/3;
+                    grid-row: 5/6;
+                    color: rgba(247,251,251,255);
+                    width: 90%;
+                    height: 90%;
+                    background-color: rgba(2,51,79,255);
+                    border-radius: 5px;
+                    display: grid;
+                    align-items: center;
+                    margin-top: -25px;
+                }
+            }
+        }
+    }
+}
+
+.allRedes{
+    .redes{
+        width: 45px;
+    }
+}

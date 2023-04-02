@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS - SASS -->
     <link rel="stylesheet" href="../css/sass.css">
     <title>Brawl Stars</title>
 </head>
 <body>
     <header>
         <nav>
+            <div>
+                <a href="../index.html"><img src="../img/logo-brawl-letras.png" alt="logo del juego brawl stars"></a>
+            </div>
+            <div>
+                <a href="../index.html"><img class="logoBrawl" src="../img/logo-brawl.png" alt="logo del juego brawl stars"></a>
+            </div>
             <ul>
                 <li>
                     <a href="../index.html">INICIO</a>
@@ -21,9 +30,6 @@
                     <a href="./personajes.html">PERSONAJES</a>
                 </li>
                 <li>
-                    <a href="../index.html"><img class="logoBrawl" src="../img/logo-brawl.png" alt="logo del juego brawl stars"></a>
-                </li>
-                <li>
                     <a href="./multimedia.html">MULTIMEDIA</a>
                 </li>
                 <li>
@@ -33,34 +39,205 @@
                     <a href="./actualizaciones.html">ACTUALIZACIONES</a>
                 </li>
             </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
         </nav>
+        <div class="menuDesplegable">
+            <li>
+                <a href="../index.html">INICIO</a>
+            </li>
+            <li>
+                <a href="./nosotros.html">NOSOTROS</a>
+            </li>
+            <li>
+                <a href="./personajes.html">PERSONAJES</a>
+            </li>
+            <li>
+                <a href="./multimedia.html">MULTIMEDIA</a>
+            </li>
+            <li>
+                <a href="./temporadas.html">TEMPORADAS</a>
+            </li>
+            <li>
+                <a href="./actualizaciones.html">ACTUALIZACIONES</a>
+            </li>
+        </div>
     </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const menuDespliegue = document.querySelector('.menuDesplegable')
+
+        toggleBtn.onclick = function (){
+            menuDespliegue.classList.toggle('open')
+            const isOpen = menuDespliegue.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
 
     <main>
-        <h1>
-            PERSONAJES
-        </h1>
-        <img src="../img/logo-brawl.png" alt="logo de brawl stars">
-        <img class="superCell" src="../img/supercell.webp" alt="portada de supercell">
+        <img class="portada" src="../img/portada-personajes2.jpg" alt="portada de personajes">
+        <div class="mainPersonajes">
+            <h1>
+                PERSONAJES
+            </h1>
+            <p>
+                Lista de todos los brawlers en Brawl Stars. Checa sus estadísticas y aprende más de ellos.
+            </p>
+            <h2>
+                BRAWLERS Y SUS CARACTERISTICAS
+            </h2>
+            <p>
+                No todos los brawlers se consideran iguales; eso sí, sea cual sea su calidad, todos son especiales y únicos a su manera. <br> A la hora de elegir un brawler, comprobar sus estadísticas y habilidades es más importante que su calidad, puesto que así te aseguras de escoger el que mejor se adapta al modo en el que juegas y a los demás miembros del equipo. Exiten 6 tipos de brawlers en el juego:
+            </p>
+        </div>
     </main>
+
+    <section>
+        <h2>
+            ESPECIALES
+        </h2>
+        <section class="contenedorPersonajes">
+            <div class="contBrawl">
+                <img src="../img/portrait_shelly.png" alt="retraro de shelly">
+                <div class="estadisticasBrawl">
+                    <div class="salud">
+                        <h4 class="tituloSalud1">Salud</h4>
+                        <h4 class="tituloSalud2">Velocidad</h4>
+                        <div class="infoSalud">
+                            <p>5510</p>
+                        </div>
+                        <div class="infoSalud">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="ataque">
+                        <h4 class="titleAtaque1">
+                            ATAQUE
+                        </h4>
+                        <h4 class="titleAtaque2">
+                            PERDIGONES
+                        </h4>
+                        <p class="parrafoAtaque">
+                            El arma de Shelly dispara una ráfaga de proyectiles de medio alcance. Mientras más perdigones impacten al objetivo, mayor será el daño.
+                        </p>
+                        <h4 class="tituloAtaque1">Daño</h4>
+                        <h4 class="tituloAtaque2">Alcance</h4>
+                        <h4 class="tituloAtaque3">Velocidad de recarga</h4>
+                        <div class="infoAtaque1">
+                            <p>5 x 435</p>
+                        </div>
+                        <div class="infoAtaque2">
+                            <p>Largo</p>
+                        </div>
+                        <div class="infoAtaque3">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="super">
+                        <h4 class="titleSuper1">
+                            SÚPER
+                        </h4>
+                        <h4 class="titleSuper2">
+                            SUPERBALAS
+                        </h4>
+                        <p class="parrafoSuper">
+                            El superataque de Shelly arrasa con los refugios y con los enemigos. Quien sobreviva recibirá un impacto hacia atrás.
+                        </p>
+                        <h4 class="tituloSuper1">Daño</h4>
+                        <h4 class="tituloSuper2">Alcance</h4>
+                        <div class="infoSuper1">
+                            <p>9 x 464</p>
+                        </div>
+                        <div class="infoSuper2">
+                            <p>Largo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contBrawl">
+                <img src="../img/portrait_shelly.png" alt="retraro de shelly">
+                <div class="estadisticasBrawl">
+                    <div class="salud">
+                        <h4 class="tituloSalud1">Salud</h4>
+                        <h4 class="tituloSalud2">Velocidad</h4>
+                        <div class="infoSalud">
+                            <p>5510</p>
+                        </div>
+                        <div class="infoSalud">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="ataque">
+                        <h4 class="titleAtaque1">
+                            ATAQUE
+                        </h4>
+                        <h4 class="titleAtaque2">
+                            PERDIGONES
+                        </h4>
+                        <p class="parrafoAtaque">
+                            El arma de Shelly dispara una ráfaga de proyectiles de medio alcance. Mientras más perdigones impacten al objetivo, mayor será el daño.
+                        </p>
+                        <h4 class="tituloAtaque1">Daño</h4>
+                        <h4 class="tituloAtaque2">Alcance</h4>
+                        <h4 class="tituloAtaque3">Velocidad de recarga</h4>
+                        <div class="infoAtaque1">
+                            <p>5 x 435</p>
+                        </div>
+                        <div class="infoAtaque2">
+                            <p>Largo</p>
+                        </div>
+                        <div class="infoAtaque3">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="super">
+                        <h4 class="titleSuper1">
+                            SÚPER
+                        </h4>
+                        <h4 class="titleSuper2">
+                            SUPERBALAS
+                        </h4>
+                        <p class="parrafoSuper">
+                            El superataque de Shelly arrasa con los refugios y con los enemigos. Quien sobreviva recibirá un impacto hacia atrás.
+                        </p>
+                        <h4 class="tituloSuper1">Daño</h4>
+                        <h4 class="tituloSuper2">Alcance</h4>
+                        <div class="infoSuper1">
+                            <p>9 x 464</p>
+                        </div>
+                        <div class="infoSuper2">
+                            <p>Largo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
 
     <footer>
         <article>
             <h3>
                 Siguenos en:
             </h3>
-            <a target="_blank" href="https://www.youtube.com/@BrawlStars">
-                <img class="redes" src="../img/logo-youtube-blanco.svg" alt="logo de youtube">
-            </a>
-            <a target="_blank" href="https://www.facebook.com/brawlstarsspanish">
-                <img class="redes" src="../img/logo-facebook-blanco.svg" alt="logo de facebook">
-            </a>
-            <a target="_blank" href="https://www.instagram.com/brawlstars/">
-                <img class="redes" src="../img/logo-instagram-blanco.svg" alt="logo de instagram">
-            </a>
-            <a target="_blank" href="https://twitter.com/BrawlStarsES">
-                <img class="redes" src="../img/logo-twitter-blanco.svg" alt="logo de twiter">
-            </a>
+            <div class="allRedes">
+                <a target="_blank" href="https://www.youtube.com/@BrawlStars">
+                    <img class="redes" src="../img/logo-youtube-blanco.svg" alt="logo de youtube">
+                </a>
+                <a target="_blank" href="https://www.facebook.com/brawlstarsspanish">
+                    <img class="redes" src="../img/logo-facebook-blanco.svg" alt="logo de facebook">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/brawlstars/">
+                    <img class="redes" src="../img/logo-instagram-blanco.svg" alt="logo de instagram">
+                </a>
+                <a target="_blank" href="https://twitter.com/BrawlStarsES">
+                    <img class="redes" src="../img/logo-twitter-blanco.svg" alt="logo de twiter">
+                </a>
+            </div>
         </article>
         <article class="descargar">
             <a target="_blank" href="https://apps.apple.com/us/app/brawl-stars/id1229016807">
