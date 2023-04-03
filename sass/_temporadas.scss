@@ -1,0 +1,72 @@
+.contTemporadas{
+    display: grid;
+    justify-items: center;
+    .contTemp{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .imageTemp{
+            margin-left: -6px;
+            .banner, .banner2{
+                display: flex;
+                width: 95%;
+                position: relative;
+                img{
+                    width: 99.8%;
+                    filter: blur(2px);
+                }
+            }
+            .banner2{
+                img{
+                    transform: skewX(-4.6deg);
+                }
+            }
+            .tituloTemp{
+                width: 90%;
+                position: relative;
+                margin-top: -60px;
+                margin-bottom: 15px;
+                h4{
+                    font-size: 18px;
+                    text-align: right;
+                    color: white;
+                    -webkit-text-stroke: 0.7px black;
+                }
+                .nombreTemp{
+                    font-size: 22px;
+                }
+            }
+            .carga, .carga2{
+                width: 95%;
+                img{
+                    border-top: 5px solid black;
+                    margin-left: -12.5px;
+                    margin-top: -3px;
+                    width: 100%;
+                    transform: skewX(-4.6deg);
+                }
+            }
+            .carga2{
+                img{
+                    margin-left: -15.5px;
+                }
+            }
+        }
+        .infoTemp, .infoTemp2{
+            width: 95%;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            margin-left: -21px;
+            margin-top: -20px;
+            p{
+                text-align: center;
+                padding: 30px;
+            }
+        }
+        .infoTemp2{
+            margin-left: -24px;
+        }
+    }
+}

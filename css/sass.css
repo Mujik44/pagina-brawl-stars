@@ -753,4 +753,74 @@ header {
 .galeria .galeria13 {
   grid-column: 1/2;
   grid-row: 17/19;
+}
+
+/* -------TEMPORADAS------- */
+.contTemporadas {
+  display: grid;
+  justify-items: center;
+}
+.contTemporadas .contTemp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contTemporadas .contTemp .imageTemp {
+  margin-left: -6px;
+}
+.contTemporadas .contTemp .imageTemp .banner, .contTemporadas .contTemp .imageTemp .banner2 {
+  display: flex;
+  width: 95%;
+  position: relative;
+}
+.contTemporadas .contTemp .imageTemp .banner img, .contTemporadas .contTemp .imageTemp .banner2 img {
+  width: 99.8%;
+  filter: blur(2px);
+}
+.contTemporadas .contTemp .imageTemp .banner2 img {
+  transform: skewX(-4.6deg);
+}
+.contTemporadas .contTemp .imageTemp .tituloTemp {
+  width: 90%;
+  position: relative;
+  margin-top: -60px;
+  margin-bottom: 15px;
+}
+.contTemporadas .contTemp .imageTemp .tituloTemp h4 {
+  font-size: 18px;
+  text-align: right;
+  color: white;
+  -webkit-text-stroke: 0.7px black;
+}
+.contTemporadas .contTemp .imageTemp .tituloTemp .nombreTemp {
+  font-size: 22px;
+}
+.contTemporadas .contTemp .imageTemp .carga, .contTemporadas .contTemp .imageTemp .carga2 {
+  width: 95%;
+}
+.contTemporadas .contTemp .imageTemp .carga img, .contTemporadas .contTemp .imageTemp .carga2 img {
+  border-top: 5px solid black;
+  margin-left: -12.5px;
+  margin-top: -3px;
+  width: 100%;
+  transform: skewX(-4.6deg);
+}
+.contTemporadas .contTemp .imageTemp .carga2 img {
+  margin-left: -15.5px;
+}
+.contTemporadas .contTemp .infoTemp, .contTemporadas .contTemp .infoTemp2 {
+  width: 95%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: -21px;
+  margin-top: -20px;
+}
+.contTemporadas .contTemp .infoTemp p, .contTemporadas .contTemp .infoTemp2 p {
+  text-align: center;
+  padding: 30px;
+}
+.contTemporadas .contTemp .infoTemp2 {
+  margin-left: -24px;
 }/*# sourceMappingURL=sass.css.map */

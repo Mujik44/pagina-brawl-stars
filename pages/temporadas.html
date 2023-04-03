@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS - SASS -->
     <link rel="stylesheet" href="../css/sass.css">
     <title>Brawl Stars</title>
 </head>
 <body>
     <header>
         <nav>
+            <div>
+                <a href="../index.html"><img src="../img/logo-brawl-letras.png" alt="logo del juego brawl stars"></a>
+            </div>
+            <div>
+                <a href="../index.html"><img class="logoBrawl" src="../img/logo-brawl.png" alt="logo del juego brawl stars"></a>
+            </div>
             <ul>
                 <li>
                     <a href="../index.html">INICIO</a>
@@ -21,9 +30,6 @@
                     <a href="./personajes.html">PERSONAJES</a>
                 </li>
                 <li>
-                    <a href="../index.html"><img class="logoBrawl" src="../img/logo-brawl.png" alt="logo del juego brawl stars"></a>
-                </li>
-                <li>
                     <a href="./multimedia.html">MULTIMEDIA</a>
                 </li>
                 <li>
@@ -33,34 +39,166 @@
                     <a href="./actualizaciones.html">ACTUALIZACIONES</a>
                 </li>
             </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
         </nav>
+        <div class="menuDesplegable">
+            <li>
+                <a href="../index.html">INICIO</a>
+            </li>
+            <li>
+                <a href="./nosotros.html">NOSOTROS</a>
+            </li>
+            <li>
+                <a href="./personajes.html">PERSONAJES</a>
+            </li>
+            <li>
+                <a href="./multimedia.html">MULTIMEDIA</a>
+            </li>
+            <li>
+                <a href="./temporadas.html">TEMPORADAS</a>
+            </li>
+            <li>
+                <a href="./actualizaciones.html">ACTUALIZACIONES</a>
+            </li>
+        </div>
     </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const menuDespliegue = document.querySelector('.menuDesplegable')
+
+        toggleBtn.onclick = function (){
+            menuDespliegue.classList.toggle('open')
+            const isOpen = menuDespliegue.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
 
     <main>
+        <img class="portada" src="../img/portada_temporadas.jpg" alt="portada de temporadas">
         <h1>
             TEMPORADAS 
         </h1>
-        <img src="../img/logo-brawl.png" alt="logo de brawl stars">
-        <img class="superCell" src="../img/supercell.webp" alt="portada de supercell">
     </main>
+    <section class="contTemporadas">
+        <div class="contTemp">
+            <div class="imageTemp">
+                <div class="banner">
+                    <img src="../img/misteriostarkparkbanner.png" alt="temporada misterios en star park">
+                </div>
+                <div class="tituloTemp">
+                    <h4>
+                        TEMPORADA 17
+                    </h4>
+                    <h4 class="nombreTemp">
+                        MISTERIO EN STARR PARK
+                    </h4>
+                </div>
+                <div class="carga">
+                    <img src="../img/temp17.jpg" alt="imagen de carga de la temporada">
+                </div>
+            </div>
+            <div class="infoTemp">
+                <p>
+                    Misterio en Starr Park empezó el 5 de marzo de 2023 y está vigente. Esta temporada desbloqueó a R-T, el brawler cromático de esta temporada, el diseño exclusivo de El Mayordomo (skin de El Primo) y R-T Carmesí junto a los Pines exclusivos para R-T y El Mayordomo. Esta temporada tiene 70 niveles.
+                </p>
+            </div>
+        </div>
+        <div class="contTemp">
+            <div class="imageTemp">
+                <div class="banner2">
+                    <img src="../img/candylandbanner.png" alt="temporada misterios en star park">
+                </div>
+                <div class="tituloTemp">
+                    <h4>
+                        TEMPORADA 16
+                    </h4>
+                    <h4 class="nombreTemp">
+                        CHUCHELANDIA
+                    </h4>
+                </div>
+                <div class="carga">
+                    <img src="../img/loading_screen_candyland2022.png" alt="imagen de carga de la temporada">
+                </div>
+            </div>
+            <div class="infoTemp">
+                <p>
+                    Chuchelandia tuvo lugar entre el 5 de enero de 2023 hasta el 5 de marzo de 2023. Esta temporada desbloqueó a Mandy, el diseño exclusivo de Nita Gominola y Mandy Magmática junto a los Pines exclusivos para Mandy y Nita Gominola. Esta temporada tenía 70 niveles.
+                </p>
+            </div>
+        </div>
+        <div class="contTemp">
+            <div class="imageTemp">
+                <div class="banner">
+                    <img src="../img/estacionfantasmalbanner.png" alt="temporada misterios en star park">
+                </div>
+                <div class="tituloTemp">
+                    <h4>
+                        TEMPORADA 15
+                    </h4>
+                    <h4 class="nombreTemp">
+                        ESTACIÓN FANTASMAL
+                    </h4>
+                </div>
+                <div class="carga2">
+                    <img src="../img/ghost_station_loading.png" alt="imagen de carga de la temporada">
+                </div>
+            </div>
+            <div class="infoTemp2">
+                <p>
+                    Estación Fantasmal tuvo lugar entre el 5 de noviembre de 2022 hasta el 5 de enero de 2023. Esta temporada desbloqueó a Buster, el diseño exclusivo de Penny Reino Mapache y Buster Motosierra junto a los Pines exclusivos para Buster y Buster Motosierra. Esta temporada tenía 70 niveles.
+                </p>
+            </div>
+        </div>
+        <div class="contTemp">
+            <div class="imageTemp">
+                <div class="banner">
+                    <img src="../img/robotfactorybanner.png" alt="temporada misterios en star park">
+                </div>
+                <div class="tituloTemp">
+                    <h4>
+                        TEMPORADA 14
+                    </h4>
+                    <h4 class="nombreTemp">
+                        LA FÁBRICA DE ROBOTS
+                    </h4>
+                </div>
+                <div class="carga2">
+                    <img src="../img/loading_screen_14.png" alt="imagen de carga de la temporada">
+                </div>
+            </div>
+            <div class="infoTemp2">
+                <p>
+                    La Fábrica de Robots tuvo lugar entre el 5 de septiembre de 2022 hasta el 5 de noviembre de 2022. Esta temporada desbloqueó a Sam, el diseño exclusivo de Poco Forajido y Sam César junto a los Pines exclusivos para Sam y Sam César. Esta temporada tenía 70 niveles.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <article>
             <h3>
                 Siguenos en:
             </h3>
-            <a target="_blank" href="https://www.youtube.com/@BrawlStars">
-                <img class="redes" src="../img/logo-youtube-blanco.svg" alt="logo de youtube">
-            </a>
-            <a target="_blank" href="https://www.facebook.com/brawlstarsspanish">
-                <img class="redes" src="../img/logo-facebook-blanco.svg" alt="logo de facebook">
-            </a>
-            <a target="_blank" href="https://www.instagram.com/brawlstars/">
-                <img class="redes" src="../img/logo-instagram-blanco.svg" alt="logo de instagram">
-            </a>
-            <a target="_blank" href="https://twitter.com/BrawlStarsES">
-                <img class="redes" src="../img/logo-twitter-blanco.svg" alt="logo de twiter">
-            </a>
+            <div class="allRedes">
+                <a target="_blank" href="https://www.youtube.com/@BrawlStars">
+                    <img class="redes" src="../img/logo-youtube-blanco.svg" alt="logo de youtube">
+                </a>
+                <a target="_blank" href="https://www.facebook.com/brawlstarsspanish">
+                    <img class="redes" src="../img/logo-facebook-blanco.svg" alt="logo de facebook">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/brawlstars/">
+                    <img class="redes" src="../img/logo-instagram-blanco.svg" alt="logo de instagram">
+                </a>
+                <a target="_blank" href="https://twitter.com/BrawlStarsES">
+                    <img class="redes" src="../img/logo-twitter-blanco.svg" alt="logo de twiter">
+                </a>
+            </div>
         </article>
         <article class="descargar">
             <a target="_blank" href="https://apps.apple.com/us/app/brawl-stars/id1229016807">
