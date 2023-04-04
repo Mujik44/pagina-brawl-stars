@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS - SASS -->
     <link rel="stylesheet" href="../css/sass.css">
     <title>Brawl Stars</title>
 </head>
 <body>
     <header>
         <nav>
+            <div>
+                <a href="../index.html"><img src="../img/logo-brawl-letras.png" alt="logo del juego brawl stars"></a>
+            </div>
+            <div>
+                <a href="../index.html"><img class="logoBrawl" src="../img/logo-brawl.png" alt="logo del juego brawl stars"></a>
+            </div>
             <ul>
                 <li>
                     <a href="../index.html">INICIO</a>
@@ -21,9 +30,6 @@
                     <a href="./personajes.html">PERSONAJES</a>
                 </li>
                 <li>
-                    <a href="../index.html"><img class="logoBrawl" src="../img/logo-brawl.png" alt="logo del juego brawl stars"></a>
-                </li>
-                <li>
                     <a href="./multimedia.html">MULTIMEDIA</a>
                 </li>
                 <li>
@@ -33,34 +39,199 @@
                     <a href="./actualizaciones.html">ACTUALIZACIONES</a>
                 </li>
             </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
         </nav>
+        <div class="menuDesplegable">
+            <li>
+                <a href="../index.html">INICIO</a>
+            </li>
+            <li>
+                <a href="./nosotros.html">NOSOTROS</a>
+            </li>
+            <li>
+                <a href="./personajes.html">PERSONAJES</a>
+            </li>
+            <li>
+                <a href="./multimedia.html">MULTIMEDIA</a>
+            </li>
+            <li>
+                <a href="./temporadas.html">TEMPORADAS</a>
+            </li>
+            <li>
+                <a href="./actualizaciones.html">ACTUALIZACIONES</a>
+            </li>
+        </div>
     </header> 
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const menuDespliegue = document.querySelector('.menuDesplegable')
+
+        toggleBtn.onclick = function (){
+            menuDespliegue.classList.toggle('open')
+            const isOpen = menuDespliegue.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
     
     <main>
+        <img class="portada" src="../img/loading_screen_05.png.png" alt="portada de actualizaciones">
         <h1>
             ACTUALIZACIONES
         </h1>
-        <img src="../img/logo-brawl.png" alt="logo de brawl stars">
-        <img class="superCell" src="../img/supercell.webp" alt="portada de supercell">
     </main>
+
+    <section class="contActualizaciones">
+        <div class="contAct">
+            <div class="imageAct">
+                <div class="bannerAct">
+                    <img src="../img/misteriostarkparkbanner.png" alt="temporada misterios en star park">
+                </div>
+                <div class="tituloAct">
+                    <h4>
+                        2 ABR 2023
+                    </h4>
+                    <h4 class="nombreAct">
+                        #MisterioEnStarrPark
+                    </h4>
+                </div>
+                <div class="cargaAct">
+                    <img src="../img/loading_screen_s17.png" alt="imagen de carga de la temporada">
+                </div>
+            </div>
+            <div class="infoAct">
+                <ul>
+                    <li>Nuevos Brawlers - <br> R-T (Cromático)</li>
+                    <li>Willow (Mítico)</li>
+                    <li>Nuevos Aspectos de Temporada -</li>
+                    <li>Maestrías -</li>
+                    <li>Nuevo inicio de batalla -</li>
+                    <li>Cambios de balance -</li>
+                </ul>
+                <div class="contButton">
+                    <a target="_blank" href="https://supercell.com/en/games/brawlstars/es/blog/release-notes/misterioenstarrpark-notas-de-actualizacion/" class="button">Mas Info Aqui</a>
+                </div>
+            </div>
+        </div>
+        <div class="contAct">
+            <div class="imageAct">
+                <div class="bannerAct2">
+                    <img src="../img/candylandbanner.png" alt="temporada misterios en star park">
+                </div>
+                <div class="tituloAct">
+                    <h4>
+                        26 ENE 2023
+                    </h4>
+                    <h4 class="nombreAct">
+                        #Chuchelandia
+                    </h4>
+                </div>
+                <div class="cargaAct">
+                    <img src="../img/actualizacion2.webp" alt="imagen de carga de la temporada">
+                </div>
+            </div>
+            <div class="infoAct">
+                <ul>
+                    <li>Nuevos Brawlers - <br> Mandy (Cromático)</li>
+                    <li>Gray (Mítico)</li>
+                    <li>Chester (Legendario)</li>
+                    <li>Nuevos Aspectos de Temporada -</li>
+                    <li>Brawlidad Siniestra -</li>
+                    <li>Año Nuevo lunar del 2023 -</li>
+                    <li>Camino Starr -</li>
+                    <li>Cambios de balance -</li>
+                </ul>
+                <div class="contButton">
+                    <a target="_blank" href="https://supercell.com/en/games/brawlstars/es/blog/release-notes/chuchelandia-notas-de-actualizaci%C3%B3n/" class="button">Mas Info Aqui</a>
+                </div>
+            </div>
+        </div>
+        <div class="contAct">
+            <div class="imageAct">
+                <div class="bannerAct">
+                    <img src="../img/estacionfantasmalbanner.png" alt="temporada misterios en star park">
+                </div>
+                <div class="tituloAct">
+                    <h4>
+                        15 NOV 2022
+                    </h4>
+                    <h4 class="nombreAct">
+                        #EstaciónFantasmal
+                    </h4>
+                </div>
+                <div class="cargaAct2">
+                    <img src="../img/actualizacion3.webp" alt="imagen de carga de la temporada">
+                </div>
+            </div>
+            <div class="infoAct2">
+                <ul>
+                    <li>Nuevo Brawler - <br> Buster (Cromático)</li>
+                    <li>Nuevos Aspectos de Temporada -</li>
+                    <li>Cambios de los refuerzos -</li>
+                    <li>Sistema de Reportes - 1.0 -</li>
+                    <li>Cambios de balance -</li>
+                </ul>
+                <div class="contButton">
+                    <a target="_blank" href="https://supercell.com/en/games/brawlstars/es/blog/release-notes/estaci%C3%B3nfantasmal-notas-de-actualizaci%C3%B3n/" class="button">Mas Info Aqui</a>
+                </div>
+            </div>
+        </div>
+        <div class="contAct">
+            <div class="imageAct">
+                <div class="bannerAct">
+                    <img src="../img/robotfactorybanner.png" alt="temporada misterios en star park">
+                </div>
+                <div class="tituloAct">
+                    <h4>
+                        19 SEPT 2022
+                    </h4>
+                    <h4 class="nombreAct">
+                        #LaFábricaDeRobots
+                    </h4>
+                </div>
+                <div class="cargaAct2">
+                    <img src="../img/actualizacion4.webp" alt="imagen de carga de la temporada">
+                </div>
+            </div>
+            <div class="infoAct2">
+                <ul>
+                    <li>Nuevos Brawlers - <br> Sam (Cromático) <br> Gus (Super Especial)</li>
+                    <li>Nuevos Aspectos de Temporada</li>
+                    <li>Nuevos gadgets</li>
+                    <li>Nuevas reacciones animadas</li>
+                    <li>Cambios de balance</li>
+                </ul>
+                <div class="contButton">
+                    <a target="_blank" href="https://supercell.com/en/games/brawlstars/es/blog/release-notes/f%C3%A1bricaderobots-notas-de-actualizaci%C3%B3n-1/" class="button">Mas Info Aqui</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <article>
             <h3>
                 Siguenos en:
             </h3>
-            <a target="_blank" href="https://www.youtube.com/@BrawlStars">
-                <img class="redes" src="../img/logo-youtube-blanco.svg" alt="logo de youtube">
-            </a>
-            <a target="_blank" href="https://www.facebook.com/brawlstarsspanish">
-                <img class="redes" src="../img/logo-facebook-blanco.svg" alt="logo de facebook">
-            </a>
-            <a target="_blank" href="https://www.instagram.com/brawlstars/">
-                <img class="redes" src="../img/logo-instagram-blanco.svg" alt="logo de instagram">
-            </a>
-            <a target="_blank" href="https://twitter.com/BrawlStarsES">
-                <img class="redes" src="../img/logo-twitter-blanco.svg" alt="logo de twiter">
-            </a>
+            <div class="allRedes">
+                <a target="_blank" href="https://www.youtube.com/@BrawlStars">
+                    <img class="redes2" src="../img/logo-youtube-blanco.svg" alt="logo de youtube">
+                </a>
+                <a target="_blank" href="https://www.facebook.com/brawlstarsspanish">
+                    <img class="redes2" src="../img/logo-facebook-blanco.svg" alt="logo de facebook">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/brawlstars/">
+                    <img class="redes2" src="../img/logo-instagram-blanco.svg" alt="logo de instagram">
+                </a>
+                <a target="_blank" href="https://twitter.com/BrawlStarsES">
+                    <img class="redes2" src="../img/logo-twitter-blanco.svg" alt="logo de twiter">
+                </a>
+            </div>    
         </article>
         <article class="descargar">
             <a target="_blank" href="https://apps.apple.com/us/app/brawl-stars/id1229016807">

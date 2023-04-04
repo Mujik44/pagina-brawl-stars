@@ -29,7 +29,7 @@ footer {
   gap: 15px;
 }
 
-ul, li, h1, h2, h4 {
+ul, li, h1, h2, h4, a {
   font-family: "Lilita One", cursive;
   text-align: center;
 }
@@ -146,7 +146,11 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
-.allRedes .redes {
+.allRedes .redes1 {
+  padding: 10px;
+  width: 65px;
+}
+.allRedes .redes2 {
   padding: 10px;
   width: 45px;
 }
@@ -823,4 +827,92 @@ header {
 }
 .contTemporadas .contTemp .infoTemp2 {
   margin-left: -24px;
+}
+
+/* -------ACTUALIZACIONES------- */
+.contActualizaciones {
+  display: grid;
+  justify-items: center;
+}
+.contActualizaciones .contAct {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contActualizaciones .contAct .imageAct {
+  margin-left: -6px;
+}
+.contActualizaciones .contAct .imageAct .bannerAct, .contActualizaciones .contAct .imageAct .bannerAct2 {
+  display: flex;
+  width: 95%;
+  position: relative;
+}
+.contActualizaciones .contAct .imageAct .bannerAct img, .contActualizaciones .contAct .imageAct .bannerAct2 img {
+  width: 99.8%;
+  filter: blur(2px);
+}
+.contActualizaciones .contAct .imageAct .bannerAct2 img {
+  transform: skewX(-4.6deg);
+}
+.contActualizaciones .contAct .imageAct .tituloAct {
+  width: 90%;
+  position: relative;
+  margin-top: -60px;
+  margin-bottom: 15px;
+}
+.contActualizaciones .contAct .imageAct .tituloAct h4 {
+  font-size: 18px;
+  text-align: right;
+  color: white;
+  -webkit-text-stroke: 0.7px black;
+}
+.contActualizaciones .contAct .imageAct .tituloAct .nombreAct {
+  font-size: 22px;
+}
+.contActualizaciones .contAct .imageAct .cargaAct, .contActualizaciones .contAct .imageAct .cargaAct2 {
+  width: 95%;
+}
+.contActualizaciones .contAct .imageAct .cargaAct img, .contActualizaciones .contAct .imageAct .cargaAct2 img {
+  border-top: 5px solid black;
+  margin-left: -12.5px;
+  margin-top: -3px;
+  width: 100%;
+  transform: skewX(-4.6deg);
+}
+.contActualizaciones .contAct .imageAct .cargaAct2 img {
+  margin-left: -15.5px;
+}
+.contActualizaciones .contAct .infoAct, .contActualizaciones .contAct .infoAct2 {
+  width: 95%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: -51px;
+  margin-top: -15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.contActualizaciones .contAct .infoAct ul li, .contActualizaciones .contAct .infoAct2 ul li {
+  text-align: left;
+}
+.contActualizaciones .contAct .infoAct .contButton, .contActualizaciones .contAct .infoAct2 .contButton {
+  padding: 20px;
+}
+.contActualizaciones .contAct .infoAct .contButton .button, .contActualizaciones .contAct .infoAct2 .contButton .button {
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  padding: 0.2rem 1rem;
+  border-radius: 0.25rem;
+}
+.contActualizaciones .contAct .infoAct .contButton .button:hover, .contActualizaciones .contAct .infoAct2 .contButton .button:hover {
+  background-color: #f01919;
+  color: black;
+}
+.contActualizaciones .contAct .infoAct2 {
+  margin-left: -54px;
 }/*# sourceMappingURL=sass.css.map */

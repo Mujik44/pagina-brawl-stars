@@ -43,7 +43,7 @@ footer{
     gap: 15px;
 }
 
-ul,li,h1,h2,h4{
+ul,li,h1,h2,h4,a{
     font-family: 'Lilita One', cursive;
     text-align: center;
 }
@@ -148,3 +148,7 @@ header{
 /* -------TEMPORADAS------- */
 
 @import "temporadas";
+
+/* -------ACTUALIZACIONES------- */
+
+@import "actualizaciones";
