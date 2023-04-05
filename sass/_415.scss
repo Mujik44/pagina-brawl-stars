@@ -1,0 +1,181 @@
+@media screen and (min-width:416px) {
+
+    /*-------INICIO-------*/
+    .contenedorMain{
+        grid-template-rows: 100px 240px 130px 130px;
+    }
+
+    /*-------NOSOTROS-------*/
+    .contenedorJuegos{
+        .juego{
+            .textoJuegos{
+                .tituloJuegos{
+                    font-size: 15px;
+                }
+                .parrafoJuegos{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    /*-------PERSONAJES-------*/
+    .contenedorPersonajes{
+        .contBrawl{
+            .estadisticasBrawl{
+                grid-template-columns: 40% 1fr;
+                grid-template-rows: 130px 290px 215px;
+                .salud{
+                    .tituloSalud1{
+                        left: -3rem
+                    }
+                    .tituloSalud2{
+                        left: -2rem
+                    }
+                }
+                .ataque{
+                    grid-template-rows: 20px 20px 90px 20px 50px 20px 50px;
+                    .titleAtaque1{
+                        margin-left: -14rem
+                    }
+                    .titleAtaque2{
+                        margin-left: -11rem
+                    }
+                    .nita{
+                        margin-left: -13rem
+                    }
+                    .colt{
+                        margin-left: -11rem
+                    }
+                    .bull{
+                        margin-left: -8.5rem
+                    }
+                    .brock{
+                        margin-left: -14.5rem
+                    }
+                    .primo{
+                        margin-left: -8rem
+                    }
+                    .barley{
+                        margin-left: -10rem
+                    }
+                    .poco{
+                        margin-left: -12.5rem
+                    }
+                    .rosa{
+                        margin-left: -7rem
+                    }
+                    .tituloAtaque1{
+                        left: -50px;
+                    }
+                    .tituloAtaque2{
+                        left: -40px;
+                    }
+                    .tituloAtaque3{
+                        left: -70px;
+                    }
+                }
+                .super{
+                    grid-template-rows: 20px 20px 80px 20px 50px;
+                    .titleSuper1{
+                        margin-left: -15rem
+                    }
+                    .titleSuper2{
+                        margin-left: -10.5rem
+                    }
+                    .nita{
+                        margin-left: -8rem
+                    }
+                    .colt{
+                        margin-left: -5rem
+                    }
+                    .bull{
+                        margin-left: -11rem
+                    }
+                    .brock{
+                        margin-left: -6rem
+                    }
+                    .primo{
+                        margin-left: -7rem
+                    }
+                    .barley{
+                        margin-left: -4.5rem
+                    }
+                    .poco{
+                        margin-left: -6rem
+                    }
+                    .rosa{
+                        margin-left: -8.5rem
+                    }
+                    .tituloSuper1{
+                        left: -50px;
+                    }
+                    .curacion{
+                        left: -40px
+                    }
+                    .reduccion{
+                        left: -36px
+                    }
+                    .tituloSuper2{
+                        left: -40px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*-------MULTIMEDIA-------*/
+    .galeria{
+        grid-template-rows: repeat(18, 220px);
+    }
+
+    /*-------TEMPORADAS-------*/
+    .contTemporadas{
+        .contTemp{
+            .imageTemp{
+                .carga{
+                    img{
+                        margin-left: -15.5px;
+                    }
+                }
+                .carga2{
+                    img{
+                        margin-left: -19.5px;
+                    }
+                }
+            }
+            .infoTemp{
+                margin-left: -26px;
+            }
+            .infoTemp2{
+                margin-left: -30px;
+            }
+        }
+    }
+
+    /*-------ACTUALIZACIONES-------*/
+    .contActualizaciones{
+        .contAct{
+            .imageAct{
+                .cargaAct{
+                    img{
+                        margin-left: -15.5px;
+                    }
+                }
+                .cargaAct2{
+                    img{
+                        margin-left: -19.5px;
+                    }
+                }
+            }
+            .infoAct{
+                align-items: center;
+                margin-left: -56px;
+            }
+            .infoAct2{
+                margin-left: -59px;
+                align-items: center;
+            }
+        }
+    }
+}

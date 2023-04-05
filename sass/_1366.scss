@@ -1,0 +1,278 @@
+@media screen and (min-width:1366px){
+
+    /*-------NOSOTROS-------*/
+    .contenedorServidores{
+        .textoServidores{
+            width: 530px;
+        }
+    }
+    .contenedorServidores2{
+        .parrafoServidores2{
+            width: 530px;
+        }
+    }
+
+    /*-------PERSONAJES-------*/
+    .contenedorPersonajes{
+        align-items: center;
+        grid-template-columns: 1fr 1fr; 
+        .contBrawl{
+            .estadisticasBrawl{
+                grid-template-columns: 20% 1fr 1fr;
+                grid-template-rows: 110px auto;
+                .salud{
+                    .tituloSalud1{
+                        font-size: 20px;
+                        left: -1.5rem;
+                    }
+                    .tituloSalud2{
+                        font-size: 20px;
+                        left: -0.4rem;
+                    }
+                    .infoSalud{
+                        margin-top: -30px;
+                    }
+                }
+                .ataque{
+                    grid-template-rows: 20px 20px 100px 20px 50px 20px 50px;
+                    .titleAtaque1{
+                        margin-left: -7rem;
+                    }
+                    .titleAtaque2{
+                        margin-left: -4rem;
+                    }
+                    .nita{
+                        margin-left: -95px
+                    }
+                    .colt{
+                        margin-left: -65px
+                    }
+                    .bull{
+                        margin-left: -24px
+                    }
+                    .brock{
+                        margin-left: -120px
+                    }
+                    .primo{
+                        margin-left: -20px
+                    }
+                    .barley{
+                        margin-left: -55px
+                    }
+                    .poco{
+                        margin-left: -90px
+                    }
+                    .rosa{
+                        margin-left: 3px;
+                    }
+                    .tituloAtaque1{
+                        left: -25px;
+                    }
+                    .tituloAtaque2{
+                        left: -17px;
+                    }
+                    .tituloAtaque3{
+                        left: -20px;
+                    }
+                }
+                .super{
+                    grid-template-rows: 20px 20px 170px 20px 50px;
+                    .titleSuper1{
+                        margin-left: -8.5rem;
+                    }
+                    .titleSuper2{
+                        margin-left: -4rem;
+                    }
+                    .nita{
+                        margin-left: -1rem;
+                    }
+                    .colt{
+                        margin-top: 5px;
+                        margin-left: 0.5rem;
+                    }
+                    .bull{
+                        margin-left: -4.7rem;
+                    }
+                    .brock{
+                        margin-top: 5px;
+                        margin-left: 0.5rem;
+                    }
+                    .primo{
+                        margin-left: -0.5rem;
+                    }
+                    .barley{
+                        margin-top: 7px;
+                        margin-left: 0.5rem;
+                    }
+                    .poco{
+                        margin-top: 7px;
+                        margin-left: 0.5rem;
+                    }
+                    .rosa{
+                        margin-left: -1.8rem;
+                    }
+                    .tituloSuper1{
+                        left: -25px;
+                    }
+                    .tituloSuper2{
+                        left: -16px;
+                    }
+                    .curacion{
+                        left: -13px;
+                    }
+                    .reduccion{
+                        left: -10px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*-------MULTIMEDIA-------*/
+    .galeria{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 242px);
+        .galeria1{
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+        .galeria2{
+            grid-column: 3/5;
+            grid-row: 1/3;
+        }
+        .galeria3{
+            grid-column: 5/7;
+            grid-row: 1/2;
+        }
+        .galeria4{
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+        .galeria5{
+            grid-column: 2/3;
+            grid-row: 2/4;
+        }
+        .galeria6{
+            grid-column: 5/7;
+            grid-row: 2/3;
+        }
+        .galeria7{
+            grid-column: 3/7;
+            grid-row: 3/4;
+        }
+        .galeria8{
+            grid-column: 1/3;
+            grid-row: 4/5;
+        }
+        .galeria9{
+            grid-column: 1/3;
+            grid-row: 5/6;
+        }
+        .galeria10{
+            grid-column: 3/4;
+            grid-row: 4/6;
+        }
+        .galeria11{
+            grid-column: 4/6;
+            grid-row: 4/5;
+        }
+        .galeria12{
+            grid-column: 4/6;
+            grid-row: 5/6;
+        }
+        .galeria13{
+            grid-column: 6/7;
+            grid-row: 4/6;
+        }
+    }
+
+    /*-------TEMPORADAS-------*/
+    .contTemporadas{
+        grid-template-rows: repeat(4, 500px);
+        .diecisiete, .quince, .dieciseis, .catorce{
+            grid-template-rows: 460px;
+            .imageTemp{
+                .banner, .banner2{
+                    margin-left: -3px;
+                }
+                .tituloTemp{
+                    margin-top: -85px;
+                    h4{
+                        font-size: 25px;
+                    }
+                    .nombreTemp{
+                        font-size: 35px;
+                    }
+                }
+            }
+            .infoTemp, .infoTemp2{
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+        .dieciseis{
+            .imageTemp{
+                .banner2{
+                    margin-left: 5px;
+                }
+            }
+        }
+        .catorce{
+            .imageTemp{
+                .banner{
+                    margin-left: -7px;
+                }
+            }
+        }
+    }
+
+    /*-------ACTUALIZACIONES-------*/
+    .contActualizaciones{
+        grid-template-rows: repeat(4, 500px);
+        .diecisiete, .quince, .dieciseis, .catorce{
+            grid-template-rows: 460px;
+            .imageAct{
+                .bannerAct, .bannerAct2{
+                    margin-left: -1px;
+                }
+                .tituloAct{
+                    margin-top: -85px;
+                    h4{
+                        font-size: 25px;
+                    }
+                    .nombreAct{
+                        font-size: 35px;
+                    }
+                }
+            }
+            .infoAct, .infoAct2{
+                grid-template-rows: auto 55px;
+                ul{
+                    li{
+                        font-size: 25px;
+                    }
+                }
+                .contButton{
+                    a{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .dieciseis{
+            .imageAct{
+                .bannerAct2{
+                    margin-left: 5px;
+                }
+            }
+        }
+        .catorce{
+            .imageAct{
+                .bannerAct{
+                    margin-left: -2px;
+                }
+            }
+        }
+    }
+}

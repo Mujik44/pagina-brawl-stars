@@ -1,8 +1,8 @@
 .contenedorMain{
-    margin: 20px 0;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 400px 100px 100px;
+    grid-template-rows: 100px 365px 100px 100px;
     place-items: center;
     grid-template-areas: 
     "titulo"
@@ -29,7 +29,6 @@
         width: 95%;
         border: 3px solid black;
         grid-area: carousel;
-        margin-bottom: 20px ;
     }
 }
 
@@ -68,8 +67,8 @@
     flex-direction: column;
     align-items: center;
     .superCell{
-        // width: 100%;
-        // height: auto;
+        width: 100%;
+        height: auto;
         display: none;
     }
     .superCell2{

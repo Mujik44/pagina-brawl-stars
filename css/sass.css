@@ -85,6 +85,7 @@ nav img {
   height: 50px;
 }
 nav ul {
+  padding-left: 2rem;
   display: flex;
   gap: 2rem;
   display: none;
@@ -143,8 +144,8 @@ header {
 }
 
 .allRedes {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .allRedes .redes1 {
   padding: 10px;
@@ -166,10 +167,10 @@ header {
 
 /* -------MAIN------- */
 .contenedorMain {
-  margin: 20px 0;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 400px 100px 100px;
+  grid-template-rows: 100px 365px 100px 100px;
   place-items: center;
   grid-template-areas: "titulo" "contenido" "carousel" "carousel";
   gap: 5px;
@@ -193,7 +194,6 @@ header {
   width: 95%;
   border: 3px solid black;
   grid-area: carousel;
-  margin-bottom: 20px;
 }
 
 .contenedorNews {
@@ -232,6 +232,8 @@ header {
   align-items: center;
 }
 .contenedorConoce .superCell {
+  width: 100%;
+  height: auto;
   display: none;
 }
 .contenedorConoce .superCell2 {
@@ -280,7 +282,7 @@ header {
 }
 .contenedorServidores2 .carouselServidores2 {
   margin: 10px;
-  height: 165px;
+  height: auto;
   width: 90%;
   border: 3px solid black;
 }
@@ -294,12 +296,14 @@ header {
 .contenedorModos {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 170px 100px;
+  grid-template-rows: 170px auto;
   align-items: center;
   justify-items: center;
   border-top: 1px solid #ccc;
 }
 .contenedorModos .imageGenio {
+  height: 250px;
+  width: auto;
   display: none;
 }
 .contenedorModos .parrafoModos {
@@ -307,10 +311,13 @@ header {
   margin: 0%;
 }
 .contenedorModos .imageTick {
+  height: 250px;
+  width: auto;
   display: none;
 }
 .contenedorModos .imageElprimo {
   width: 90%;
+  padding: 20px;
 }
 
 .contenedorJuegos {
@@ -319,7 +326,7 @@ header {
   grid-template-rows: repeat(6, 170px);
   justify-items: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .contenedorJuegos .juego {
   display: flex;
@@ -423,7 +430,7 @@ header {
   justify-items: center;
   align-items: center;
   grid-template-columns: 100%;
-  grid-template-rows: 30px 30px 30px 30px;
+  grid-template-rows: repeat(4, 30px);
 }
 .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1 {
   font-size: 20px;
@@ -601,6 +608,7 @@ header {
   -webkit-text-stroke: 0.2px black;
   margin-top: -20px;
   margin-left: -90px;
+  text-align: left;
 }
 .contenedorPersonajes .contBrawl .estadisticasBrawl .super .nita {
   margin-left: -40px;
@@ -915,4 +923,1266 @@ header {
 }
 .contActualizaciones .contAct .infoAct2 {
   margin-left: -54px;
+}
+
+/* -------RESPONSIVE-------*/
+@media screen and (min-width: 416px) {
+  /*-------INICIO-------*/
+  .contenedorMain {
+    grid-template-rows: 100px 240px 130px 130px;
+  }
+  /*-------NOSOTROS-------*/
+  .contenedorJuegos .juego .textoJuegos .tituloJuegos {
+    font-size: 15px;
+  }
+  .contenedorJuegos .juego .textoJuegos .parrafoJuegos {
+    font-size: 13px;
+  }
+  /*-------PERSONAJES-------*/
+  .contenedorPersonajes .contBrawl .estadisticasBrawl {
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 130px 290px 215px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1 {
+    left: -3rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
+    left: -2rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque {
+    grid-template-rows: 20px 20px 90px 20px 50px 20px 50px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1 {
+    margin-left: -14rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2 {
+    margin-left: -11rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita {
+    margin-left: -13rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt {
+    margin-left: -11rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull {
+    margin-left: -8.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock {
+    margin-left: -14.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo {
+    margin-left: -8rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley {
+    margin-left: -10rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco {
+    margin-left: -12.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa {
+    margin-left: -7rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1 {
+    left: -50px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2 {
+    left: -40px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3 {
+    left: -70px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
+    grid-template-rows: 20px 20px 80px 20px 50px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleSuper1 {
+    margin-left: -15rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleSuper2 {
+    margin-left: -10.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .nita {
+    margin-left: -8rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .colt {
+    margin-left: -5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .bull {
+    margin-left: -11rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .brock {
+    margin-left: -6rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .primo {
+    margin-left: -7rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .barley {
+    margin-left: -4.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .poco {
+    margin-left: -6rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .rosa {
+    margin-left: -8.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloSuper1 {
+    left: -50px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .curacion {
+    left: -40px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .reduccion {
+    left: -36px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloSuper2 {
+    left: -40px;
+  }
+  /*-------MULTIMEDIA-------*/
+  .galeria {
+    grid-template-rows: repeat(18, 220px);
+  }
+  /*-------TEMPORADAS-------*/
+  .contTemporadas .contTemp .imageTemp .carga img {
+    margin-left: -15.5px;
+  }
+  .contTemporadas .contTemp .imageTemp .carga2 img {
+    margin-left: -19.5px;
+  }
+  .contTemporadas .contTemp .infoTemp {
+    margin-left: -26px;
+  }
+  .contTemporadas .contTemp .infoTemp2 {
+    margin-left: -30px;
+  }
+  /*-------ACTUALIZACIONES-------*/
+  .contActualizaciones .contAct .imageAct .cargaAct img {
+    margin-left: -15.5px;
+  }
+  .contActualizaciones .contAct .imageAct .cargaAct2 img {
+    margin-left: -19.5px;
+  }
+  .contActualizaciones .contAct .infoAct {
+    align-items: center;
+    margin-left: -56px;
+  }
+  .contActualizaciones .contAct .infoAct2 {
+    margin-left: -59px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 455px) {
+  /*-------INICIO-------*/
+  .contenedorMain {
+    grid-template-rows: 100px 200px 130px 130px;
+  }
+  /*-------FOOTER-------*/
+  .descargar {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* -------MULTIMEDIA------- */
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(14, 242px);
+  }
+  .galeria .galeria1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .galeria .galeria2 {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+  .galeria .galeria3 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .galeria .galeria4 {
+    grid-column: 1/2;
+    grid-row: 5/7;
+  }
+  .galeria .galeria5 {
+    grid-column: 2/3;
+    grid-row: 5/7;
+  }
+  .galeria .galeria6 {
+    grid-column: 1/3;
+    grid-row: 7/8;
+  }
+  .galeria .galeria7 {
+    grid-column: 1/3;
+    grid-row: 8/9;
+  }
+  .galeria .galeria8 {
+    grid-column: 1/3;
+    grid-row: 9/10;
+  }
+  .galeria .galeria9 {
+    grid-column: 1/3;
+    grid-row: 10/11;
+  }
+  .galeria .galeria10 {
+    grid-column: 1/2;
+    grid-row: 11/13;
+  }
+  .galeria .galeria11 {
+    grid-column: 1/3;
+    grid-row: 13/14;
+  }
+  .galeria .galeria12 {
+    grid-column: 1/3;
+    grid-row: 14/15;
+  }
+  .galeria .galeria13 {
+    grid-column: 2/3;
+    grid-row: 11/13;
+  }
+}
+@media screen and (min-width: 576px) {
+  .menuDesplegable {
+    left: auto;
+    width: 250px;
+    top: 80px;
+  }
+  /*-------INICIO-------*/
+  .contenedorMain {
+    grid-template-rows: 100px 200px 160px 160px;
+  }
+  .contenedorMain .carouselMain {
+    width: 530px;
+  }
+  /*-------PERSONAJES-------*/
+  .contenedorPersonajes .contBrawl .estadisticasBrawl {
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 200px auto;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud {
+    grid-template-rows: repeat(4, auto);
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1 {
+    left: -4rem;
+    font-size: 23px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
+    left: -2.8rem;
+    font-size: 23px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud {
+    margin-top: -50px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud p {
+    font-size: 15px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    grid-template-rows: 20px 20px 130px 20px 50px 20px 50px;
+    margin: 20px 0;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1 {
+    margin-left: -8rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2 {
+    margin-left: -5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita {
+    margin-left: -7rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt {
+    margin-left: -5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull {
+    margin-left: -2.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock {
+    margin-left: -8.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo {
+    margin-left: -2rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley {
+    margin-left: -4.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco {
+    margin-left: -6.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa {
+    margin-left: -1rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1 {
+    left: -30px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2 {
+    left: -20px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3 {
+    left: -30px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-template-rows: 20px 20px 200px 20px 50px;
+    margin: 20px 0;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleSuper1 {
+    margin-left: -8rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleSuper2 {
+    margin-left: -3.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .nita {
+    margin-left: -0.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .colt {
+    margin-top: 10px;
+    margin-left: 1rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .bull {
+    margin-left: -4.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .brock {
+    margin-top: 10px;
+    margin-left: 1rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .primo {
+    margin-left: 0rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .barley {
+    margin-top: 10px;
+    margin-left: 1rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .poco {
+    margin-top: 10px;
+    margin-left: 1rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .rosa {
+    margin-left: -1.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloSuper1 {
+    left: -25px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .curacion {
+    left: -15px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .reduccion {
+    left: -10px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloSuper2 {
+    left: -15px;
+  }
+  /*-------TEMPORADAS-------*/
+  .contTemporadas {
+    margin: 40px 0;
+    grid-template-rows: repeat(4, 260px);
+    gap: 20px;
+    align-items: center;
+  }
+  .contTemporadas .contTemp {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px;
+    justify-items: center;
+    align-items: center;
+  }
+  .contTemporadas .contTemp .imageTemp .banner, .contTemporadas .contTemp .imageTemp .banner2 {
+    margin-left: -5px;
+  }
+  .contTemporadas .contTemp .imageTemp .tituloTemp h4 {
+    font-size: 15px;
+  }
+  .contTemporadas .contTemp .imageTemp .tituloTemp .nombreTemp {
+    font-size: 20px;
+  }
+  .contTemporadas .contTemp .infoTemp, .contTemporadas .contTemp .infoTemp2 {
+    width: 110%;
+    height: 85%;
+    margin-left: -55px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 2px solid black;
+    display: grid;
+    align-items: center;
+  }
+  .contTemporadas .contTemp .infoTemp p, .contTemporadas .contTemp .infoTemp2 p {
+    padding: 8px 8px 8px 41px;
+  }
+  /*-------ACTUALIZACION-------*/
+  .contActualizaciones {
+    margin: 40px 0;
+    grid-template-rows: repeat(4, 260px);
+    gap: 20px;
+    align-items: center;
+  }
+  .contActualizaciones .contAct {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px;
+    justify-items: center;
+    align-items: center;
+  }
+  .contActualizaciones .contAct .imageAct .bannerAct, .contActualizaciones .contAct .imageAct .bannerAct2 {
+    margin-left: -5px;
+  }
+  .contActualizaciones .contAct .imageAct .tituloAct h4 {
+    font-size: 14px;
+  }
+  .contActualizaciones .contAct .imageAct .tituloAct .nombreAct {
+    font-size: 20px;
+  }
+  .contActualizaciones .contAct .imageAct .cargaAct img, .contActualizaciones .contAct .imageAct .cargaAct2 img {
+    margin-left: -13px;
+  }
+  .contActualizaciones .contAct .infoAct, .contActualizaciones .contAct .infoAct2 {
+    padding: 0%;
+    width: 110%;
+    height: 80%;
+    margin-left: -55px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 2px solid black;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: auto 30px;
+  }
+  .contActualizaciones .contAct .infoAct ul, .contActualizaciones .contAct .infoAct2 ul {
+    padding: 8px 8px 8px 41px;
+  }
+  .contActualizaciones .contAct .infoAct ul li, .contActualizaciones .contAct .infoAct2 ul li {
+    font-size: 14px;
+  }
+  .contActualizaciones .contAct .infoAct .contButton, .contActualizaciones .contAct .infoAct2 .contButton {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 585px) {
+  footer {
+    height: 115px;
+  }
+  footer .allRedes {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 600px) {
+  /*-------PERSONAJES-------*/
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .colt {
+    margin-left: 1.3rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .brock {
+    margin-top: -20px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .barley {
+    margin-left: 1.3rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .poco {
+    margin-top: -20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /*-------INICIO-------*/
+  .contenedorMain {
+    grid-template-rows: 100px 210px 160px 160px;
+  }
+  .contenedorMain .tituloMain {
+    font-size: 30px;
+  }
+  .contenedorMain .contenidoMain .parrafoMain {
+    font-size: 20px;
+  }
+  .contenedorNews .textoNews .tituloNews {
+    font-size: 25px;
+  }
+  .contenedorNews .textoNews .parrafoNews {
+    font-size: 20px;
+  }
+  .contenedorConoce .centrado .tituloConoce {
+    font-size: 25px;
+  }
+  .contenedorConoce .centrado .parrafoConoce {
+    font-size: 20px;
+  }
+  /*-------NOSOTROS-------*/
+  main h1 {
+    font-size: 30px;
+  }
+  main .contenedorServidores .imageServidores {
+    width: 500px;
+  }
+  main .contenedorServidores .textoServidores .parrafoServidores {
+    font-size: 20px;
+  }
+  main .contenedorServidores .textoServidores .tituloServidores {
+    font-size: 25px;
+  }
+  .contenedorServidores2 .parrafoServidores2 {
+    font-size: 20px;
+  }
+  .contenedorServidores2 .carouselServidores2 {
+    width: 500px;
+  }
+  .contenedorServidores2 .carouselServidores2 .imagesCarousel {
+    display: block;
+  }
+  .contenedorServidores2 .carouselServidores2 .imagesCarousel2 {
+    display: none;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .contenedorModos .parrafoModos {
+    font-size: 20px;
+  }
+  .contenedorModos .imageElprimo {
+    width: 500px;
+  }
+  .contenedorJuegos .juego .textoJuegos .parrafoJuegos {
+    font-size: 14px;
+  }
+  /*-------PERSONAJES-------*/
+  .mainPersonajes p {
+    font-size: 20px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl {
+    grid-template-columns: 25% 1fr 1fr;
+    grid-template-rows: 160px auto;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 79%;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1 {
+    left: -2rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
+    left: -0.9rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud {
+    height: 150%;
+    margin-top: -30px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleSuper1 {
+    margin-left: -9.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleSuper2 {
+    margin-left: -5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .nita {
+    margin-left: -2rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .colt {
+    margin-left: 0.3rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .bull {
+    margin-left: -5.7rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .brock {
+    margin-top: -22px;
+    margin-left: -0.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .primo {
+    margin-left: 1.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .barley {
+    margin-left: 0.3rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .poco {
+    margin-top: -22px;
+    margin-left: -0.3rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .rosa {
+    margin-left: -3rem;
+  }
+  /*-------MULTIMEDIA-------*/
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(10, 242px);
+  }
+  .galeria .galeria1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .galeria .galeria2 {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+  .galeria .galeria3 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .galeria .galeria4 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  .galeria .galeria5 {
+    grid-column: 3/4;
+    grid-row: 3/5;
+  }
+  .galeria .galeria6 {
+    grid-column: 2/4;
+    grid-row: 5/6;
+  }
+  .galeria .galeria7 {
+    grid-column: 2/4;
+    grid-row: 6/7;
+  }
+  .galeria .galeria8 {
+    grid-column: 2/4;
+    grid-row: 7/8;
+  }
+  .galeria .galeria9 {
+    grid-column: 2/4;
+    grid-row: 8/9;
+  }
+  .galeria .galeria10 {
+    grid-column: 1/2;
+    grid-row: 5/7;
+  }
+  .galeria .galeria11 {
+    grid-column: 1/3;
+    grid-row: 9/10;
+  }
+  .galeria .galeria12 {
+    grid-column: 1/3;
+    grid-row: 10/11;
+  }
+  .galeria .galeria13 {
+    grid-column: 1/2;
+    grid-row: 7/9;
+  }
+  /*-------TEMPORADAS-------*/
+  .contTemporadas {
+    gap: 40px;
+  }
+  .contTemporadas .contTemp .imageTemp {
+    margin-left: 50px;
+  }
+  .contTemporadas .diecisiete .imageTemp .banner {
+    width: 97%;
+    margin-left: -8px;
+  }
+  .contTemporadas .dieciseis .imageTemp, .contTemporadas .catorce .imageTemp {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .contTemporadas .dieciseis .infoTemp, .contTemporadas .dieciseis .infoTemp2, .contTemporadas .catorce .infoTemp, .contTemporadas .catorce .infoTemp2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 120px;
+    border-left: 2px solid black;
+    padding-right: 20px;
+  }
+  .contTemporadas .dieciseis .infoTemp p, .contTemporadas .dieciseis .infoTemp2 p, .contTemporadas .catorce .infoTemp p, .contTemporadas .catorce .infoTemp2 p {
+    padding: 8px 41px 8px 8px;
+  }
+  .contTemporadas .quince .imageTemp .banner {
+    width: 97%;
+    margin-left: -11px;
+  }
+  .contTemporadas .catorce .imageTemp .banner {
+    width: 98%;
+    margin-left: -14px;
+  }
+  /*-------ACTUALIZACIONES-------*/
+  .contActualizaciones {
+    gap: 40px;
+  }
+  .contActualizaciones .contAct .imageAct {
+    margin-left: 50px;
+  }
+  .contActualizaciones .diecisiete .imageAct .bannerAct {
+    width: 97%;
+    margin-left: -7px;
+  }
+  .contActualizaciones .dieciseis .imageAct, .contActualizaciones .catorce .imageAct {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .contActualizaciones .dieciseis .infoAct, .contActualizaciones .dieciseis .infoAct2, .contActualizaciones .catorce .infoAct, .contActualizaciones .catorce .infoAct2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 120px;
+    border-left: 2px solid black;
+    padding-right: 20px;
+  }
+  .contActualizaciones .dieciseis .infoAct p, .contActualizaciones .dieciseis .infoAct2 p, .contActualizaciones .catorce .infoAct p, .contActualizaciones .catorce .infoAct2 p {
+    padding: 8px 41px 8px 8px;
+  }
+  .contActualizaciones .dieciseis .imageAct .bannerAct2 {
+    margin-left: -4px;
+  }
+  .contActualizaciones .quince .imageAct .bannerAct {
+    width: 98%;
+    margin-left: -8px;
+  }
+  .contActualizaciones .catorce .imageAct .bannerAct {
+    width: 98%;
+    margin-left: -8px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /*-------NAVBAR-------*/
+  nav ul {
+    display: block;
+    display: flex;
+    margin: 0;
+  }
+  nav ul li {
+    font-size: 20px;
+  }
+  nav .toggle_btn {
+    display: none;
+  }
+  .menuDesplegable {
+    display: none;
+  }
+  /*-------INICIO-------*/
+  .contenedorMain {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 365px;
+    grid-template-areas: "titulo carousel" "contenido carousel";
+  }
+  .contenedorMain .tituloMain {
+    margin-top: 40px;
+    font-size: 35px;
+  }
+  .contenedorNews {
+    flex-direction: row;
+    align-items: center;
+  }
+  .contenedorNews .gimageNews {
+    align-items: center;
+    height: 95%;
+  }
+  .contenedorNews .gimageNews .imageNews {
+    width: 788px;
+    height: 100%;
+    margin-left: -150px;
+  }
+  .contenedorNews .textoNews .tituloNews {
+    font-size: 30px;
+  }
+  .contenedorConoce .superCell {
+    display: block;
+  }
+  .contenedorConoce .superCell2 {
+    display: none;
+  }
+  .contenedorConoce .centrado {
+    width: 400px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .contenedorConoce .centrado .tituloConoce {
+    font-size: 30px;
+  }
+  /*-------NOSOTROS-------*/
+  .contenedorServidores {
+    flex-direction: row;
+  }
+  .contenedorServidores2 {
+    flex-direction: row;
+  }
+  .contenedorModos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+  }
+  .contenedorModos .imageGenio {
+    display: block;
+  }
+  .contenedorModos .imageTick {
+    display: block;
+  }
+  .contenedorModos .imageElprimo {
+    display: none;
+  }
+  .contenedorJuegos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 170px);
+  }
+  /*-------PERSONAJES-------*/
+  .contenedorPersonajes .contBrawl .nombreBrawl h2 {
+    margin: 10px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl {
+    grid-template-columns: 20% 1fr 1fr;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1 {
+    font-size: 20px;
+    left: -3rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
+    font-size: 20px;
+    left: -1.9rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud {
+    margin-top: -20px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque {
+    grid-template-rows: 20px 20px 85px 20px 50px 20px 50px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1 {
+    margin-left: -14rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2 {
+    margin-left: -11rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita {
+    margin-left: -210px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt {
+    margin-left: -175px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull {
+    margin-left: -135px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock {
+    margin-left: -230px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo {
+    margin-left: -130px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley {
+    margin-left: -165px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco {
+    margin-left: -200px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa {
+    margin-left: -110px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1 {
+    left: -50px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2 {
+    left: -40px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3 {
+    left: -70px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
+    grid-template-rows: 20px 20px 155px 20px 50px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleSuper1 {
+    margin-left: -15.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleSuper2 {
+    margin-left: -11rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .nita {
+    margin-left: -8rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .colt {
+    margin-top: -22px;
+    margin-left: -5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .bull {
+    margin-left: -11.7rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .brock {
+    margin-left: -6.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .primo {
+    margin-left: 7.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .barley {
+    margin-top: -22px;
+    margin-left: -4.7rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .poco {
+    margin-top: -22px;
+    margin-left: -6.3rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .rosa {
+    margin-left: -8.8rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloSuper1 {
+    left: -50px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloSuper2 {
+    left: -40px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .curacion {
+    left: -38px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .reduccion {
+    left: -35px;
+  }
+  /*-------MULTIMEDIA-------*/
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 242px);
+  }
+  .galeria .galeria1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .galeria .galeria2 {
+    grid-column: 3/5;
+    grid-row: 1/3;
+  }
+  .galeria .galeria3 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .galeria .galeria4 {
+    grid-column: 1/2;
+    grid-row: 3/5;
+  }
+  .galeria .galeria5 {
+    grid-column: 4/5;
+    grid-row: 3/5;
+  }
+  .galeria .galeria6 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+  .galeria .galeria7 {
+    grid-column: 1/5;
+    grid-row: 5/6;
+  }
+  .galeria .galeria8 {
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
+  .galeria .galeria9 {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+  .galeria .galeria10 {
+    grid-column: 3/4;
+    grid-row: 6/8;
+  }
+  .galeria .galeria11 {
+    grid-column: 1/3;
+    grid-row: 7/8;
+  }
+  .galeria .galeria12 {
+    grid-column: 1/3;
+    grid-row: 8/9;
+  }
+  .galeria .galeria13 {
+    grid-column: 4/5;
+    grid-row: 6/8;
+  }
+  /*-------TEMPORADAS-------*/
+  .contTemporadas {
+    grid-template-rows: repeat(4, 350px);
+  }
+  .contTemporadas .diecisiete, .contTemporadas .quince {
+    grid-template-rows: 330px;
+  }
+  .contTemporadas .diecisiete .imageTemp, .contTemporadas .quince .imageTemp {
+    margin-left: 100px;
+    height: 100%;
+  }
+  .contTemporadas .diecisiete .infoTemp, .contTemporadas .diecisiete .infoTemp2, .contTemporadas .quince .infoTemp, .contTemporadas .quince .infoTemp2 {
+    margin-left: -200px;
+  }
+  .contTemporadas .diecisiete .infoTemp p, .contTemporadas .diecisiete .infoTemp2 p, .contTemporadas .quince .infoTemp p, .contTemporadas .quince .infoTemp2 p {
+    padding: 8px 30px 8px 120px;
+  }
+  .contTemporadas .dieciseis, .contTemporadas .catorce {
+    grid-template-rows: 330px;
+  }
+  .contTemporadas .dieciseis .imageTemp, .contTemporadas .catorce .imageTemp {
+    margin-right: 100px;
+    margin-left: 0px;
+    height: 100%;
+  }
+  .contTemporadas .dieciseis .infoTemp, .contTemporadas .dieciseis .infoTemp2, .contTemporadas .catorce .infoTemp, .contTemporadas .catorce .infoTemp2 {
+    margin-right: -200px;
+  }
+  .contTemporadas .dieciseis .infoTemp p, .contTemporadas .dieciseis .infoTemp2 p, .contTemporadas .catorce .infoTemp p, .contTemporadas .catorce .infoTemp2 p {
+    padding: 8px 200px 8px 30px;
+  }
+  /*-------ACTUALIZACIONES-------*/
+  .contActualizaciones {
+    grid-template-rows: repeat(4, 350px);
+  }
+  .contActualizaciones .diecisiete, .contActualizaciones .quince {
+    grid-template-rows: 330px;
+  }
+  .contActualizaciones .diecisiete .imageAct, .contActualizaciones .quince .imageAct {
+    margin-left: 100px;
+    height: 100%;
+  }
+  .contActualizaciones .diecisiete .infoAct, .contActualizaciones .diecisiete .infoAct2, .contActualizaciones .quince .infoAct, .contActualizaciones .quince .infoAct2 {
+    margin-left: -200px;
+  }
+  .contActualizaciones .diecisiete .infoAct ul, .contActualizaciones .diecisiete .infoAct2 ul, .contActualizaciones .quince .infoAct ul, .contActualizaciones .quince .infoAct2 ul {
+    padding: 8px 30px 8px 120px;
+  }
+  .contActualizaciones .diecisiete .infoAct ul li, .contActualizaciones .diecisiete .infoAct2 ul li, .contActualizaciones .quince .infoAct ul li, .contActualizaciones .quince .infoAct2 ul li {
+    font-size: 20px;
+  }
+  .contActualizaciones .dieciseis, .contActualizaciones .catorce {
+    grid-template-rows: 330px;
+  }
+  .contActualizaciones .dieciseis .imageAct, .contActualizaciones .catorce .imageAct {
+    margin-right: 100px;
+    margin-left: 0px;
+    height: 100%;
+  }
+  .contActualizaciones .dieciseis .infoAct, .contActualizaciones .dieciseis .infoAct2, .contActualizaciones .catorce .infoAct, .contActualizaciones .catorce .infoAct2 {
+    margin-right: -200px;
+  }
+  .contActualizaciones .dieciseis .infoAct ul, .contActualizaciones .dieciseis .infoAct2 ul, .contActualizaciones .catorce .infoAct ul, .contActualizaciones .catorce .infoAct2 ul {
+    padding: 8px 200px 8px 30px;
+  }
+  .contActualizaciones .dieciseis .infoAct ul li, .contActualizaciones .dieciseis .infoAct2 ul li, .contActualizaciones .catorce .infoAct ul li, .contActualizaciones .catorce .infoAct2 ul li {
+    font-size: 20px;
+  }
+  .contActualizaciones .dieciseis .contButton, .contActualizaciones .catorce .contButton {
+    margin-left: -15rem;
+  }
+}
+@media screen and (min-width: 1366px) {
+  /*-------NOSOTROS-------*/
+  .contenedorServidores .textoServidores {
+    width: 530px;
+  }
+  .contenedorServidores2 .parrafoServidores2 {
+    width: 530px;
+  }
+  /*-------PERSONAJES-------*/
+  .contenedorPersonajes {
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl {
+    grid-template-columns: 20% 1fr 1fr;
+    grid-template-rows: 110px auto;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1 {
+    font-size: 20px;
+    left: -1.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
+    font-size: 20px;
+    left: -0.4rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud {
+    margin-top: -30px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque {
+    grid-template-rows: 20px 20px 100px 20px 50px 20px 50px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1 {
+    margin-left: -7rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2 {
+    margin-left: -4rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita {
+    margin-left: -95px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt {
+    margin-left: -65px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull {
+    margin-left: -24px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock {
+    margin-left: -120px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo {
+    margin-left: -20px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley {
+    margin-left: -55px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco {
+    margin-left: -90px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa {
+    margin-left: 3px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1 {
+    left: -25px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2 {
+    left: -17px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3 {
+    left: -20px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
+    grid-template-rows: 20px 20px 170px 20px 50px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleSuper1 {
+    margin-left: -8.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleSuper2 {
+    margin-left: -4rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .nita {
+    margin-left: -1rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .colt {
+    margin-top: 5px;
+    margin-left: 0.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .bull {
+    margin-left: -4.7rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .brock {
+    margin-top: 5px;
+    margin-left: 0.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .primo {
+    margin-left: -0.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .barley {
+    margin-top: 7px;
+    margin-left: 0.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .poco {
+    margin-top: 7px;
+    margin-left: 0.5rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .rosa {
+    margin-left: -1.8rem;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloSuper1 {
+    left: -25px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloSuper2 {
+    left: -16px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .curacion {
+    left: -13px;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .reduccion {
+    left: -10px;
+  }
+  /*-------MULTIMEDIA-------*/
+  .galeria {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 242px);
+  }
+  .galeria .galeria1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .galeria .galeria2 {
+    grid-column: 3/5;
+    grid-row: 1/3;
+  }
+  .galeria .galeria3 {
+    grid-column: 5/7;
+    grid-row: 1/2;
+  }
+  .galeria .galeria4 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  .galeria .galeria5 {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+  .galeria .galeria6 {
+    grid-column: 5/7;
+    grid-row: 2/3;
+  }
+  .galeria .galeria7 {
+    grid-column: 3/7;
+    grid-row: 3/4;
+  }
+  .galeria .galeria8 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .galeria .galeria9 {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+  .galeria .galeria10 {
+    grid-column: 3/4;
+    grid-row: 4/6;
+  }
+  .galeria .galeria11 {
+    grid-column: 4/6;
+    grid-row: 4/5;
+  }
+  .galeria .galeria12 {
+    grid-column: 4/6;
+    grid-row: 5/6;
+  }
+  .galeria .galeria13 {
+    grid-column: 6/7;
+    grid-row: 4/6;
+  }
+  /*-------TEMPORADAS-------*/
+  .contTemporadas {
+    grid-template-rows: repeat(4, 500px);
+  }
+  .contTemporadas .diecisiete, .contTemporadas .quince, .contTemporadas .dieciseis, .contTemporadas .catorce {
+    grid-template-rows: 460px;
+  }
+  .contTemporadas .diecisiete .imageTemp .banner, .contTemporadas .diecisiete .imageTemp .banner2, .contTemporadas .quince .imageTemp .banner, .contTemporadas .quince .imageTemp .banner2, .contTemporadas .dieciseis .imageTemp .banner, .contTemporadas .dieciseis .imageTemp .banner2, .contTemporadas .catorce .imageTemp .banner, .contTemporadas .catorce .imageTemp .banner2 {
+    margin-left: -3px;
+  }
+  .contTemporadas .diecisiete .imageTemp .tituloTemp, .contTemporadas .quince .imageTemp .tituloTemp, .contTemporadas .dieciseis .imageTemp .tituloTemp, .contTemporadas .catorce .imageTemp .tituloTemp {
+    margin-top: -85px;
+  }
+  .contTemporadas .diecisiete .imageTemp .tituloTemp h4, .contTemporadas .quince .imageTemp .tituloTemp h4, .contTemporadas .dieciseis .imageTemp .tituloTemp h4, .contTemporadas .catorce .imageTemp .tituloTemp h4 {
+    font-size: 25px;
+  }
+  .contTemporadas .diecisiete .imageTemp .tituloTemp .nombreTemp, .contTemporadas .quince .imageTemp .tituloTemp .nombreTemp, .contTemporadas .dieciseis .imageTemp .tituloTemp .nombreTemp, .contTemporadas .catorce .imageTemp .tituloTemp .nombreTemp {
+    font-size: 35px;
+  }
+  .contTemporadas .diecisiete .infoTemp p, .contTemporadas .diecisiete .infoTemp2 p, .contTemporadas .quince .infoTemp p, .contTemporadas .quince .infoTemp2 p, .contTemporadas .dieciseis .infoTemp p, .contTemporadas .dieciseis .infoTemp2 p, .contTemporadas .catorce .infoTemp p, .contTemporadas .catorce .infoTemp2 p {
+    font-size: 20px;
+  }
+  .contTemporadas .dieciseis .imageTemp .banner2 {
+    margin-left: 5px;
+  }
+  .contTemporadas .catorce .imageTemp .banner {
+    margin-left: -7px;
+  }
+  /*-------ACTUALIZACIONES-------*/
+  .contActualizaciones {
+    grid-template-rows: repeat(4, 500px);
+  }
+  .contActualizaciones .diecisiete, .contActualizaciones .quince, .contActualizaciones .dieciseis, .contActualizaciones .catorce {
+    grid-template-rows: 460px;
+  }
+  .contActualizaciones .diecisiete .imageAct .bannerAct, .contActualizaciones .diecisiete .imageAct .bannerAct2, .contActualizaciones .quince .imageAct .bannerAct, .contActualizaciones .quince .imageAct .bannerAct2, .contActualizaciones .dieciseis .imageAct .bannerAct, .contActualizaciones .dieciseis .imageAct .bannerAct2, .contActualizaciones .catorce .imageAct .bannerAct, .contActualizaciones .catorce .imageAct .bannerAct2 {
+    margin-left: -1px;
+  }
+  .contActualizaciones .diecisiete .imageAct .tituloAct, .contActualizaciones .quince .imageAct .tituloAct, .contActualizaciones .dieciseis .imageAct .tituloAct, .contActualizaciones .catorce .imageAct .tituloAct {
+    margin-top: -85px;
+  }
+  .contActualizaciones .diecisiete .imageAct .tituloAct h4, .contActualizaciones .quince .imageAct .tituloAct h4, .contActualizaciones .dieciseis .imageAct .tituloAct h4, .contActualizaciones .catorce .imageAct .tituloAct h4 {
+    font-size: 25px;
+  }
+  .contActualizaciones .diecisiete .imageAct .tituloAct .nombreAct, .contActualizaciones .quince .imageAct .tituloAct .nombreAct, .contActualizaciones .dieciseis .imageAct .tituloAct .nombreAct, .contActualizaciones .catorce .imageAct .tituloAct .nombreAct {
+    font-size: 35px;
+  }
+  .contActualizaciones .diecisiete .infoAct, .contActualizaciones .diecisiete .infoAct2, .contActualizaciones .quince .infoAct, .contActualizaciones .quince .infoAct2, .contActualizaciones .dieciseis .infoAct, .contActualizaciones .dieciseis .infoAct2, .contActualizaciones .catorce .infoAct, .contActualizaciones .catorce .infoAct2 {
+    grid-template-rows: auto 55px;
+  }
+  .contActualizaciones .diecisiete .infoAct ul li, .contActualizaciones .diecisiete .infoAct2 ul li, .contActualizaciones .quince .infoAct ul li, .contActualizaciones .quince .infoAct2 ul li, .contActualizaciones .dieciseis .infoAct ul li, .contActualizaciones .dieciseis .infoAct2 ul li, .contActualizaciones .catorce .infoAct ul li, .contActualizaciones .catorce .infoAct2 ul li {
+    font-size: 25px;
+  }
+  .contActualizaciones .diecisiete .infoAct .contButton a, .contActualizaciones .diecisiete .infoAct2 .contButton a, .contActualizaciones .quince .infoAct .contButton a, .contActualizaciones .quince .infoAct2 .contButton a, .contActualizaciones .dieciseis .infoAct .contButton a, .contActualizaciones .dieciseis .infoAct2 .contButton a, .contActualizaciones .catorce .infoAct .contButton a, .contActualizaciones .catorce .infoAct2 .contButton a {
+    font-size: 25px;
+  }
+  .contActualizaciones .dieciseis .imageAct .bannerAct2 {
+    margin-left: 5px;
+  }
+  .contActualizaciones .catorce .imageAct .bannerAct {
+    margin-left: -2px;
+  }
 }/*# sourceMappingURL=sass.css.map */

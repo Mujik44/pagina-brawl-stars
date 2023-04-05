@@ -1,0 +1,8 @@
+@media screen and (min-width:585px){
+    footer{
+        height: 115px;
+        .allRedes{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}

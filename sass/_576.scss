@@ -1,0 +1,237 @@
+@media screen and (min-width:576px){
+    .menuDesplegable{
+        left: auto;
+        width: 250px;
+        top: 80px;
+    }
+
+    /*-------INICIO-------*/
+    .contenedorMain{
+        grid-template-rows: 100px 200px 160px 160px;
+        .carouselMain{
+            width: 530px;
+        }
+    }
+
+    /*-------PERSONAJES-------*/
+    .contenedorPersonajes{
+        .contBrawl{
+            .estadisticasBrawl{
+                grid-template-columns: 50% 1fr;
+                grid-template-rows: 200px auto;
+                .salud{
+                    grid-template-rows: repeat(4, auto);
+                    .tituloSalud1{
+                        left: -4rem;
+                        font-size: 23px;
+                    }
+                    .tituloSalud2{
+                        left: -2.8rem;
+                        font-size: 23px;
+                    }
+                    .infoSalud{
+                        margin-top: -50px;
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .ataque{
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                    grid-template-rows: 20px 20px 130px 20px 50px 20px 50px;
+                    margin: 20px 0;
+                    .titleAtaque1{
+                        margin-left: -8rem;
+                    }
+                    .titleAtaque2{
+                        margin-left: -5rem;
+                    }
+                    .nita{
+                        margin-left: -7rem;
+                    }
+                    .colt{
+                        margin-left: -5rem;
+                    }
+                    .bull{
+                        margin-left: -2.5rem;
+                    }
+                    .brock{
+                        margin-left: -8.5rem;
+                    }
+                    .primo{
+                        margin-left: -2rem;
+                    }
+                    .barley{
+                        margin-left: -4.5rem;
+                    }
+                    .poco{
+                        margin-left: -6.5rem;
+                    }
+                    .rosa{
+                        margin-left: -1rem;
+                    }
+                    .tituloAtaque1{
+                        left: -30px;
+                    }
+                    .tituloAtaque2{
+                        left: -20px;
+                    }
+                    .tituloAtaque3{
+                        left: -30px;
+                    }
+                }
+                .super{
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                    grid-template-rows: 20px 20px 200px 20px 50px;
+                    margin: 20px 0;
+                    .titleSuper1{
+                        margin-left: -8rem;
+                    }
+                    .titleSuper2{
+                        margin-left: -3.5rem;
+                    }
+                    .nita{
+                        margin-left: -0.5rem;
+                    }
+                    .colt{
+                        margin-top: 10px;
+                        margin-left: 1rem;
+                    }
+                    .bull{
+                        margin-left: -4.5rem;
+                    }
+                    .brock{
+                        margin-top: 10px;
+                        margin-left: 1rem;
+                    }
+                    .primo{
+                        margin-left: 0rem;
+                    }
+                    .barley{
+                        margin-top: 10px;
+                        margin-left: 1rem;
+                    }
+                    .poco{
+                        margin-top: 10px;
+                        margin-left: 1rem;
+                    }
+                    .rosa{
+                        margin-left: -1.5rem;
+                    }
+                    .tituloSuper1{
+                        left: -25px;
+                    }
+                    .curacion{
+                        left: -15px;
+                    }
+                    .reduccion{
+                        left: -10px;
+                    }
+                    .tituloSuper2{
+                        left: -15px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*-------TEMPORADAS-------*/
+    .contTemporadas{
+        margin: 40px 0;
+        grid-template-rows: repeat(4, 260px);
+        gap: 20px;
+        align-items: center;
+        .contTemp{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 250px;
+            justify-items: center;
+            align-items: center;
+            .imageTemp{
+                .banner, .banner2{
+                    margin-left: -5px;
+                }
+                .tituloTemp{
+                    h4{
+                        font-size: 15px;
+                    }
+                    .nombreTemp{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .infoTemp, .infoTemp2{
+                width: 110%;
+                height: 85%;
+                margin-left: -55px;
+                margin-top: 0;
+                margin-bottom: 0;
+                border-top: 2px solid black;
+                display: grid;
+                align-items: center;
+                p{
+                    padding: 8px 8px 8px 41px;
+                }
+            }
+        }
+    }
+
+    /*-------ACTUALIZACION-------*/
+    .contActualizaciones{
+        margin: 40px 0;
+        grid-template-rows: repeat(4, 260px);
+        gap: 20px;
+        align-items: center;
+        .contAct{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 250px;
+            justify-items: center;
+            align-items: center;
+            .imageAct{
+                .bannerAct, .bannerAct2{
+                    margin-left: -5px;
+                }
+                .tituloAct{
+                    h4{
+                        font-size: 14px;
+                    }
+                    .nombreAct{
+                        font-size: 20px;
+                    }
+                }
+                .cargaAct, .cargaAct2{
+                    img{
+                        margin-left: -13px;
+                    }
+                }
+            }
+            .infoAct, .infoAct2{
+                padding: 0%;
+                width: 110%;
+                height: 80%;
+                margin-left: -55px;
+                margin-top: 0;
+                margin-bottom: 0;
+                border-top: 2px solid black;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-template-rows: auto 30px;
+                ul{
+                    padding: 8px 8px 8px 41px;
+                    li{
+                        font-size: 14px ;
+                    }
+                }
+                .contButton{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

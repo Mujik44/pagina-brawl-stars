@@ -30,7 +30,7 @@
     }
     .carouselServidores2{
         margin: 10px;
-        height: 165px;
+        height: auto;
         width: 90%;
         border: 3px solid black;
         .imagesCarousel{
@@ -45,13 +45,13 @@
 .contenedorModos{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 170px 100px;
+    grid-template-rows: 170px auto;
     align-items: center;
     justify-items: center;
     border-top: 1px solid #ccc;
     .imageGenio{
-        // height: 250px;
-        // width: auto;
+        height: 250px;
+        width: auto;
         display: none;
     }
     .parrafoModos{
@@ -59,12 +59,13 @@
         margin: 0%;
     }
     .imageTick{
-        // height: 250px;
-        // width: auto;
+        height: 250px;
+        width: auto;
         display: none;
     } 
     .imageElprimo{
         width: 90%;
+        padding: 20px;
     }
 }
 
@@ -74,7 +75,7 @@
     grid-template-rows: repeat(6, 170px);
     justify-items: center;
     align-items: center;  
-    margin-bottom: 20px ;
+    margin: 20px 0 ;
     .juego{
         display: flex;
         width: 90%;
