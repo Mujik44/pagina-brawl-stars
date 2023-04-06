@@ -1,0 +1,5 @@
+# Ignora la carpeta .vscode
+.vscode
+
+#Ignora la carpeta multimedia que esta vacia
+.multimedia
