@@ -164,8 +164,7 @@
                 }
             }
             .infoTemp, .infoTemp2{
-                width: 110%;
-                height: 85%;
+                @include sizes(110%, 85%);
                 margin-left: -55px;
                 margin-top: 0;
                 margin-bottom: 0;
@@ -212,8 +211,7 @@
             }
             .infoAct, .infoAct2{
                 padding: 0%;
-                width: 110%;
-                height: 80%;
+                @include sizes(110%, 80%);
                 margin-left: -55px;
                 margin-top: 0;
                 margin-bottom: 0;

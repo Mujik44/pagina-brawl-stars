@@ -22,7 +22,7 @@ a {
 
 footer {
   background-color: black;
-  height: 180px; /**/
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,7 +42,6 @@ h1 {
 
 h2 {
   font-size: 20px;
-  /* padding: 30px; */
   margin: 20px;
 }
 
@@ -69,6 +68,7 @@ p {
   width: 100%;
 }
 
+/*-------NAVBAR-------*/
 nav {
   display: flex;
   width: 100%;
@@ -432,7 +432,7 @@ header {
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, 30px);
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1 {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1, .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
   font-size: 20px;
   position: relative;
   left: -25px;
@@ -440,11 +440,7 @@ header {
   color: rgb(5, 199, 5);
 }
 .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
-  font-size: 20px;
-  position: relative;
   left: -10px;
-  -webkit-text-stroke: 0.9px black;
-  color: rgb(5, 199, 5);
 }
 .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud {
   color: rgb(247, 251, 251);
@@ -459,7 +455,7 @@ header {
 .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud p {
   font-size: 13px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque, .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
   grid-column: 1/3;
   grid-row: 2/3;
   width: 95%;
@@ -471,7 +467,7 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 20px 20px 130px 20px 50px 20px 50px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1 {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleAtaque1 {
   grid-column: 1/3;
   grid-row: 1/2;
   font-size: 25px;
@@ -480,7 +476,7 @@ header {
   margin-top: -25px;
   margin-left: -140px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2 {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleAtaque2 {
   grid-column: 1/3;
   grid-row: 2/3;
   font-size: 25px;
@@ -489,37 +485,37 @@ header {
   margin-top: -20px;
   margin-left: -90px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .nita {
   margin-left: -125px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .colt {
   margin-left: -90px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .bull {
   margin-left: -50px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .brock {
   margin-left: -146px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .primo {
   margin-left: -50px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .barley {
   margin-left: -80px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .poco {
   margin-left: -120px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .rosa {
   margin-left: -25px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .parrafoAtaque {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .parrafoAtaque, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .parrafoAtaque {
   grid-column: 1/3;
   grid-row: 3/4;
   width: 90%;
   color: rgb(247, 251, 251);
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1 {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque1 {
   grid-column: 1/2;
   grid-row: 4/5;
   color: rgb(253, 58, 124);
@@ -527,7 +523,7 @@ header {
   position: relative;
   left: -30px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2 {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque2 {
   grid-column: 2/3;
   grid-row: 4/5;
   color: rgb(253, 58, 124);
@@ -535,7 +531,7 @@ header {
   position: relative;
   left: -20px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .infoAtaque1 {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .infoAtaque1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .infoAtaque1, .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .infoAtaque3, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .infoAtaque3, .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .infoAtaque2, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .infoAtaque2 {
   grid-column: 1/2;
   grid-row: 5/6;
   color: rgb(247, 251, 251);
@@ -547,19 +543,11 @@ header {
   align-items: center;
   margin-top: -25px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .infoAtaque2 {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .infoAtaque2, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .infoAtaque2 {
   grid-column: 2/3;
   grid-row: 5/6;
-  color: rgb(247, 251, 251);
-  width: 90%;
-  height: 90%;
-  background-color: rgb(2, 51, 79);
-  border-radius: 5px;
-  display: grid;
-  align-items: center;
-  margin-top: -25px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3 {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque3 {
   grid-column: 1/3;
   grid-row: 6/7;
   color: rgb(253, 58, 124);
@@ -567,28 +555,13 @@ header {
   position: relative;
   left: -30px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .infoAtaque3 {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .infoAtaque3, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .infoAtaque3 {
   grid-column: 1/3;
   grid-row: 7/8;
-  color: rgb(247, 251, 251);
-  width: 90%;
-  height: 90%;
-  background-color: rgb(2, 51, 79);
-  border-radius: 5px;
-  display: grid;
-  align-items: center;
-  margin-top: -25px;
 }
 .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
   grid-column: 1/3;
   grid-row: 3/4;
-  width: 95%;
-  background-color: rgb(9, 136, 243);
-  border-radius: 5px;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: 20px 20px 100px 20px 50px;
 }
 .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleSuper1 {
@@ -662,7 +635,7 @@ header {
   position: relative;
   left: -20px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .super .infoSuper1 {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .super .infoSuper1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .infoSuper2 {
   grid-column: 1/2;
   grid-row: 5/6;
   color: rgb(247, 251, 251);
@@ -676,15 +649,6 @@ header {
 }
 .contenedorPersonajes .contBrawl .estadisticasBrawl .super .infoSuper2 {
   grid-column: 2/3;
-  grid-row: 5/6;
-  color: rgb(247, 251, 251);
-  width: 90%;
-  height: 90%;
-  background-color: rgb(2, 51, 79);
-  border-radius: 5px;
-  display: grid;
-  align-items: center;
-  margin-top: -25px;
 }
 
 .allRedes .redes {
@@ -908,6 +872,7 @@ header {
 }
 .contActualizaciones .contAct .infoAct .contButton, .contActualizaciones .contAct .infoAct2 .contButton {
   padding: 20px;
+  /*-------ANIMACION DESLIZAR HACIA LA DERECHA-------*/
 }
 .contActualizaciones .contAct .infoAct .contButton .button, .contActualizaciones .contAct .infoAct2 .contButton .button {
   cursor: pointer;
@@ -917,9 +882,36 @@ header {
   padding: 0.2rem 1rem;
   border-radius: 0.25rem;
 }
-.contActualizaciones .contAct .infoAct .contButton .button:hover, .contActualizaciones .contAct .infoAct2 .contButton .button:hover {
-  background-color: #f01919;
-  color: black;
+.contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+.contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:before, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f01919;
+  border-radius: 0.25rem;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:hover, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:hover, .contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:focus, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:focus, .contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:active, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:active {
+  color: white;
+}
+.contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:hover:before, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:hover:before, .contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:focus:before, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:focus:before, .contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:active:before, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:active:before {
+  transform: scaleX(1);
 }
 .contActualizaciones .contAct .infoAct2 {
   margin-left: -54px;
@@ -943,52 +935,52 @@ header {
     grid-template-columns: 40% 1fr;
     grid-template-rows: 130px 290px 215px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1, .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
     left: -3rem;
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
     left: -2rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque, .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
     grid-template-rows: 20px 20px 90px 20px 50px 20px 50px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleAtaque1 {
     margin-left: -14rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleAtaque2 {
     margin-left: -11rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .nita {
     margin-left: -13rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .colt {
     margin-left: -11rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .bull {
     margin-left: -8.5rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .brock {
     margin-left: -14.5rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .primo {
     margin-left: -8rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .barley {
     margin-left: -10rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .poco {
     margin-left: -12.5rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .rosa {
     margin-left: -7rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque1 {
     left: -50px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque2 {
     left: -40px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque3 {
     left: -70px;
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
@@ -1041,26 +1033,26 @@ header {
     grid-template-rows: repeat(18, 220px);
   }
   /*-------TEMPORADAS-------*/
-  .contTemporadas .contTemp .imageTemp .carga img {
+  .contTemporadas .contTemp .imageTemp .carga img, .contTemporadas .contTemp .imageTemp .carga2 img {
     margin-left: -15.5px;
   }
   .contTemporadas .contTemp .imageTemp .carga2 img {
     margin-left: -19.5px;
   }
-  .contTemporadas .contTemp .infoTemp {
+  .contTemporadas .contTemp .infoTemp, .contTemporadas .contTemp .infoTemp2 {
     margin-left: -26px;
   }
   .contTemporadas .contTemp .infoTemp2 {
     margin-left: -30px;
   }
   /*-------ACTUALIZACIONES-------*/
-  .contActualizaciones .contAct .imageAct .cargaAct img {
+  .contActualizaciones .contAct .imageAct .cargaAct img, .contActualizaciones .contAct .imageAct .cargaAct2 img {
     margin-left: -15.5px;
   }
   .contActualizaciones .contAct .imageAct .cargaAct2 img {
     margin-left: -19.5px;
   }
-  .contActualizaciones .contAct .infoAct {
+  .contActualizaciones .contAct .infoAct, .contActualizaciones .contAct .infoAct2 {
     align-items: center;
     margin-left: -56px;
   }
@@ -1157,7 +1149,7 @@ header {
   .contenedorPersonajes .contBrawl .estadisticasBrawl .salud {
     grid-template-rows: repeat(4, auto);
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1, .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
     left: -4rem;
     font-size: 23px;
   }
@@ -1171,49 +1163,49 @@ header {
   .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud p {
     font-size: 15px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque, .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
     grid-column: 1/2;
     grid-row: 2/3;
     grid-template-rows: 20px 20px 130px 20px 50px 20px 50px;
     margin: 20px 0;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleAtaque1 {
     margin-left: -8rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleAtaque2 {
     margin-left: -5rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .nita {
     margin-left: -7rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .colt {
     margin-left: -5rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .bull {
     margin-left: -2.5rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .brock {
     margin-left: -8.5rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .primo {
     margin-left: -2rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .barley {
     margin-left: -4.5rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .poco {
     margin-left: -6.5rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .rosa {
     margin-left: -1rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque1 {
     left: -30px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque2 {
     left: -20px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque3 {
     left: -30px;
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
@@ -1292,7 +1284,7 @@ header {
   .contTemporadas .contTemp .imageTemp .tituloTemp .nombreTemp {
     font-size: 20px;
   }
-  .contTemporadas .contTemp .infoTemp, .contTemporadas .contTemp .infoTemp2 {
+  .contTemporadas .contTemp .infoTemp, .contTemporadas .contTemp .infoTemp2, .contTemporadas .contTemp .infoTemp2 {
     width: 110%;
     height: 85%;
     margin-left: -55px;
@@ -1302,7 +1294,7 @@ header {
     display: grid;
     align-items: center;
   }
-  .contTemporadas .contTemp .infoTemp p, .contTemporadas .contTemp .infoTemp2 p {
+  .contTemporadas .contTemp .infoTemp p, .contTemporadas .contTemp .infoTemp2 p, .contTemporadas .contTemp .infoTemp2 p {
     padding: 8px 8px 8px 41px;
   }
   /*-------ACTUALIZACION-------*/
@@ -1332,7 +1324,7 @@ header {
   .contActualizaciones .contAct .imageAct .cargaAct img, .contActualizaciones .contAct .imageAct .cargaAct2 img {
     margin-left: -13px;
   }
-  .contActualizaciones .contAct .infoAct, .contActualizaciones .contAct .infoAct2 {
+  .contActualizaciones .contAct .infoAct, .contActualizaciones .contAct .infoAct2, .contActualizaciones .contAct .infoAct2 {
     padding: 0%;
     width: 110%;
     height: 80%;
@@ -1345,10 +1337,10 @@ header {
     justify-items: center;
     grid-template-rows: auto 30px;
   }
-  .contActualizaciones .contAct .infoAct ul, .contActualizaciones .contAct .infoAct2 ul {
+  .contActualizaciones .contAct .infoAct ul, .contActualizaciones .contAct .infoAct2 ul, .contActualizaciones .contAct .infoAct2 ul {
     padding: 8px 8px 8px 41px;
   }
-  .contActualizaciones .contAct .infoAct ul li, .contActualizaciones .contAct .infoAct2 ul li {
+  .contActualizaciones .contAct .infoAct ul li, .contActualizaciones .contAct .infoAct2 ul li, .contActualizaciones .contAct .infoAct2 ul li {
     font-size: 14px;
   }
   .contActualizaciones .contAct .infoAct .contButton, .contActualizaciones .contAct .infoAct2 .contButton {
@@ -1360,7 +1352,7 @@ header {
     height: 115px;
   }
   footer .allRedes {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media screen and (min-width: 600px) {
@@ -1451,7 +1443,7 @@ header {
     grid-row: 2/3;
     height: 79%;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1, .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
     left: -2rem;
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
@@ -1461,7 +1453,7 @@ header {
     height: 150%;
     margin-top: -30px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque, .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
     grid-column: 2/3;
     grid-row: 1/3;
   }
@@ -1503,7 +1495,7 @@ header {
   }
   /*-------MULTIMEDIA-------*/
   .galeria {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(10, 242px);
   }
   .galeria .galeria1 {
@@ -1565,7 +1557,7 @@ header {
   .contTemporadas .contTemp .imageTemp {
     margin-left: 50px;
   }
-  .contTemporadas .diecisiete .imageTemp .banner {
+  .contTemporadas .diecisiete .imageTemp .banner, .contTemporadas .diecisiete .contTemp .imageTemp .banner2, .contTemporadas .contTemp .diecisiete .imageTemp .banner2 {
     width: 97%;
     margin-left: -8px;
   }
@@ -1573,21 +1565,21 @@ header {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  .contTemporadas .dieciseis .infoTemp, .contTemporadas .dieciseis .infoTemp2, .contTemporadas .catorce .infoTemp, .contTemporadas .catorce .infoTemp2 {
+  .contTemporadas .dieciseis .infoTemp, .contTemporadas .dieciseis .contTemp .infoTemp2, .contTemporadas .contTemp .dieciseis .infoTemp2, .contTemporadas .dieciseis .infoTemp2, .contTemporadas .catorce .infoTemp, .contTemporadas .catorce .contTemp .infoTemp2, .contTemporadas .contTemp .catorce .infoTemp2, .contTemporadas .catorce .infoTemp2 {
     grid-column: 1/2;
     grid-row: 1/2;
     margin-left: 120px;
     border-left: 2px solid black;
     padding-right: 20px;
   }
-  .contTemporadas .dieciseis .infoTemp p, .contTemporadas .dieciseis .infoTemp2 p, .contTemporadas .catorce .infoTemp p, .contTemporadas .catorce .infoTemp2 p {
+  .contTemporadas .dieciseis .infoTemp p, .contTemporadas .dieciseis .contTemp .infoTemp2 p, .contTemporadas .contTemp .dieciseis .infoTemp2 p, .contTemporadas .dieciseis .infoTemp2 p, .contTemporadas .catorce .infoTemp p, .contTemporadas .catorce .contTemp .infoTemp2 p, .contTemporadas .contTemp .catorce .infoTemp2 p, .contTemporadas .catorce .infoTemp2 p {
     padding: 8px 41px 8px 8px;
   }
-  .contTemporadas .quince .imageTemp .banner {
+  .contTemporadas .quince .imageTemp .banner, .contTemporadas .quince .contTemp .imageTemp .banner2, .contTemporadas .contTemp .quince .imageTemp .banner2 {
     width: 97%;
     margin-left: -11px;
   }
-  .contTemporadas .catorce .imageTemp .banner {
+  .contTemporadas .catorce .imageTemp .banner, .contTemporadas .catorce .contTemp .imageTemp .banner2, .contTemporadas .contTemp .catorce .imageTemp .banner2 {
     width: 98%;
     margin-left: -14px;
   }
@@ -1598,7 +1590,7 @@ header {
   .contActualizaciones .contAct .imageAct {
     margin-left: 50px;
   }
-  .contActualizaciones .diecisiete .imageAct .bannerAct {
+  .contActualizaciones .diecisiete .imageAct .bannerAct, .contActualizaciones .diecisiete .contAct .imageAct .bannerAct2, .contActualizaciones .contAct .diecisiete .imageAct .bannerAct2 {
     width: 97%;
     margin-left: -7px;
   }
@@ -1606,24 +1598,24 @@ header {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  .contActualizaciones .dieciseis .infoAct, .contActualizaciones .dieciseis .infoAct2, .contActualizaciones .catorce .infoAct, .contActualizaciones .catorce .infoAct2 {
+  .contActualizaciones .dieciseis .infoAct, .contActualizaciones .dieciseis .contAct .infoAct2, .contActualizaciones .contAct .dieciseis .infoAct2, .contActualizaciones .dieciseis .infoAct2, .contActualizaciones .catorce .infoAct, .contActualizaciones .catorce .contAct .infoAct2, .contActualizaciones .contAct .catorce .infoAct2, .contActualizaciones .catorce .infoAct2 {
     grid-column: 1/2;
     grid-row: 1/2;
     margin-left: 120px;
     border-left: 2px solid black;
     padding-right: 20px;
   }
-  .contActualizaciones .dieciseis .infoAct p, .contActualizaciones .dieciseis .infoAct2 p, .contActualizaciones .catorce .infoAct p, .contActualizaciones .catorce .infoAct2 p {
+  .contActualizaciones .dieciseis .infoAct p, .contActualizaciones .dieciseis .contAct .infoAct2 p, .contActualizaciones .contAct .dieciseis .infoAct2 p, .contActualizaciones .dieciseis .infoAct2 p, .contActualizaciones .catorce .infoAct p, .contActualizaciones .catorce .contAct .infoAct2 p, .contActualizaciones .contAct .catorce .infoAct2 p, .contActualizaciones .catorce .infoAct2 p {
     padding: 8px 41px 8px 8px;
   }
   .contActualizaciones .dieciseis .imageAct .bannerAct2 {
     margin-left: -4px;
   }
-  .contActualizaciones .quince .imageAct .bannerAct {
+  .contActualizaciones .quince .imageAct .bannerAct, .contActualizaciones .quince .contAct .imageAct .bannerAct2, .contActualizaciones .contAct .quince .imageAct .bannerAct2 {
     width: 98%;
     margin-left: -8px;
   }
-  .contActualizaciones .catorce .imageAct .bannerAct {
+  .contActualizaciones .catorce .imageAct .bannerAct, .contActualizaciones .catorce .contAct .imageAct .bannerAct2, .contActualizaciones .contAct .catorce .imageAct .bannerAct2 {
     width: 98%;
     margin-left: -8px;
   }
@@ -1687,20 +1679,14 @@ header {
     font-size: 30px;
   }
   /*-------NOSOTROS-------*/
-  .contenedorServidores {
-    flex-direction: row;
-  }
-  .contenedorServidores2 {
+  .contenedorServidores, .contenedorServidores2 {
     flex-direction: row;
   }
   .contenedorModos {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 300px;
   }
-  .contenedorModos .imageGenio {
-    display: block;
-  }
-  .contenedorModos .imageTick {
+  .contenedorModos .imageGenio, .contenedorModos .imageTick {
     display: block;
   }
   .contenedorModos .imageElprimo {
@@ -1717,7 +1703,7 @@ header {
   .contenedorPersonajes .contBrawl .estadisticasBrawl {
     grid-template-columns: 20% 1fr 1fr;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1, .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
     font-size: 20px;
     left: -3rem;
   }
@@ -1728,46 +1714,46 @@ header {
   .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud {
     margin-top: -20px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque, .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
     grid-template-rows: 20px 20px 85px 20px 50px 20px 50px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleAtaque1 {
     margin-left: -14rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleAtaque2 {
     margin-left: -11rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .nita {
     margin-left: -210px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .colt {
     margin-left: -175px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .bull {
     margin-left: -135px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .brock {
     margin-left: -230px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .primo {
     margin-left: -130px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .barley {
     margin-left: -165px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .poco {
     margin-left: -200px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .rosa {
     margin-left: -110px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque1 {
     left: -50px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque2 {
     left: -40px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque3 {
     left: -70px;
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
@@ -1820,7 +1806,7 @@ header {
   }
   /*-------MULTIMEDIA-------*/
   .galeria {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 242px);
   }
   .galeria .galeria1 {
@@ -1886,10 +1872,10 @@ header {
     margin-left: 100px;
     height: 100%;
   }
-  .contTemporadas .diecisiete .infoTemp, .contTemporadas .diecisiete .infoTemp2, .contTemporadas .quince .infoTemp, .contTemporadas .quince .infoTemp2 {
+  .contTemporadas .diecisiete .infoTemp, .contTemporadas .diecisiete .contTemp .infoTemp2, .contTemporadas .contTemp .diecisiete .infoTemp2, .contTemporadas .diecisiete .infoTemp2, .contTemporadas .quince .infoTemp, .contTemporadas .quince .contTemp .infoTemp2, .contTemporadas .contTemp .quince .infoTemp2, .contTemporadas .quince .infoTemp2 {
     margin-left: -200px;
   }
-  .contTemporadas .diecisiete .infoTemp p, .contTemporadas .diecisiete .infoTemp2 p, .contTemporadas .quince .infoTemp p, .contTemporadas .quince .infoTemp2 p {
+  .contTemporadas .diecisiete .infoTemp p, .contTemporadas .diecisiete .contTemp .infoTemp2 p, .contTemporadas .contTemp .diecisiete .infoTemp2 p, .contTemporadas .diecisiete .infoTemp2 p, .contTemporadas .quince .infoTemp p, .contTemporadas .quince .contTemp .infoTemp2 p, .contTemporadas .contTemp .quince .infoTemp2 p, .contTemporadas .quince .infoTemp2 p {
     padding: 8px 30px 8px 120px;
   }
   .contTemporadas .dieciseis, .contTemporadas .catorce {
@@ -1900,10 +1886,10 @@ header {
     margin-left: 0px;
     height: 100%;
   }
-  .contTemporadas .dieciseis .infoTemp, .contTemporadas .dieciseis .infoTemp2, .contTemporadas .catorce .infoTemp, .contTemporadas .catorce .infoTemp2 {
+  .contTemporadas .dieciseis .infoTemp, .contTemporadas .dieciseis .contTemp .infoTemp2, .contTemporadas .contTemp .dieciseis .infoTemp2, .contTemporadas .dieciseis .infoTemp2, .contTemporadas .catorce .infoTemp, .contTemporadas .catorce .contTemp .infoTemp2, .contTemporadas .contTemp .catorce .infoTemp2, .contTemporadas .catorce .infoTemp2 {
     margin-right: -200px;
   }
-  .contTemporadas .dieciseis .infoTemp p, .contTemporadas .dieciseis .infoTemp2 p, .contTemporadas .catorce .infoTemp p, .contTemporadas .catorce .infoTemp2 p {
+  .contTemporadas .dieciseis .infoTemp p, .contTemporadas .dieciseis .contTemp .infoTemp2 p, .contTemporadas .contTemp .dieciseis .infoTemp2 p, .contTemporadas .dieciseis .infoTemp2 p, .contTemporadas .catorce .infoTemp p, .contTemporadas .catorce .contTemp .infoTemp2 p, .contTemporadas .contTemp .catorce .infoTemp2 p, .contTemporadas .catorce .infoTemp2 p {
     padding: 8px 200px 8px 30px;
   }
   /*-------ACTUALIZACIONES-------*/
@@ -1917,13 +1903,13 @@ header {
     margin-left: 100px;
     height: 100%;
   }
-  .contActualizaciones .diecisiete .infoAct, .contActualizaciones .diecisiete .infoAct2, .contActualizaciones .quince .infoAct, .contActualizaciones .quince .infoAct2 {
+  .contActualizaciones .diecisiete .infoAct, .contActualizaciones .diecisiete .contAct .infoAct2, .contActualizaciones .contAct .diecisiete .infoAct2, .contActualizaciones .diecisiete .infoAct2, .contActualizaciones .quince .infoAct, .contActualizaciones .quince .contAct .infoAct2, .contActualizaciones .contAct .quince .infoAct2, .contActualizaciones .quince .infoAct2 {
     margin-left: -200px;
   }
-  .contActualizaciones .diecisiete .infoAct ul, .contActualizaciones .diecisiete .infoAct2 ul, .contActualizaciones .quince .infoAct ul, .contActualizaciones .quince .infoAct2 ul {
+  .contActualizaciones .diecisiete .infoAct ul, .contActualizaciones .diecisiete .contAct .infoAct2 ul, .contActualizaciones .contAct .diecisiete .infoAct2 ul, .contActualizaciones .diecisiete .infoAct2 ul, .contActualizaciones .quince .infoAct ul, .contActualizaciones .quince .contAct .infoAct2 ul, .contActualizaciones .contAct .quince .infoAct2 ul, .contActualizaciones .quince .infoAct2 ul {
     padding: 8px 30px 8px 120px;
   }
-  .contActualizaciones .diecisiete .infoAct ul li, .contActualizaciones .diecisiete .infoAct2 ul li, .contActualizaciones .quince .infoAct ul li, .contActualizaciones .quince .infoAct2 ul li {
+  .contActualizaciones .diecisiete .infoAct ul li, .contActualizaciones .diecisiete .contAct .infoAct2 ul li, .contActualizaciones .contAct .diecisiete .infoAct2 ul li, .contActualizaciones .diecisiete .infoAct2 ul li, .contActualizaciones .quince .infoAct ul li, .contActualizaciones .quince .contAct .infoAct2 ul li, .contActualizaciones .contAct .quince .infoAct2 ul li, .contActualizaciones .quince .infoAct2 ul li {
     font-size: 20px;
   }
   .contActualizaciones .dieciseis, .contActualizaciones .catorce {
@@ -1934,13 +1920,13 @@ header {
     margin-left: 0px;
     height: 100%;
   }
-  .contActualizaciones .dieciseis .infoAct, .contActualizaciones .dieciseis .infoAct2, .contActualizaciones .catorce .infoAct, .contActualizaciones .catorce .infoAct2 {
+  .contActualizaciones .dieciseis .infoAct, .contActualizaciones .dieciseis .contAct .infoAct2, .contActualizaciones .contAct .dieciseis .infoAct2, .contActualizaciones .dieciseis .infoAct2, .contActualizaciones .catorce .infoAct, .contActualizaciones .catorce .contAct .infoAct2, .contActualizaciones .contAct .catorce .infoAct2, .contActualizaciones .catorce .infoAct2 {
     margin-right: -200px;
   }
-  .contActualizaciones .dieciseis .infoAct ul, .contActualizaciones .dieciseis .infoAct2 ul, .contActualizaciones .catorce .infoAct ul, .contActualizaciones .catorce .infoAct2 ul {
+  .contActualizaciones .dieciseis .infoAct ul, .contActualizaciones .dieciseis .contAct .infoAct2 ul, .contActualizaciones .contAct .dieciseis .infoAct2 ul, .contActualizaciones .dieciseis .infoAct2 ul, .contActualizaciones .catorce .infoAct ul, .contActualizaciones .catorce .contAct .infoAct2 ul, .contActualizaciones .contAct .catorce .infoAct2 ul, .contActualizaciones .catorce .infoAct2 ul {
     padding: 8px 200px 8px 30px;
   }
-  .contActualizaciones .dieciseis .infoAct ul li, .contActualizaciones .dieciseis .infoAct2 ul li, .contActualizaciones .catorce .infoAct ul li, .contActualizaciones .catorce .infoAct2 ul li {
+  .contActualizaciones .dieciseis .infoAct ul li, .contActualizaciones .dieciseis .contAct .infoAct2 ul li, .contActualizaciones .contAct .dieciseis .infoAct2 ul li, .contActualizaciones .dieciseis .infoAct2 ul li, .contActualizaciones .catorce .infoAct ul li, .contActualizaciones .catorce .contAct .infoAct2 ul li, .contActualizaciones .contAct .catorce .infoAct2 ul li, .contActualizaciones .catorce .infoAct2 ul li {
     font-size: 20px;
   }
   .contActualizaciones .dieciseis .contButton, .contActualizaciones .catorce .contButton {
@@ -1964,7 +1950,7 @@ header {
     grid-template-columns: 20% 1fr 1fr;
     grid-template-rows: 110px auto;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud1, .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .tituloSalud2 {
     font-size: 20px;
     left: -1.5rem;
   }
@@ -1975,46 +1961,46 @@ header {
   .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud {
     margin-top: -30px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque, .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
     grid-template-rows: 20px 20px 100px 20px 50px 20px 50px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleAtaque1 {
     margin-left: -7rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .titleAtaque2, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .titleAtaque2 {
     margin-left: -4rem;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .nita, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .nita {
     margin-left: -95px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .colt, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .colt {
     margin-left: -65px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .bull, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .bull {
     margin-left: -24px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .brock, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .brock {
     margin-left: -120px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .primo, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .primo {
     margin-left: -20px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .barley, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .barley {
     margin-left: -55px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .poco, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .poco {
     margin-left: -90px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rosa, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .rosa {
     margin-left: 3px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque1 {
     left: -25px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque2, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque2 {
     left: -17px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3 {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .tituloAtaque3, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .tituloAtaque3 {
     left: -20px;
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
@@ -2142,13 +2128,13 @@ header {
   .contTemporadas .diecisiete .imageTemp .tituloTemp .nombreTemp, .contTemporadas .quince .imageTemp .tituloTemp .nombreTemp, .contTemporadas .dieciseis .imageTemp .tituloTemp .nombreTemp, .contTemporadas .catorce .imageTemp .tituloTemp .nombreTemp {
     font-size: 35px;
   }
-  .contTemporadas .diecisiete .infoTemp p, .contTemporadas .diecisiete .infoTemp2 p, .contTemporadas .quince .infoTemp p, .contTemporadas .quince .infoTemp2 p, .contTemporadas .dieciseis .infoTemp p, .contTemporadas .dieciseis .infoTemp2 p, .contTemporadas .catorce .infoTemp p, .contTemporadas .catorce .infoTemp2 p {
+  .contTemporadas .diecisiete .infoTemp p, .contTemporadas .diecisiete .contTemp .infoTemp2 p, .contTemporadas .contTemp .diecisiete .infoTemp2 p, .contTemporadas .diecisiete .infoTemp2 p, .contTemporadas .quince .infoTemp p, .contTemporadas .quince .contTemp .infoTemp2 p, .contTemporadas .contTemp .quince .infoTemp2 p, .contTemporadas .quince .infoTemp2 p, .contTemporadas .dieciseis .infoTemp p, .contTemporadas .dieciseis .contTemp .infoTemp2 p, .contTemporadas .contTemp .dieciseis .infoTemp2 p, .contTemporadas .dieciseis .infoTemp2 p, .contTemporadas .catorce .infoTemp p, .contTemporadas .catorce .contTemp .infoTemp2 p, .contTemporadas .contTemp .catorce .infoTemp2 p, .contTemporadas .catorce .infoTemp2 p {
     font-size: 20px;
   }
   .contTemporadas .dieciseis .imageTemp .banner2 {
     margin-left: 5px;
   }
-  .contTemporadas .catorce .imageTemp .banner {
+  .contTemporadas .catorce .imageTemp .banner, .contTemporadas .catorce .contTemp .imageTemp .banner2, .contTemporadas .contTemp .catorce .imageTemp .banner2 {
     margin-left: -7px;
   }
   /*-------ACTUALIZACIONES-------*/
@@ -2170,10 +2156,10 @@ header {
   .contActualizaciones .diecisiete .imageAct .tituloAct .nombreAct, .contActualizaciones .quince .imageAct .tituloAct .nombreAct, .contActualizaciones .dieciseis .imageAct .tituloAct .nombreAct, .contActualizaciones .catorce .imageAct .tituloAct .nombreAct {
     font-size: 35px;
   }
-  .contActualizaciones .diecisiete .infoAct, .contActualizaciones .diecisiete .infoAct2, .contActualizaciones .quince .infoAct, .contActualizaciones .quince .infoAct2, .contActualizaciones .dieciseis .infoAct, .contActualizaciones .dieciseis .infoAct2, .contActualizaciones .catorce .infoAct, .contActualizaciones .catorce .infoAct2 {
+  .contActualizaciones .diecisiete .infoAct, .contActualizaciones .diecisiete .contAct .infoAct2, .contActualizaciones .contAct .diecisiete .infoAct2, .contActualizaciones .diecisiete .infoAct2, .contActualizaciones .quince .infoAct, .contActualizaciones .quince .contAct .infoAct2, .contActualizaciones .contAct .quince .infoAct2, .contActualizaciones .quince .infoAct2, .contActualizaciones .dieciseis .infoAct, .contActualizaciones .dieciseis .contAct .infoAct2, .contActualizaciones .contAct .dieciseis .infoAct2, .contActualizaciones .dieciseis .infoAct2, .contActualizaciones .catorce .infoAct, .contActualizaciones .catorce .contAct .infoAct2, .contActualizaciones .contAct .catorce .infoAct2, .contActualizaciones .catorce .infoAct2 {
     grid-template-rows: auto 55px;
   }
-  .contActualizaciones .diecisiete .infoAct ul li, .contActualizaciones .diecisiete .infoAct2 ul li, .contActualizaciones .quince .infoAct ul li, .contActualizaciones .quince .infoAct2 ul li, .contActualizaciones .dieciseis .infoAct ul li, .contActualizaciones .dieciseis .infoAct2 ul li, .contActualizaciones .catorce .infoAct ul li, .contActualizaciones .catorce .infoAct2 ul li {
+  .contActualizaciones .diecisiete .infoAct ul li, .contActualizaciones .diecisiete .contAct .infoAct2 ul li, .contActualizaciones .contAct .diecisiete .infoAct2 ul li, .contActualizaciones .diecisiete .infoAct2 ul li, .contActualizaciones .quince .infoAct ul li, .contActualizaciones .quince .contAct .infoAct2 ul li, .contActualizaciones .contAct .quince .infoAct2 ul li, .contActualizaciones .quince .infoAct2 ul li, .contActualizaciones .dieciseis .infoAct ul li, .contActualizaciones .dieciseis .contAct .infoAct2 ul li, .contActualizaciones .contAct .dieciseis .infoAct2 ul li, .contActualizaciones .dieciseis .infoAct2 ul li, .contActualizaciones .catorce .infoAct ul li, .contActualizaciones .catorce .contAct .infoAct2 ul li, .contActualizaciones .contAct .catorce .infoAct2 ul li, .contActualizaciones .catorce .infoAct2 ul li {
     font-size: 25px;
   }
   .contActualizaciones .diecisiete .infoAct .contButton a, .contActualizaciones .diecisiete .infoAct2 .contButton a, .contActualizaciones .quince .infoAct .contButton a, .contActualizaciones .quince .infoAct2 .contButton a, .contActualizaciones .dieciseis .infoAct .contButton a, .contActualizaciones .dieciseis .infoAct2 .contButton a, .contActualizaciones .catorce .infoAct .contButton a, .contActualizaciones .catorce .infoAct2 .contButton a {
@@ -2182,7 +2168,7 @@ header {
   .contActualizaciones .dieciseis .imageAct .bannerAct2 {
     margin-left: 5px;
   }
-  .contActualizaciones .catorce .imageAct .bannerAct {
+  .contActualizaciones .catorce .imageAct .bannerAct, .contActualizaciones .catorce .contAct .imageAct .bannerAct2, .contActualizaciones .contAct .catorce .imageAct .bannerAct2 {
     margin-left: -2px;
   }
 }/*# sourceMappingURL=sass.css.map */

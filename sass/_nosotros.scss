@@ -5,8 +5,7 @@
     border-top: 1px solid #ccc;
     flex-direction: column-reverse;
     .imageServidores{
-        width: 90%;
-        height: auto;
+        @include sizes(90%, auto);
         margin: 20px 0;
     }
     .textoServidores{
@@ -30,8 +29,7 @@
     }
     .carouselServidores2{
         margin: 10px;
-        height: auto;
-        width: 90%;
+        @include sizes(90%, auto);
         border: 3px solid black;
         .imagesCarousel{
             display: none;
@@ -50,8 +48,7 @@
     justify-items: center;
     border-top: 1px solid #ccc;
     .imageGenio{
-        height: 250px;
-        width: auto;
+        @include sizes(auto, 250px);
         display: none;
     }
     .parrafoModos{
@@ -59,8 +56,7 @@
         margin: 0%;
     }
     .imageTick{
-        height: 250px;
-        width: auto;
+        @include sizes(auto, 250px);
         display: none;
     } 
     .imageElprimo{
@@ -78,14 +74,12 @@
     margin: 20px 0 ;
     .juego{
         display: flex;
-        width: 90%;
-        height: 160px;
+        @include sizes(90%, 160px);
         border-radius: 6px;
         background-color: white;
         align-items: center;
         .image{
-            height: 70px;
-            width: 70px;
+            @include sizes(70px, 70px);
             padding: 10px;
             margin: 10px;
         }

@@ -38,8 +38,7 @@
             align-items: center;
             height: 95%;
             .imageNews{
-                width: 788px;
-                height: 100%;
+                @include sizes(788px, 100%);
                 margin-left: -150px;
             }
         }
@@ -70,19 +69,13 @@
     }
 
     /*-------NOSOTROS-------*/
-    .contenedorServidores{
-        flex-direction: row;
-    }
-    .contenedorServidores2{
+    .contenedorServidores, .contenedorServidores2{
         flex-direction: row;
     }
     .contenedorModos{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 300px;
-        .imageGenio{
-            display: block;
-        }
-        .imageTick{
+        .imageGenio, .imageTick{
             display: block;
         }
         .imageElprimo{
@@ -213,7 +206,7 @@
 
     /*-------MULTIMEDIA-------*/
     .galeria{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(8, 242px);
         .galeria1{
             grid-column: 1/3;

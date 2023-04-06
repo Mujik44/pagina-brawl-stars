@@ -6,8 +6,7 @@
     padding-bottom: 35px;
     border-bottom: 1px solid #ccc;
     p{
-        width: 90%;
-        height: auto;
+        @include sizes(90%, auto);
     }
 }
 
@@ -34,8 +33,7 @@
         }
         .estadisticasBrawl{
             background-color: rgba(16,92,229,255);
-            width: 100%;
-            height: auto;
+            @include sizes(100%, auto);
             display: grid;
             grid-template-columns: 50% 1fr;
             grid-template-rows: 130px 340px 215px;
@@ -44,21 +42,18 @@
             gap: 10px;
             .contImage{
                 background-color: rgba(246,246,246,255);
-                width: 100%;
-                height: 100%;
+                @include sizes(100%, 100%);
                 border: 2px solid black;
                 grid-column: 1/2;
                 grid-row: 1/2;
                 img{
-                    width: 100%;
-                    height: 100%;
+                    @include sizes(100%, 100%);
                 }
             }
             .salud{
                 grid-column: 2/3;
                 grid-row: 1/2;
-                width: 90%;
-                height: 90%;
+                @include sizes(90%, 90%);
                 background-color: rgba(9,136,243,255);
                 border-radius: 5px;
                 display: grid;
@@ -75,17 +70,13 @@
                     color: rgba(5,199,5,255);
                 }
                 .tituloSalud2{
-                    font-size: 20px;
-                    position: relative;
+                    @extend .tituloSalud1;
                     left: -10px;
-                    -webkit-text-stroke: 0.9px black;
-                    color: rgba(5,199,5,255);
                 }
                 .infoSalud{
                     color: rgba(247,251,251,255);
                     margin-top: -25px;
-                    width: 90%;
-                    height: 90%;
+                    @include sizes(90%, 90%);
                     background-color: rgba(2,51,79,255);
                     border-radius: 5px;
                     display: grid;
@@ -174,8 +165,7 @@
                     grid-column: 1/2;
                     grid-row: 5/6;
                     color: rgba(247,251,251,255);
-                    width: 90%;
-                    height: 90%;
+                    @include sizes(90%, 90%);
                     background-color: rgba(2,51,79,255);
                     border-radius: 5px;
                     display: grid;
@@ -183,16 +173,9 @@
                     margin-top: -25px;
                 }
                 .infoAtaque2{
+                    @extend .infoAtaque1;
                     grid-column: 2/3;
                     grid-row: 5/6;
-                    color: rgba(247,251,251,255);
-                    width: 90%;
-                    height: 90%;
-                    background-color: rgba(2,51,79,255);
-                    border-radius: 5px;
-                    display: grid;
-                    align-items: center;
-                    margin-top: -25px;
                 }
                 .tituloAtaque3{
                     grid-column: 1/3;
@@ -203,28 +186,15 @@
                     left: -30px;
                 }
                 .infoAtaque3{
+                    @extend .infoAtaque1;
                     grid-column: 1/3;
                     grid-row: 7/8;
-                    color: rgba(247,251,251,255);
-                    width: 90%;
-                    height: 90%;
-                    background-color: rgba(2,51,79,255);
-                    border-radius: 5px;
-                    display: grid;
-                    align-items: center;
-                    margin-top: -25px;
                 }
             }
             .super{
+                @extend .ataque;
                 grid-column: 1/3;
                 grid-row: 3/4;
-                width: 95%;
-                background-color: rgba(9,136,243,255);
-                border-radius: 5px;
-                display: grid;
-                align-items: center;
-                justify-items: center;
-                grid-template-columns: 1fr 1fr;
                 grid-template-rows: 20px 20px 100px 20px 50px;
                 .titleSuper1{
                     grid-column: 1/3;
@@ -301,8 +271,7 @@
                     grid-column: 1/2;
                     grid-row: 5/6;
                     color: rgba(247,251,251,255);
-                    width: 90%;
-                    height: 90%;
+                    @include sizes(90%, 90%);
                     background-color: rgba(2,51,79,255);
                     border-radius: 5px;
                     display: grid;
@@ -310,16 +279,8 @@
                     margin-top: -25px;
                 }
                 .infoSuper2{
+                    @extend .infoSuper1;
                     grid-column: 2/3;
-                    grid-row: 5/6;
-                    color: rgba(247,251,251,255);
-                    width: 90%;
-                    height: 90%;
-                    background-color: rgba(2,51,79,255);
-                    border-radius: 5px;
-                    display: grid;
-                    align-items: center;
-                    margin-top: -25px;
                 }
             }
         }

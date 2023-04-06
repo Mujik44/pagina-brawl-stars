@@ -7,7 +7,7 @@
         flex-direction: column;
         .imageTemp{
             margin-left: -6px;
-            .banner, .banner2{
+            .banner{
                 display: flex;
                 width: 95%;
                 position: relative;
@@ -17,6 +17,7 @@
                 }
             }
             .banner2{
+                @extend .banner;
                 img{
                     transform: skewX(-4.6deg);
                 }
@@ -36,7 +37,7 @@
                     font-size: 22px;
                 }
             }
-            .carga, .carga2{
+            .carga{
                 width: 95%;
                 img{
                     border-top: 5px solid black;
@@ -47,12 +48,13 @@
                 }
             }
             .carga2{
+                @extend .carga;
                 img{
                     margin-left: -15.5px;
                 }
             }
         }
-        .infoTemp, .infoTemp2{
+        .infoTemp{
             width: 95%;
             border-right: 2px solid black;
             border-bottom: 2px solid black;
@@ -66,6 +68,7 @@
             }
         }
         .infoTemp2{
+            @extend .infoTemp;
             margin-left: -24px;
         }
     }
