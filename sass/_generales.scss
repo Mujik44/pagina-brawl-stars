@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&display=swap');
 
-@mixin tamaño($width, $height){
+@mixin sizes($width, $height){
     height: $height;
     width: $width;
 }
@@ -17,8 +17,7 @@ body{
 
 header{
     background-color: black;
-    height: 100px;
-    width: auto;
+    @include sizes(auto, 100px);
 }
 
 a{
@@ -65,20 +64,17 @@ p{
 }
 
 .logoBrawl{
-    height: 100px;
-    width: 100px;
+    @include sizes(100px, 100px)
 }
 
 .portada{
-    height: auto;
-    width: 100%;
+    @include sizes(100%, auto);
 }
 
 /*-------NAVBAR-------*/
 nav{
     display: flex;
-    width: 100%;
-    height: 60px;
+    @include sizes(100%, 60px);
     max-width: 1200px;
     margin: 0 auto  ;
     align-items: center;
@@ -116,4 +112,63 @@ header{
     height: 70px;
     display: grid;
     align-items: center;
+}
+
+/*-------SUMARIO-------*/
+
+.barraSumario{
+    height: 0;
+    bottom: 10%;
+    right: 5%;
+    position: fixed;
+    transform: translateX(3%);
+    z-index: 200;
+    .botonSumario{
+        background-color: #f01919;
+        border-radius: 50%;
+        cursor: pointer;
+        @include sizes(50px, 50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 200;
+    }
+}
+.sumarioDesplegable{
+    position: fixed;
+    right: 2rem;
+    left: 1rem;
+    bottom: 7%;
+    max-height: 0;
+    background: rgba(255, 255, 255, 0.363);
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,.3);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: max-height 0.5s linear;
+    z-index: 150;
+    overflow-y: auto;
+    li{
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        a{
+            color: black;
+        }
+        a:hover{
+            color: #f01919;
+        }
+        ul{
+            li{
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+.sumarioDesplegable.open{
+    max-height: 300px;
 }

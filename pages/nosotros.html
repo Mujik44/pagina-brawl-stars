@@ -16,6 +16,7 @@
     <meta name="keywords" content="BRAWL, STARS, SUPERCELL, BATTLE, ROYAL, BRAWLERS, ATRAPA GEMAS, SUPERVIVENCIA, BALON BRAWL, CAZAESTELAR, ZONA RESTRINGIDA, ATRACO, MULTIMEDIA, TEMPORADAS, ACTUALIZACIONES">
 </head>
 <body>
+    <!-- BARRA DE NAVEGACION -->
     <header>
         <nav>
             <div>
@@ -44,10 +45,12 @@
                     <a href="./actualizaciones.html">ACTUALIZACIONES</a>
                 </li>
             </ul>
+            <!-- BOTON HAMBURGUESA NAVBAR -->
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
             </div>
         </nav>
+        <!-- MENU DESPLEGABLE NAVBAR -->
         <div class="menuDesplegable">
             <li>
                 <a href="../index.html">INICIO</a>
@@ -83,7 +86,33 @@
             : 'fa-solid fa-bars'
         }
     </script>
+    <section class="barraSumario">
+        <div class="botonSumario">
+            <i class="fa-solid fa-book" style="color: #ffffff;"></i>
+        </div>
+    </section>
+    <div class="sumarioDesplegable">
+        <li>
+            <a href="#titlePrinc">SERVIDORES</a>
+        </li>
+        <li>
+            <a href="#title2">MODOS DE JUEGOS</a>
+        </li>
+    </div>
+    <script>
+        const botonSum = document.querySelector('.botonSumario')
+        const botonSumIcon = document.querySelector('.botonSumario i')
+        const sumDespliegue = document.querySelector('.sumarioDesplegable')
 
+        botonSum.onclick = function (){
+            sumDespliegue.classList.toggle('open')
+            const isOpen = sumDespliegue.classList.contains('open')
+
+            botonSumIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-book'
+        }
+    </script>
     <main>
         <img class="portada" src="../img/portada-giftshop.png" alt="portada de la pagina noosotros">
         <h1>
@@ -92,7 +121,7 @@
         <section class="contenedorServidores">
             <img class="imageServidores" src="../img/servidores.png" alt="servidores del juego">
             <section class="textoServidores">
-                <h2 class="tituloServidores">
+                <h2 id="titlePrinc" class="tituloServidores">
                     SERVIDORES
                 </h2>
                 <p class="parrafoServidores">
@@ -160,7 +189,7 @@
         </section>
     </section>
 
-    <h2>
+    <h2 id="title2">
         MODOS DE JUEGO
     </h2>
     <section class="contenedorModos">

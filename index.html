@@ -46,10 +46,12 @@
                     <a href="./pages/actualizaciones.html">ACTUALIZACIONES</a>
                 </li>
             </ul>
+            <!-- BOTON HAMBURGUESA NAVBAR -->
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
             </div>
         </nav>
+        <!-- MENU DESPLEGABLE NAVBAR -->
         <div class="menuDesplegable">
             <li>
                 <a href="index.html">INICIO</a>
@@ -85,11 +87,43 @@
             : 'fa-solid fa-bars'
         }
     </script>
-    
+    <!-- SUMARIO -->
+    <section class="barraSumario">
+        <!-- BOTON DEL SUMARIO -->
+        <div class="botonSumario">
+            <i class="fa-solid fa-book" style="color: #ffffff;"></i>
+        </div>
+    </section>
+    <!-- MENU DESPLEGABLE SUMARIO -->
+    <div class="sumarioDesplegable">
+        <li>
+            <a href="#titlePrinc">3V3, BATLE ROYAL Y MAS ...</a>
+        </li>
+        <li>
+            <a href="#title2">SIEMPRE AL DIA</a>
+        </li>
+        <li>
+            <a href="#title3">CONOCE MAS</a>
+        </li>
+    </div>
+    <script>
+        const botonSum = document.querySelector('.botonSumario')
+        const botonSumIcon = document.querySelector('.botonSumario i')
+        const sumDespliegue = document.querySelector('.sumarioDesplegable')
+
+        botonSum.onclick = function (){
+            sumDespliegue.classList.toggle('open')
+            const isOpen = sumDespliegue.classList.contains('open')
+
+            botonSumIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-book'
+        }
+    </script>
     <main>
         <img class="portada" src="./img/portada3-brawl.jpg" alt="portada del juego brawl stars">
         <section class="contenedorMain">
-            <h1 class="contMain tituloMain">
+            <h1 id="titlePrinc" class="contMain tituloMain">
                 3V3, BATLE ROYAL Y MAS ...
             </h1>
             <section class="contMain contenidoMain">
@@ -150,7 +184,7 @@
             <img class="imageNews" src="./img/news-brawl.webp" alt="noticias dentro del juego">
         </div>
         <section class="textoNews">
-            <h2 class="tituloNews">
+            <h2 id="title2" class="tituloNews">
                 SIEMPRE AL DIA
             </h2>
             <p class="parrafoNews">
@@ -164,7 +198,7 @@
     <article class="contenedorConoce">
         <img class="superCell" src="./img/supercell.webp" alt="portada de supercell">
         <div class="centrado">
-            <h2 class="tituloConoce">
+            <h2 id="title3" class="tituloConoce">
                 CONOCE MAS
             </h2>
             <p class="parrafoConoce">

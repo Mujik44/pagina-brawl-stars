@@ -14,6 +14,7 @@
     <meta name="keywords" content="BRAWL, STARS, SUPERCELL, BATTLE, ROYAL, BRAWLERS, ATRAPA GEMAS, SUPERVIVENCIA, BALON BRAWL, CAZAESTELAR, ZONA RESTRINGIDA, ATRACO, MULTIMEDIA, TEMPORADAS, ACTUALIZACIONES">
 </head>
 <body>
+    <!-- BARRA DE NAVEGACION -->
     <header>
         <nav>
             <div>
@@ -42,10 +43,12 @@
                     <a href="./actualizaciones.html">ACTUALIZACIONES</a>
                 </li>
             </ul>
+            <!-- BOTON HAMBURGUESA NAVBAR -->
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
             </div>
         </nav>
+        <!-- MENU DESPLEGABLE NAVBAR -->
         <div class="menuDesplegable">
             <li>
                 <a href="../index.html">INICIO</a>
@@ -81,7 +84,100 @@
             : 'fa-solid fa-bars'
         }
     </script>
+    <!-- SUMARIO -->
+    <section class="barraSumario">
+        <!-- BOTON DEL SUMARIO -->
+        <div class="botonSumario">
+            <i class="fa-solid fa-book" style="color: #ffffff;"></i>
+        </div>
+    </section>
+    <!-- MENU DESPLEGABLE SUMARIO -->
+    <div class="sumarioDesplegable">
+        <li>
+            <a href="#titlePrinc">BRAWLERS Y SUS CARACTERISTICAS</a>
+        </li>
+        <li>
+            <a href="#title2">ESPECIALES:</a>
+            <ul>
+                <li>
+                    <a href="#shelly">-SHELLY</a>
+                </li>
+                <li>
+                    <a href="#nita">-NITA</a>
+                </li>
+                <li>
+                    <a href="#colt">-COLT</a>
+                </li>
+                <li>
+                    <a href="#bull">-BULL</a>
+                </li>
+                <li>
+                    <a href="#brock">-BROCK</a>
+                </li>
+                <li>
+                    <a href="#primo">-EL PRIMO</a>
+                </li>
+                <li>
+                    <a href="#barley">-BARLEY</a>
+                </li>
+                <li>
+                    <a href="#poco">-POCO</a>
+                </li>
+                <li>
+                    <a href="#rosa">-ROSA</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#title3">SUPERESPECIALES:</a>
+            <ul>
+                <li>
+                    <a href="#jessie">-JESSIE</a>
+                </li>
+                <li>
+                    <a href="#mike">-DYNAMIKE</a>
+                </li>
+                <li>
+                    <a href="#tick">-TICK</a>
+                </li>
+                <li>
+                    <a href="#ochobit">-8-BIT</a>
+                </li>
+                <li>
+                    <a href="#rico">-RICO</a>
+                </li>
+                <li>
+                    <a href="#darryl">-DARRYL</a>
+                </li>
+                <li>
+                    <a href="#penny">-PENNY</a>
+                </li>
+                <li>
+                    <a href="#carl">-CARL</a>
+                </li>
+                <li>
+                    <a href="#jacky">-JACKY</a>
+                </li>
+                <li>
+                    <a href="#gus">-GUS</a>
+                </li>
+            </ul>
+        </li>
+    </div>
+    <script>
+        const botonSum = document.querySelector('.botonSumario')
+        const botonSumIcon = document.querySelector('.botonSumario i')
+        const sumDespliegue = document.querySelector('.sumarioDesplegable')
 
+        botonSum.onclick = function (){
+            sumDespliegue.classList.toggle('open')
+            const isOpen = sumDespliegue.classList.contains('open')
+
+            botonSumIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-book'
+        }
+    </script>
     <main>
         <img class="portada" src="../img/portada-personajes2.jpg" alt="portada de personajes">
         <div class="mainPersonajes">
@@ -91,7 +187,7 @@
             <p>
                 Lista de todos los brawlers en Brawl Stars. Checa sus estadísticas y aprende más de ellos.
             </p>
-            <h2>
+            <h2 id="titlePrinc">
                 BRAWLERS Y SUS CARACTERISTICAS
             </h2>
             <p>
@@ -101,13 +197,13 @@
     </main>
 
     <section>
-        <h2 class="tituloEspeciales">
+        <h2 id="title2" class="tituloEspeciales">
             ESPECIALES
         </h2>
-        <section class="contenedorPersonajes">
-            <div class="contBrawl">
+        <section class="contenedorPersonajes especiales">
+            <div class="contBrawl shelly">
                 <div class="nombreBrawl">
-                    <h2>
+                    <h2 id="shelly">
                         SHELLY<br>Destructora
                     </h2>
                 </div>
@@ -169,9 +265,9 @@
                     </div>
                 </div>
             </div>
-            <div class="contBrawl">
+            <div class="contBrawl nita">
                 <div class="nombreBrawl especial">
-                    <h2>
+                    <h2 id="nita">
                         NITA<br>Destructora
                     </h2>
                 </div>
@@ -233,9 +329,9 @@
                     </div>
                 </div>
             </div>
-            <div class="contBrawl">
+            <div class="contBrawl colt">
                 <div class="nombreBrawl especial">
-                    <h2>
+                    <h2 id="colt">
                         COLT<br>Destructor
                     </h2>
                 </div>
@@ -297,9 +393,9 @@
                     </div>
                 </div>
             </div>
-            <div class="contBrawl">
+            <div class="contBrawl bull">
                 <div class="nombreBrawl especial">
-                    <h2>
+                    <h2 id="bull">
                         BULL<br>Tanque
                     </h2>
                 </div>
@@ -361,9 +457,9 @@
                     </div>
                 </div>
             </div>
-            <div class="contBrawl">
+            <div class="contBrawl brock">
                 <div class="nombreBrawl especial">
-                    <h2>
+                    <h2 id="brock">
                         BROCK<br>Tiro de Élite
                     </h2>
                 </div>
@@ -425,9 +521,9 @@
                     </div>
                 </div>
             </div>
-            <div class="contBrawl">
+            <div class="contBrawl primo">
                 <div class="nombreBrawl especial">
-                    <h2>
+                    <h2 id="primo">
                         EL PRIMO<br>Tanque
                     </h2>
                 </div>
@@ -489,9 +585,9 @@
                     </div>
                 </div>
             </div>
-            <div class="contBrawl">
+            <div class="contBrawl barley">
                 <div class="nombreBrawl especial">
-                    <h2>
+                    <h2 id="barley">
                         BARLEY<br>Artilleriía
                     </h2>
                 </div>
@@ -553,9 +649,9 @@
                     </div>
                 </div>
             </div>
-            <div class="contBrawl">
+            <div class="contBrawl poco">
                 <div class="nombreBrawl especial">
-                    <h2>
+                    <h2 id="poco">
                         POCO<br>Apoyo
                     </h2>
                 </div>
@@ -617,9 +713,9 @@
                     </div>
                 </div>
             </div>
-            <div class="contBrawl">
+            <div class="contBrawl rosa">
                 <div class="nombreBrawl especial">
-                    <h2>
+                    <h2 id="rosa">
                         ROSA<br>Tanque
                     </h2>
                 </div>
@@ -677,6 +773,651 @@
                         </div>
                         <div class="infoSuper2">
                             <p>3s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2 id="title3" class="tituloSuperespeciales">
+            SUPERESPECIALES
+        </h2>
+        <section class="contenedorPersonajes superespeciales">
+            <div class="contBrawl jessie">
+                <div class="nombreBrawl superespecial">
+                    <h2 id="jessie">
+                        JESSIE<br>Vigilante
+                    </h2>
+                </div>
+                <div class="estadisticasBrawl">
+                    <div class="contImage">
+                        <img src="../img/portrait_jessie_new.png" alt="retraro de jessie">
+                    </div>
+                    <div class="salud">
+                        <h4 class="tituloSalud1">Salud</h4>
+                        <div class="infoSalud">
+                            <p>4350</p>
+                        </div>
+                        <h4 class="tituloSalud2">Velocidad</h4>
+                        <div class="infoSalud">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="ataque">
+                        <h4 class="titleAtaque1">
+                            ATAQUE
+                        </h4>
+                        <h4 class="titleAtaque2 jessie">
+                            RIFLE ATURDIDOR
+                        </h4>
+                        <p class="parrafoAtaque">
+                            Jessie dispara una esfera de energía. Tras alcanzar el primer objetivo, la esfera puede llegar a alcanzar hasta 2 objetivos mas. El daño que inflinge se reduce en un 25% por rebote.
+                        </p>
+                        <h4 class="tituloAtaque1">Daño</h4>
+                        <h4 class="tituloAtaque2">Alcance</h4>
+                        <h4 class="tituloAtaque3">Velocidad de recarga</h4>
+                        <div class="infoAtaque1">
+                            <p>1537</p>
+                        </div>
+                        <div class="infoAtaque2">
+                            <p>Largo</p>
+                        </div>
+                        <div class="infoAtaque3">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="super">
+                        <h4 class="titleSuper1">
+                            SÚPER
+                        </h4>
+                        <h4 class="titleSuper2 jessie">
+                            CHATARRETA
+                        </h4>
+                        <p class="parrafoSuper">
+                        Jessie despliega una torreta con 4785 de vida, capaz de disparar automáticamente. ¡100% hecha de materiales reciclados!
+                        </p>
+                        <h4 class="tituloSuper1">Daño</h4>
+                        <h4 class="tituloSuper2">Alcance</h4>
+                        <div class="infoSuper1">
+                            <p>377</p>
+                        </div>
+                        <div class="infoSuper2">
+                            <p>Largo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contBrawl mike">
+                <div class="nombreBrawl superespecial">
+                    <h2 id="mike">
+                        DYNAMIKE<br>Artillería
+                    </h2>
+                </div>
+                <div class="estadisticasBrawl">
+                    <div class="contImage">
+                        <img src="../img/portrait_mike.png" alt="retraro de dynamike">
+                    </div>
+                    <div class="salud">
+                        <h4 class="tituloSalud1">Salud</h4>
+                        <div class="infoSalud">
+                            <p>4060</p>
+                        </div>
+                        <h4 class="tituloSalud2">Velocidad</h4>
+                        <div class="infoSalud">
+                            <p>Rápida</p>
+                        </div>
+                    </div>
+                    <div class="ataque">
+                        <h4 class="titleAtaque1">
+                            ATAQUE
+                        </h4>
+                        <h4 class="titleAtaque2 mike">
+                            MECHA CORTA
+                        </h4>
+                        <p class="parrafoAtaque">
+                            Mike tira dos cartuchos de dinamita que sobrevuelan obstáculos. ¡Sus cartuchos son casi tan explosivos como su temperamento!
+                        </p>
+                        <h4 class="tituloAtaque1">Daño</h4>
+                        <h4 class="tituloAtaque2">Alcance</h4>
+                        <h4 class="tituloAtaque3">Velocidad de recarga</h4>
+                        <div class="infoAtaque1">
+                            <p>2 x 1160</p>
+                        </div>
+                        <div class="infoAtaque2">
+                            <p>Largo</p>
+                        </div>
+                        <div class="infoAtaque3">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="super">
+                        <h4 class="titleSuper1">
+                            SÚPER
+                        </h4>
+                        <h4 class="titleSuper2 mike">
+                            BARRIL EXPLOSIVO
+                        </h4>
+                        <p class="parrafoSuper">
+                            Mike lanza un barril grande de dinamita. Cuando este explota, quien sobreviva recibe un impacto hacia atras.
+                        </p>
+                        <h4 class="tituloSuper1">Daño</h4>
+                        <h4 class="tituloSuper2">Alcance</h4>
+                        <div class="infoSuper1">
+                            <p>3190</p>
+                        </div>
+                        <div class="infoSuper2">
+                            <p>Largo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contBrawl tick">
+                <div class="nombreBrawl superespecial">
+                    <h2 id="tick">
+                        TICK<br>Artillería
+                    </h2>
+                </div>
+                <div class="estadisticasBrawl">
+                    <div class="contImage">
+                        <img src="../img/portrait_tick.png" alt="retraro de tick">
+                    </div>
+                    <div class="salud">
+                        <h4 class="tituloSalud1">Salud</h4>
+                        <div class="infoSalud">
+                            <p>3190</p>
+                        </div>
+                        <h4 class="tituloSalud2">Velocidad</h4>
+                        <div class="infoSalud">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="ataque">
+                        <h4 class="titleAtaque1">
+                            ATAQUE
+                        </h4>
+                        <h4 class="titleAtaque2 tick">
+                            MINIMINAS
+                        </h4>
+                        <p class="parrafoAtaque">
+                            Tick lanza un racimo de minas que se dividen antes de aterrizar. Las minas explotan directamente al alcanzar al enemigo o tras unos segundos.
+                        </p>
+                        <h4 class="tituloAtaque1">Daño</h4>
+                        <h4 class="tituloAtaque2">Alcance</h4>
+                        <h4 class="tituloAtaque3">Velocidad de recarga</h4>
+                        <div class="infoAtaque1">
+                            <p>3 x 928</p>
+                        </div>
+                        <div class="infoAtaque2">
+                            <p>Largo</p>
+                        </div>
+                        <div class="infoAtaque3">
+                            <p>Muy Lenta</p>
+                        </div>
+                    </div>
+                    <div class="super">
+                        <h4 class="titleSuper1">
+                            SÚPER
+                        </h4>
+                        <h4 class="titleSuper2 tick">
+                            CABEZAZO
+                        </h4>
+                        <p class="parrafoSuper">
+                            ¡La cabeza de Tick sale disparada! Tiene una vida de 2320 y cuando aterriza, se acerca a saltos muy rapidos al objetivo mas cercano y explota al contacto con él.
+                        </p>
+                        <h4 class="tituloSuper1">Daño</h4>
+                        <h4 class="tituloSuper2">Alcance</h4>
+                        <div class="infoSuper1">
+                            <p>2900</p>
+                        </div>
+                        <div class="infoSuper2">
+                            <p>Corto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contBrawl ochobit">
+                <div class="nombreBrawl superespecial">
+                    <h2 id="ochobit">
+                        8-BIT<br>Destructor
+                    </h2>
+                </div>
+                <div class="estadisticasBrawl">
+                    <div class="contImage">
+                        <img src="../img/portrait_8bit.png" alt="retraro de 8bit">
+                    </div>
+                    <div class="salud">
+                        <h4 class="tituloSalud1">Salud</h4>
+                        <div class="infoSalud">
+                            <p>6960</p>
+                        </div>
+                        <h4 class="tituloSalud2">Velocidad</h4>
+                        <div class="infoSalud">
+                            <p>Muy Lenta</p>
+                        </div>
+                    </div>
+                    <div class="ataque">
+                        <h4 class="titleAtaque1">
+                            ATAQUE
+                        </h4>
+                        <h4 class="titleAtaque2 ochobit">
+                            RAYOS ABRASIVOS
+                        </h4>
+                        <p class="parrafoAtaque">
+                            Dispara rayos abrasivos que inflingen daño a los brawlers enemigos. Los rayos son de medio alcance y salen disparados con una cierta amplitud.
+                        </p>
+                        <h4 class="tituloAtaque1">Daño</h4>
+                        <h4 class="tituloAtaque2">Alcance</h4>
+                        <h4 class="tituloAtaque3">Velocidad de recarga</h4>
+                        <div class="infoAtaque1">
+                            <p>6 x 464</p>
+                        </div>
+                        <div class="infoAtaque2">
+                            <p>Muy Largo</p>
+                        </div>
+                        <div class="infoAtaque3">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="super">
+                        <h4 class="titleSuper1">
+                            SÚPER
+                        </h4>
+                        <h4 class="titleSuper2 ochobit">
+                            AMPLIFICADAÑO
+                        </h4>
+                        <p class="parrafoSuper">
+                            Despliega una torreta que aumenta el daño que inflingen los brawlers aliados en la zona de efecto.
+                        </p>
+                        <h4 class="tituloSuper1 saludTorreta">Salud de torreta</h4>
+                        <h4 class="tituloSuper2 masDaño">Aumento de daño</h4>
+                        <div class="infoSuper1">
+                            <p>4060</p>
+                        </div>
+                        <div class="infoSuper2">
+                            <p>35%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contBrawl rico">
+                <div class="nombreBrawl superespecial">
+                    <h2 id="rico">
+                        RICO<br>Destructor
+                    </h2>
+                </div>
+                <div class="estadisticasBrawl">
+                    <div class="contImage">
+                        <img src="../img/portrait_rico.png" alt="retraro de rico">
+                    </div>
+                    <div class="salud">
+                        <h4 class="tituloSalud1">Salud</h4>
+                        <div class="infoSalud">
+                            <p>4060</p>
+                        </div>
+                        <h4 class="tituloSalud2">Velocidad</h4>
+                        <div class="infoSalud">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="ataque">
+                        <h4 class="titleAtaque1">
+                            ATAQUE
+                        </h4>
+                        <h4 class="titleAtaque2 rico">
+                            BALAS REBOTADORAS
+                        </h4>
+                        <p class="parrafoAtaque">
+                            El alcance de las balas de Rico es mayor tras rebotar en los muros. Además, pueden alcanzar a los enemigos que estén refugiados.
+                        </p>
+                        <h4 class="tituloAtaque1">Daño</h4>
+                        <h4 class="tituloAtaque2">Alcance</h4>
+                        <h4 class="tituloAtaque3">Velocidad de recarga</h4>
+                        <div class="infoAtaque1">
+                            <p>5 x 464</p>
+                        </div>
+                        <div class="infoAtaque2">
+                            <p>Muy Largo</p>
+                        </div>
+                        <div class="infoAtaque3">
+                            <p>Muy Rapida</p>
+                        </div>
+                    </div>
+                    <div class="super">
+                        <h4 class="titleSuper1">
+                            SÚPER
+                        </h4>
+                        <h4 class="titleSuper2 rico">
+                            DISPARO EXPERTO
+                        </h4>
+                        <p class="parrafoSuper">
+                            Rico dispara una larga ráfaga de balas que acribillan a los enemigos. Aumentan su alcance después de haber rebotado en los muros.
+                        </p>
+                        <h4 class="tituloSuper1">Daño</h4>
+                        <h4 class="tituloSuper2">Alcance</h4>
+                        <div class="infoSuper1">
+                            <p>12 x 464</p>
+                        </div>
+                        <div class="infoSuper2">
+                            <p>Muy Largo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contBrawl darryl">
+                <div class="nombreBrawl superespecial">
+                    <h2 id="darryl">
+                        DARRYL<br>Tanque
+                    </h2>
+                </div>
+                <div class="estadisticasBrawl">
+                    <div class="contImage">
+                        <img src="../img/portrait_darryl.png" alt="retraro de el darryl">
+                    </div>
+                    <div class="salud">
+                        <h4 class="tituloSalud1">Salud</h4>
+                        <div class="infoSalud">
+                            <p>7950</p>
+                        </div>
+                        <h4 class="tituloSalud2">Velocidad</h4>
+                        <div class="infoSalud">
+                            <p>Rápida</p>
+                        </div>
+                    </div>
+                    <div class="ataque">
+                        <h4 class="titleAtaque1">
+                            ATAQUE
+                        </h4>
+                        <h4 class="titleAtaque2 darryl">
+                            CARGA DOBLE
+                        </h4>
+                        <p class="parrafoAtaque">
+                            Las escopetas de doble cañon de Darryl disparan dos ráfagas de balas letales a corta distancia.
+                        </p>
+                        <h4 class="tituloAtaque1">Daño</h4>
+                        <h4 class="tituloAtaque2">Alcance</h4>
+                        <h4 class="tituloAtaque3">Velocidad de recarga</h4>
+                        <div class="infoAtaque1">
+                            <p>10 x 360</p>
+                        </div>
+                        <div class="infoAtaque2">
+                            <p>Normal</p>
+                        </div>
+                        <div class="infoAtaque3">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="super">
+                        <h4 class="titleSuper1">
+                            SÚPER
+                        </h4>
+                        <h4 class="titleSuper2 darryl">
+                            TONEL LOCO
+                        </h4>
+                        <p class="parrafoSuper">
+                            Darryl se refugia en su barril y empuja a los enemigos. Reduce el daño que recibe en un 50% y rebota en las paredes. ¡Esta se recarga con el tiempo!
+                        </p>
+                        <h4 class="tituloSuper1">Daño</h4>
+                        <h4 class="tituloSuper2">Alcance</h4>
+                        <div class="infoSuper1">
+                            <p>600</p>
+                        </div>
+                        <div class="infoSuper2">
+                            <p>Largo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contBrawl penny">
+                <div class="nombreBrawl superespecial">
+                    <h2 id="penny">
+                        PENNY<br>Artillería
+                    </h2>
+                </div>
+                <div class="estadisticasBrawl">
+                    <div class="contImage">
+                        <img src="../img/portrait_penny.png" alt="retraro de penny">
+                    </div>
+                    <div class="salud">
+                        <h4 class="tituloSalud1">Salud</h4>
+                        <div class="infoSalud">
+                            <p>5220</p>
+                        </div>
+                        <h4 class="tituloSalud2">Velocidad</h4>
+                        <div class="infoSalud">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="ataque">
+                        <h4 class="titleAtaque1">
+                            ATAQUE
+                        </h4>
+                        <h4 class="titleAtaque2 penny">
+                            LANZAMONEDAS
+                        </h4>
+                        <p class="parrafoAtaque">
+                            Dispara una bolsa de monedas de oro. Si la bolsa alcanza al enemigo, las monedas salen disparadas e impactan a los enemigos que se encuentren detrás.
+                        </p>
+                        <h4 class="tituloAtaque1">Daño</h4>
+                        <h4 class="tituloAtaque2">Alcance</h4>
+                        <h4 class="tituloAtaque3">Velocidad de recarga</h4>
+                        <div class="infoAtaque1">
+                            <p>1363</p>
+                        </div>
+                        <div class="infoAtaque2">
+                            <p>Largo</p>
+                        </div>
+                        <div class="infoAtaque3">
+                            <p>Lenta</p>
+                        </div>
+                    </div>
+                    <div class="super">
+                        <h4 class="titleSuper1">
+                            SÚPER
+                        </h4>
+                        <h4 class="titleSuper2 penny">
+                            CAÑONAZO
+                        </h4>
+                        <p class="parrafoSuper">
+                            ¡Penny despliega su cañón! Con 4060 de salud, puede disparar a los enemigos a larga distancia, sortear obstáculos y prender fuego al suelo. 
+                        </p>
+                        <h4 class="tituloSuper1">Daño</h4>
+                        <h4 class="tituloSuper2">Alcance</h4>
+                        <div class="infoSuper1">
+                            <p>1740</p>
+                        </div>
+                        <div class="infoSuper2">
+                            <p>Muy Largo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contBrawl carl">
+                <div class="nombreBrawl superespecial">
+                    <h2 id="carl">
+                        CARL<br>Destructor
+                    </h2>
+                </div>
+                <div class="estadisticasBrawl">
+                    <div class="contImage">
+                        <img src="../img/portrait_carl.png" alt="retraro de carl">
+                    </div>
+                    <div class="salud">
+                        <h4 class="tituloSalud1">Salud</h4>
+                        <div class="infoSalud">
+                            <p>5800</p>
+                        </div>
+                        <h4 class="tituloSalud2">Velocidad</h4>
+                        <div class="infoSalud">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="ataque">
+                        <h4 class="titleAtaque1">
+                            ATAQUE
+                        </h4>
+                        <h4 class="titleAtaque2 carl">
+                            PIQUETA
+                        </h4>
+                        <p class="parrafoAtaque">
+                            Carl lanza su piqueta como si de un bumerán se tratase. Puede volver a tirarla cuando vuelve a su poder.
+                        </p>
+                        <h4 class="tituloAtaque1">Daño</h4>
+                        <h4 class="tituloAtaque2">Alcance</h4>
+                        <h4 class="tituloAtaque3">Velocidad de recarga</h4>
+                        <div class="infoAtaque1">
+                            <p>957</p>
+                        </div>
+                        <div class="infoAtaque2">
+                            <p>Largo</p>
+                        </div>
+                        <div class="infoAtaque3">
+                            <p>Lenta</p>
+                        </div>
+                    </div>
+                    <div class="super">
+                        <h4 class="titleSuper1">
+                            SÚPER
+                        </h4>
+                        <h4 class="titleSuper2 carl">
+                            CARRO DESCARRILADO
+                        </h4>
+                        <p class="parrafoSuper">
+                            Carl gira como loco durante unos 3 segundos, sacudiéndolo todo a su alrededor y dañando a sus rivales.
+                        </p>
+                        <h4 class="tituloSuper1">Daño</h4>
+                        <h4 class="tituloSuper2">Alcance</h4>
+                        <div class="infoSuper1">
+                            <p>725</p>
+                        </div>
+                        <div class="infoSuper2">
+                            <p>Corto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contBrawl jacky">
+                <div class="nombreBrawl superespecial">
+                    <h2 id="jacky">
+                        JACKY<br>Tanque
+                    </h2>
+                </div>
+                <div class="estadisticasBrawl">
+                    <div class="contImage">
+                        <img src="../img/portrait_jacky.png" alt="retraro de jacky">
+                    </div>
+                    <div class="salud">
+                        <h4 class="tituloSalud1">Salud</h4>
+                        <div class="infoSalud">
+                            <p>7250</p>
+                        </div>
+                        <h4 class="tituloSalud2">Velocidad</h4>
+                        <div class="infoSalud">
+                            <p>Rápida</p>
+                        </div>
+                    </div>
+                    <div class="ataque">
+                        <h4 class="titleAtaque1">
+                            ATAQUE
+                        </h4>
+                        <h4 class="titleAtaque2 jacky">
+                            MARTILLO MECÁNICO
+                        </h4>
+                        <p class="parrafoAtaque">
+                            Jacky se monta en el martillo mecánico. ¡Los rivales que estén cerca sentirán el temblor!
+                        </p>
+                        <h4 class="tituloAtaque1">Daño</h4>
+                        <h4 class="tituloAtaque2">Alcance</h4>
+                        <h4 class="tituloAtaque3">Velocidad de recarga</h4>
+                        <div class="infoAtaque1">
+                            <p>1798</p>
+                        </div>
+                        <div class="infoAtaque2">
+                            <p>Corto</p>
+                        </div>
+                        <div class="infoAtaque3">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="super">
+                        <h4 class="titleSuper1">
+                            SÚPER
+                        </h4>
+                        <h4 class="titleSuper2 jacky">
+                            ATRACCIÓN MARTILLEANTE
+                        </h4>
+                        <p class="parrafoSuper">
+                            Jacky perfora el suelo y atrae a los rivales para que vean su martillo mecánico más de cerca.
+                        </p>
+                        <h4 class="tituloSuper1">Daño</h4>
+                        <h4 class="tituloSuper2">Duración</h4>
+                        <div class="infoSuper1">
+                            <p>-</p>
+                        </div>
+                        <div class="infoSuper2">
+                            <p>-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contBrawl gus">
+                <div class="nombreBrawl superespecial">
+                    <h2 id="gus">
+                        GUS<br>Apoyo
+                    </h2>
+                </div>
+                <div class="estadisticasBrawl">
+                    <div class="contImage">
+                        <img src="../img/portrait_gus.png" alt="retraro de gus">
+                    </div>
+                    <div class="salud">
+                        <h4 class="tituloSalud1">Salud</h4>
+                        <div class="infoSalud">
+                            <p>4480</p>
+                        </div>
+                        <h4 class="tituloSalud2">Velocidad</h4>
+                        <div class="infoSalud">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="ataque">
+                        <h4 class="titleAtaque1">
+                            ATAQUE
+                        </h4>
+                        <h4 class="titleAtaque2 gus">
+                            GLOBOS LOCOS
+                        </h4>
+                        <p class="parrafoAtaque">
+                            Gus dispara globos a sus enemigos. Tras dar en el blanco varias veces, aparecerá un espíritu. Los espíritus que se recolenten restaurarán 1120 puntos de salud de Gus y de sus aliados.
+                        </p>
+                        <h4 class="tituloAtaque1">Daño</h4>
+                        <h4 class="tituloAtaque2">Alcance</h4>
+                        <h4 class="tituloAtaque3">Velocidad de recarga</h4>
+                        <div class="infoAtaque1">
+                            <p>1316</p>
+                        </div>
+                        <div class="infoAtaque2">
+                            <p>Muy Largo</p>
+                        </div>
+                        <div class="infoAtaque3">
+                            <p>Normal</p>
+                        </div>
+                    </div>
+                    <div class="super">
+                        <h4 class="titleSuper1">
+                            SÚPER
+                        </h4>
+                        <h4 class="titleSuper2 gus">
+                            SABUESO TENEBROSO
+                        </h4>
+                        <p class="parrafoSuper">
+                            Gus usa a Tenebroso (su mejor amigo y una de sus creaciones con globos), para formar un escudo a su alrededor o de alguno de sus aliados.
+                        </p>
+                        <h4 class="tituloSuper1 escudo">Escudo</h4>
+                        <h4 class="tituloSuper2">Alcance</h4>
+                        <div class="infoSuper1">
+                            <p>3640</p>
+                        </div>
+                        <div class="infoSuper2">
+                            <p>Muy Largo</p>
                         </div>
                     </div>
                 </div>

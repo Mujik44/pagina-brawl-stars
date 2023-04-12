@@ -14,6 +14,7 @@
     <meta name="keywords" content="BRAWL, STARS, SUPERCELL, BATTLE, ROYAL, BRAWLERS, ATRAPA GEMAS, SUPERVIVENCIA, BALON BRAWL, CAZAESTELAR, ZONA RESTRINGIDA, ATRACO, MULTIMEDIA, TEMPORADAS, ACTUALIZACIONES">
 </head>
 <body>
+    <!-- BARRA DE NAVEGACION -->
     <header>
         <nav>
             <div>
@@ -42,10 +43,12 @@
                     <a href="./actualizaciones.html">ACTUALIZACIONES</a>
                 </li>
             </ul>
+            <!-- BOTON HAMBURGUESA NAVBAR -->
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
             </div>
         </nav>
+        <!-- MENU DESPLEGABLE NAVBAR -->
         <div class="menuDesplegable">
             <li>
                 <a href="../index.html">INICIO</a>
@@ -81,10 +84,50 @@
             : 'fa-solid fa-bars'
         }
     </script>
-    
+    <!-- SUMARIO -->
+    <section class="barraSumario">
+        <!-- BOTON DEL SUMARIO -->
+        <div class="botonSumario">
+            <i class="fa-solid fa-book" style="color: #ffffff;"></i>
+        </div>
+    </section>
+    <!-- MENU DESPLEGABLE SUMARIO -->
+    <div class="sumarioDesplegable">
+        <li>
+            <a href="#titlePrinc">ACTUALIZACIONES</a>
+            <ul>
+                <li>
+                    <a href="#temp17">#MisterioEnStarrPark - 2 ABR 2023</a>
+                </li>
+                <li>
+                    <a href="#temp16">#Chuchelandia - 26 ENE 2023</a>
+                </li>
+                <li>
+                    <a href="#temp15">#EstaciónFantasmal - 15 NOV 2022</a>
+                </li>
+                <li>
+                    <a href="#temp14">#LaFábricaDeRobots - 19 SEPT 2022</a>
+                </li>
+            </ul>
+        </li>
+    </div>
+    <script>
+        const botonSum = document.querySelector('.botonSumario')
+        const botonSumIcon = document.querySelector('.botonSumario i')
+        const sumDespliegue = document.querySelector('.sumarioDesplegable')
+
+        botonSum.onclick = function (){
+            sumDespliegue.classList.toggle('open')
+            const isOpen = sumDespliegue.classList.contains('open')
+
+            botonSumIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-book'
+        }
+    </script>
     <main>
         <img class="portada" src="../img/loading_screen_05.png.png" alt="portada de actualizaciones">
-        <h1>
+        <h1 id="titlePrinc">
             ACTUALIZACIONES
         </h1>
     </main>
@@ -96,7 +139,7 @@
                     <img src="../img/misteriostarkparkbanner.png" alt="temporada misterios en star park">
                 </div>
                 <div class="tituloAct">
-                    <h4>
+                    <h4 id="temp17">
                         2 ABR 2023
                     </h4>
                     <h4 class="nombreAct">
@@ -126,7 +169,7 @@
                     <img src="../img/candylandbanner.png" alt="temporada misterios en star park">
                 </div>
                 <div class="tituloAct">
-                    <h4>
+                    <h4 id="temp16">
                         26 ENE 2023
                     </h4>
                     <h4 class="nombreAct">
@@ -157,7 +200,7 @@
                     <img src="../img/estacionfantasmalbanner.png" alt="temporada misterios en star park">
                 </div>
                 <div class="tituloAct">
-                    <h4>
+                    <h4 id="temp15">
                         15 NOV 2022
                     </h4>
                     <h4 class="nombreAct">
@@ -187,7 +230,7 @@
                     <img src="../img/robotfactorybanner.png" alt="temporada misterios en star park">
                 </div>
                 <div class="tituloAct">
-                    <h4>
+                    <h4 id="temp14">
                         19 SEPT 2022
                     </h4>
                     <h4 class="nombreAct">
