@@ -21,110 +21,32 @@
                 grid-template-columns: 20% 1fr 1fr;
                 grid-template-rows: 110px auto;
                 .salud{
-                    .tituloSalud1{
-                        font-size: 20px;
-                        left: -1.5rem;
-                    }
-                    .tituloSalud2{
-                        font-size: 20px;
-                        left: -0.4rem;
-                    }
                     .infoSalud{
-                        margin-top: -30px;
+                        margin-top: -60px;
+                        height: 100%;
                     }
                 }
                 .ataque{
-                    grid-template-rows: 20px 20px 100px 20px 50px 20px 50px;
-                    .titleAtaque1{
-                        margin-left: -7rem;
+                    grid-template-rows: 20px 20px 150px 20px 50px 20px 50px;
+                    .rico, .jacky1{
+                        top: 5px;
                     }
-                    .titleAtaque2{
-                        margin-left: -4rem;
-                    }
-                    .nita{
-                        margin-left: -95px
-                    }
-                    .colt{
-                        margin-left: -65px
-                    }
-                    .bull{
-                        margin-left: -24px
-                    }
-                    .brock{
-                        margin-left: -120px
-                    }
-                    .primo{
-                        margin-left: -20px
-                    }
-                    .barley{
-                        margin-left: -55px
-                    }
-                    .poco{
-                        margin-left: -90px
-                    }
-                    .rosa{
-                        margin-left: 3px;
-                    }
-                    .tituloAtaque1{
-                        left: -25px;
-                    }
-                    .tituloAtaque2{
-                        left: -17px;
-                    }
-                    .tituloAtaque3{
-                        left: -20px;
+                    .saludTorreta{
+                        top: -5px;
+                        line-height: 85%;
                     }
                 }
                 .super{
-                    grid-template-rows: 20px 20px 170px 20px 50px;
-                    .titleSuper1{
-                        margin-left: -8.5rem;
-                    }
-                    .titleSuper2{
-                        margin-left: -4rem;
-                    }
-                    .nita{
-                        margin-left: -1rem;
-                    }
-                    .colt{
-                        margin-top: 5px;
-                        margin-left: 0.5rem;
-                    }
-                    .bull{
-                        margin-left: -4.7rem;
-                    }
-                    .brock{
-                        margin-top: 5px;
-                        margin-left: 0.5rem;
-                    }
-                    .primo{
-                        margin-left: -0.5rem;
-                    }
-                    .barley{
-                        margin-top: 7px;
-                        margin-left: 0.5rem;
-                    }
-                    .poco{
-                        margin-top: 7px;
-                        margin-left: 0.5rem;
-                    }
-                    .rosa{
-                        margin-left: -1.8rem;
-                    }
-                    .tituloSuper1{
-                        left: -25px;
-                    }
-                    .tituloSuper2{
-                        left: -16px;
-                    }
-                    .curacion{
-                        left: -13px;
-                    }
-                    .reduccion{
-                        left: -10px;
+                    grid-template-rows: 20px 20px 220px 20px 50px;
+                    .colt, .barley, .carl, .jacky2, .gus{
+                        top: 5px;
                     }
                 }
             }
+        }
+        .rosa{
+            position: relative;
+            left: 52%;
         }
     }
 

@@ -1,8 +1,28 @@
 @media screen and (min-width:576px){
+    /*-------MENU DESPLEGABLE-------*/
     .menuDesplegable{
         left: auto;
         width: 250px;
         top: 80px;
+    }
+
+    /*-------SUMARIO-------*/
+    .sumarioDesplegable{
+        left: auto;
+        width: 350px;
+        right: 3rem;
+        li{
+            a{
+                font-size: 17px;
+            }
+            ul{
+                li{
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
     }
 
     /*-------INICIO-------*/
@@ -21,13 +41,10 @@
                 grid-template-rows: 200px auto;
                 .salud{
                     grid-template-rows: repeat(4, auto);
-                    .tituloSalud1{
-                        left: -4rem;
-                        font-size: 23px;
-                    }
-                    .tituloSalud2{
-                        left: -2.8rem;
-                        font-size: 23px;
+                    .contSalud1{
+                        .tituloSalud1{
+                            font-size: 23px;
+                        }
                     }
                     .infoSalud{
                         margin-top: -50px;
@@ -41,44 +58,8 @@
                     grid-row: 2/3;
                     grid-template-rows: 20px 20px 130px 20px 50px 20px 50px;
                     margin: 20px 0;
-                    .titleAtaque1{
-                        margin-left: -8rem;
-                    }
-                    .titleAtaque2{
-                        margin-left: -5rem;
-                    }
-                    .nita{
-                        margin-left: -7rem;
-                    }
-                    .colt{
-                        margin-left: -5rem;
-                    }
-                    .bull{
-                        margin-left: -2.5rem;
-                    }
-                    .brock{
-                        margin-left: -8.5rem;
-                    }
-                    .primo{
-                        margin-left: -2rem;
-                    }
-                    .barley{
-                        margin-left: -4.5rem;
-                    }
-                    .poco{
-                        margin-left: -6.5rem;
-                    }
-                    .rosa{
-                        margin-left: -1rem;
-                    }
-                    .tituloAtaque1{
-                        left: -30px;
-                    }
-                    .tituloAtaque2{
-                        left: -20px;
-                    }
-                    .tituloAtaque3{
-                        left: -30px;
+                    .jacky1{
+                        top: 5px;
                     }
                 }
                 .super{
@@ -86,51 +67,12 @@
                     grid-row: 2/3;
                     grid-template-rows: 20px 20px 200px 20px 50px;
                     margin: 20px 0;
-                    .titleSuper1{
-                        margin-left: -8rem;
+                    .barley, .carl, .jacky2, .gus{
+                        top: 5px;
                     }
-                    .titleSuper2{
-                        margin-left: -3.5rem;
-                    }
-                    .nita{
-                        margin-left: -0.5rem;
-                    }
-                    .colt{
-                        margin-top: 10px;
-                        margin-left: 1rem;
-                    }
-                    .bull{
-                        margin-left: -4.5rem;
-                    }
-                    .brock{
-                        margin-top: 10px;
-                        margin-left: 1rem;
-                    }
-                    .primo{
-                        margin-left: 0rem;
-                    }
-                    .barley{
-                        margin-top: 10px;
-                        margin-left: 1rem;
-                    }
-                    .poco{
-                        margin-top: 10px;
-                        margin-left: 1rem;
-                    }
-                    .rosa{
-                        margin-left: -1.5rem;
-                    }
-                    .tituloSuper1{
-                        left: -25px;
-                    }
-                    .curacion{
-                        left: -15px;
-                    }
-                    .reduccion{
-                        left: -10px;
-                    }
-                    .tituloSuper2{
-                        left: -15px;
+                    .masDaño{
+                        line-height: 85%;
+                        bottom: 5px;
                     }
                 }
             }

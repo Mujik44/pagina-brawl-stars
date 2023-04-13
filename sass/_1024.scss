@@ -98,106 +98,20 @@
             .estadisticasBrawl{
                 grid-template-columns: 20% 1fr 1fr;
                 .salud{
-                    .tituloSalud1{
-                        font-size: 20px;
-                        left: -3rem;
-                    }
-                    .tituloSalud2{
-                        font-size: 20px;
-                        left: -1.9rem;
-                    }
                     .infoSalud{
                         margin-top: -20px;
                     }
                 }
                 .ataque{
                     grid-template-rows: 20px 20px 85px 20px 50px 20px 50px;
-                    .titleAtaque1{
-                        margin-left: -14rem;
-                    }
-                    .titleAtaque2{
-                        margin-left: -11rem;
-                    }
-                    .nita{
-                        margin-left: -210px
-                    }
-                    .colt{
-                        margin-left: -175px
-                    }
-                    .bull{
-                        margin-left: -135px
-                    }
-                    .brock{
-                        margin-left: -230px
-                    }
-                    .primo{
-                        margin-left: -130px
-                    }
-                    .barley{
-                        margin-left: -165px
-                    }
-                    .poco{
-                        margin-left: -200px
-                    }
-                    .rosa{
-                        margin-left: -110px;
-                    }
-                    .tituloAtaque1{
-                        left: -50px;
-                    }
-                    .tituloAtaque2{
-                        left: -40px;
-                    }
-                    .tituloAtaque3{
-                        left: -70px;
+                    .rico, .jacky1{
+                        top: -10px;
                     }
                 }
                 .super{
                     grid-template-rows: 20px 20px 155px 20px 50px;
-                    .titleSuper1{
-                        margin-left: -15.5rem;
-                    }
-                    .titleSuper2{
-                        margin-left: -11rem;
-                    }
-                    .nita{
-                        margin-left: -8rem;
-                    }
-                    .colt{
-                        margin-top: -22px;
-                        margin-left: -5rem;
-                    }
-                    .bull{
-                        margin-left: -11.7rem;
-                    }
-                    .brock{
-                        margin-left: -6.5rem;
-                    }
-                    .primo{
-                        margin-left: 7.5rem;
-                    }
-                    .barley{
-                        margin-top: -22px;
-                        margin-left: -4.7rem;
-                    }
-                    .poco{
-                        margin-top: -22px;
-                        margin-left: -6.3rem;
-                    }
-                    .rosa{
-                        margin-left: -8.8rem;
-                    }
-                    .tituloSuper1{
-                        left: -50px;
-                    }
-                    .tituloSuper2{
-                        left: -40px;
-                    }
-                    .curacion{
-                        left: -38px;
-                    }
-                    .reduccion{
-                        left: -35px;
+                    .barley, .carl, .jacky2, .gus{
+                        top: -10px;
                     }
                 }
             }

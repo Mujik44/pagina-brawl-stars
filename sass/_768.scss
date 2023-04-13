@@ -102,12 +102,6 @@
                     grid-column: 1/2;
                     grid-row: 2/3;
                     height: 79%;
-                    .tituloSalud1{
-                        left: -2rem;
-                    }
-                    .tituloSalud2{
-                        left: -0.9rem;
-                    }
                     .infoSalud{
                         height: 150%;
                         margin-top: -30px;
@@ -116,41 +110,18 @@
                 .ataque{
                     grid-column: 2/3;
                     grid-row: 1/3;
+                    .jacky1, .rico{
+                        top: 5px;
+                    }
                 }
                 .super{
                     grid-column: 3/4;
                     grid-row: 1/3;
-                    .titleSuper1{
-                        margin-left: -9.5rem;
+                    .barley, .gus{
+                        top: 5px;
                     }
-                    .titleSuper2{
-                        margin-left: -5rem;
-                    }
-                    .nita{
-                        margin-left: -2rem;
-                    }
-                    .colt{
-                        margin-left: 0.3rem;
-                    }
-                    .bull{
-                        margin-left: -5.7rem;
-                    }
-                    .brock{
-                        margin-top: -22px;
-                        margin-left: -0.5rem;
-                    }
-                    .primo{
-                        margin-left: 1.5rem;
-                    }
-                    .barley{
-                        margin-left: 0.3rem;
-                    }
-                    .poco{
-                        margin-top: -22px;
-                        margin-left: -0.3rem;
-                    }
-                    .rosa{
-                        margin-left: -3rem;
+                    .masDaño{
+                        top: -5px;
                     }
                 }
             }

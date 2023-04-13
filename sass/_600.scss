@@ -3,18 +3,17 @@
     .contenedorPersonajes{
         .contBrawl{
             .estadisticasBrawl{
+                .ataque{
+                    .jacky1{
+                        top: -10px;
+                    }
+                }
                 .super{
-                    .colt{
-                        margin-left: 1.3rem;
+                    .barley, .gus{
+                        top: -10px;
                     }
-                    .brock{
-                        margin-top: -20px;
-                    }
-                    .barley{
-                        margin-left: 1.3rem;
-                    }
-                    .poco{
-                        margin-top: -20px;
+                    .masDaño{
+                        top: 0px;
                     }
                 }
             }
