@@ -67,8 +67,13 @@ p{
     @include sizes(100px, 100px)
 }
 
-.portada{
-    @include sizes(100%, auto);
+.contPortada{
+    @include sizes(100%, 30vh);
+    overflow: hidden;
+    .portada{
+        @include sizes(100%, 100%);
+        object-fit: cover;
+    }
 }
 
 /*-------NAVBAR-------*/
@@ -84,6 +89,21 @@ nav{
     }
     img{
         height: 50px;
+    }
+    .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+    }
+    .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
     ul{
         padding-left: 2rem;
@@ -107,11 +127,13 @@ nav{
     }
 } 
 header{
-    position: relative;
+    position: sticky;
+    top: 0%;
     padding: 0 2rem;
     height: 70px;
     display: grid;
     align-items: center;
+    z-index: 250;
 }
 
 /*-------SUMARIO-------*/
@@ -168,6 +190,13 @@ header{
             }
         }
     }
+}
+.sumarioDesplegable::-webkit-scrollbar{
+    width: 7px;
+}
+.sumarioDesplegable::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 5px;
 }
 .sumarioDesplegable.open{
     max-height: 300px;

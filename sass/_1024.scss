@@ -1,5 +1,10 @@
 @media screen and (min-width:1024px){
     
+    /*-------PORTADA-------*/
+    .contPortada{
+        @include sizes(100%, 57vh);
+    }
+
     /*-------NAVBAR-------*/
     nav{
         ul{

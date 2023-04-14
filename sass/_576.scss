@@ -1,4 +1,10 @@
 @media screen and (min-width:576px){
+
+    /*-------PORTADA-------*/
+    .contPortada{
+        @include sizes(100%, 48vh);
+    }
+
     /*-------MENU DESPLEGABLE-------*/
     .menuDesplegable{
         left: auto;

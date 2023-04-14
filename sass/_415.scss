@@ -1,5 +1,10 @@
 @media screen and (min-width:416px) {
 
+    /*-------PORTADA-------*/
+    .contPortada{
+        @include sizes(100%, 34vh);
+    }
+
     /*-------INICIO-------*/
     .contenedorMain{
         grid-template-rows: 100px 240px 130px 130px;

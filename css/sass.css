@@ -64,9 +64,16 @@ p {
   width: 100px;
 }
 
-.portada {
-  height: auto;
+.contPortada {
+  height: 30vh;
   width: 100%;
+  overflow: hidden;
+}
+.contPortada .portada {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*-------NAVBAR-------*/
@@ -84,6 +91,17 @@ nav .logoBrawl {
 }
 nav img {
   height: 50px;
+}
+nav .hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+nav .hvr-grow:hover, nav .hvr-grow:focus, nav .hvr-grow:active {
+  transform: scale(1.1);
 }
 nav ul {
   padding-left: 2rem;
@@ -107,11 +125,13 @@ nav .toggle_btn {
 }
 
 header {
-  position: relative;
+  position: sticky;
+  top: 0%;
   padding: 0 2rem;
   height: 70px;
   display: grid;
   align-items: center;
+  z-index: 250;
 }
 
 /*-------SUMARIO-------*/
@@ -168,6 +188,15 @@ header {
   font-size: 12px;
 }
 
+.sumarioDesplegable::-webkit-scrollbar {
+  width: 7px;
+}
+
+.sumarioDesplegable::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 5px;
+}
+
 .sumarioDesplegable.open {
   max-height: 300px;
 }
@@ -185,6 +214,7 @@ header {
   overflow: hidden;
   transition: max-height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.3);
+  z-index: 150;
 }
 .menuDesplegable li {
   padding: 0.7rem;
@@ -248,6 +278,18 @@ header {
   height: 50px;
   width: auto;
   margin: 10px;
+}
+.contenedorMain .contenidoMain .parrafoMain .hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+}
+.contenedorMain .contenidoMain .parrafoMain .hvr-grow-shadow:hover, .contenedorMain .contenidoMain .parrafoMain .hvr-grow-shadow:focus, .contenedorMain .contenidoMain .parrafoMain .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
 .contenedorMain .carouselMain {
   height: auto;
@@ -393,7 +435,6 @@ header {
   height: 160px;
   width: 90%;
   border-radius: 6px;
-  background-color: white;
   align-items: center;
 }
 .contenedorJuegos .juego .image {
@@ -404,18 +445,45 @@ header {
 }
 .contenedorJuegos .juego .textoJuegos {
   display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 .contenedorJuegos .juego .textoJuegos .tituloJuegos {
-  color: black;
+  color: white;
   margin: 0;
   font-weight: bolder;
-  margin-top: 10px;
   font-size: 12px;
 }
 .contenedorJuegos .juego .textoJuegos .parrafoJuegos {
   font-size: 11px;
   text-align: left;
   margin: 0 10px 10px 10px;
+  color: white;
+}
+.contenedorJuegos .atrapaGemas {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/map_4.png);
+  background-position: -78% 0;
+}
+.contenedorJuegos .supervivencia {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/map_2.png.png);
+  background-position: -58% 0;
+}
+.contenedorJuegos .balonBrawl {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/map_16.png.png);
+  background-position: -100% 0;
+}
+.contenedorJuegos .cazaEstelar {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/map_15.png);
+  background-position: 10% 0;
+}
+.contenedorJuegos .zonaRestringida {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/map_13.png);
+  background-position: 38% 0;
+}
+.contenedorJuegos .atraco {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/map_5.png);
+  background-position: 85% 0;
 }
 
 /* -------PERSONAJES------- */
@@ -909,6 +977,11 @@ header {
 
 /* -------RESPONSIVE-------*/
 @media screen and (min-width: 416px) {
+  /*-------PORTADA-------*/
+  .contPortada {
+    height: 34vh;
+    width: 100%;
+  }
   /*-------INICIO-------*/
   .contenedorMain {
     grid-template-rows: 100px 240px 130px 130px;
@@ -968,6 +1041,11 @@ header {
   }
 }
 @media screen and (min-width: 455px) {
+  /*-------PORTADA-------*/
+  .contPortada {
+    height: 37vh;
+    width: 100%;
+  }
   /*-------INICIO-------*/
   .contenedorMain {
     grid-template-rows: 100px 200px 130px 130px;
@@ -1035,6 +1113,11 @@ header {
   }
 }
 @media screen and (min-width: 576px) {
+  /*-------PORTADA-------*/
+  .contPortada {
+    height: 48vh;
+    width: 100%;
+  }
   /*-------MENU DESPLEGABLE-------*/
   .menuDesplegable {
     left: auto;
@@ -1207,6 +1290,11 @@ header {
   }
 }
 @media screen and (min-width: 768px) {
+  /*-------PORTADA-------*/
+  .contPortada {
+    height: 42vh;
+    width: 100%;
+  }
   /*-------INICIO-------*/
   .contenedorMain {
     grid-template-rows: 100px 210px 160px 160px;
@@ -1428,6 +1516,11 @@ header {
   }
 }
 @media screen and (min-width: 1024px) {
+  /*-------PORTADA-------*/
+  .contPortada {
+    height: 57vh;
+    width: 100%;
+  }
   /*-------NAVBAR-------*/
   nav ul {
     display: block;
@@ -1655,6 +1748,11 @@ header {
   }
 }
 @media screen and (min-width: 1366px) {
+  /*-------PORTADA-------*/
+  .contPortada {
+    height: 77vh;
+    width: 100%;
+  }
   /*-------NOSOTROS-------*/
   .contenedorServidores .textoServidores {
     width: 530px;
