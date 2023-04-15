@@ -92,17 +92,6 @@ nav .logoBrawl {
 nav img {
   height: 50px;
 }
-nav .hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transition-duration: 0.3s;
-  transition-property: transform;
-}
-nav .hvr-grow:hover, nav .hvr-grow:focus, nav .hvr-grow:active {
-  transform: scale(1.1);
-}
 nav ul {
   padding-left: 2rem;
   display: flex;
@@ -153,6 +142,10 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 200;
+}
+.barraSumario .hvr-rectangle-out:before {
+  border-radius: 50%;
+  background: rgb(242, 198, 60);
 }
 
 .sumarioDesplegable {
@@ -278,18 +271,6 @@ header {
   height: 50px;
   width: auto;
   margin: 10px;
-}
-.contenedorMain .contenidoMain .parrafoMain .hvr-grow-shadow {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transition-duration: 0.3s;
-  transition-property: box-shadow, transform;
-}
-.contenedorMain .contenidoMain .parrafoMain .hvr-grow-shadow:hover, .contenedorMain .contenidoMain .parrafoMain .hvr-grow-shadow:focus, .contenedorMain .contenidoMain .parrafoMain .hvr-grow-shadow:active {
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
 }
 .contenedorMain .carouselMain {
   height: auto;

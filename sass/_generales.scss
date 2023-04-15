@@ -90,21 +90,6 @@ nav{
     img{
         height: 50px;
     }
-    .hvr-grow {
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-    }
-    .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
     ul{
         padding-left: 2rem;
         display: flex;
@@ -146,7 +131,7 @@ header{
     transform: translateX(3%);
     z-index: 200;
     .botonSumario{
-        background-color: #f01919;
+        background-color:#f01919;
         border-radius: 50%;
         cursor: pointer;
         @include sizes(50px, 50px);
@@ -154,6 +139,10 @@ header{
         justify-content: center;
         align-items: center;
         z-index: 200;
+    }
+    .hvr-rectangle-out:before{
+        border-radius: 50%;
+        background: rgba(242,198,60,255);
     }
 }
 .sumarioDesplegable{
