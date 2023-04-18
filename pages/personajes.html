@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- HOVER.CSS -->
+    <link rel="stylesheet" href="../css/hover.css">
     <!-- CSS - SASS -->
     <link rel="stylesheet" href="../css/sass.css">
+    <!-- WOW.JS -->
+    <script src="../js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
     <title>Brawl Stars | Personajes</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon-16x16.png">
     <meta name="description" content="Descarga Brawl Stars y conoce todo acerca del juego">
@@ -87,7 +96,7 @@
     <!-- SUMARIO -->
     <section class="barraSumario">
         <!-- BOTON DEL SUMARIO -->
-        <div class="botonSumario">
+        <div class="botonSumario hvr-rectangle-out">
             <i class="fa-solid fa-book" style="color: #ffffff;"></i>
         </div>
     </section>
@@ -178,21 +187,25 @@
             : 'fa-solid fa-book'
         }
     </script>
-    <main>
+    <main>  
         <div class="contPortada"><img class="portada" src="../img/portada-personajes2.jpg" alt="portada de personajes"></div>
         <div class="mainPersonajes">
             <h1>
                 PERSONAJES
             </h1>
-            <p>
-                Lista de todos los brawlers en Brawl Stars. Checa sus estadísticas y aprende más de ellos.
-            </p>
+            <div class="contParrafo1">
+                <p>
+                    Lista de todos los brawlers en Brawl Stars. Checa sus estadísticas y aprende más de ellos.
+                </p>
+            </div>
             <h2 id="titlePrinc">
                 BRAWLERS Y SUS CARACTERISTICAS
             </h2>
-            <p>
-                No todos los brawlers se consideran iguales; eso sí, sea cual sea su calidad, todos son especiales y únicos a su manera. <br> A la hora de elegir un brawler, comprobar sus estadísticas y habilidades es más importante que su calidad, puesto que así te aseguras de escoger el que mejor se adapta al modo en el que juegas y a los demás miembros del equipo. Exiten 6 tipos de brawlers en el juego:
-            </p>
+            <div class="contParrafo2">
+                <p>
+                    No todos los brawlers se consideran iguales; eso sí, sea cual sea su calidad, todos son especiales y únicos a su manera. <br> A la hora de elegir un brawler, comprobar sus estadísticas y habilidades es más importante que su calidad, puesto que así te aseguras de escoger el que mejor se adapta al modo en el que juegas y a los demás miembros del equipo. Exiten 6 tipos de brawlers en el juego:
+                </p>
+            </div>
         </div>
     </main>
 
@@ -221,6 +234,118 @@
                             <p>Normal</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 shellyG1"><img src="../img/gadgets/shelly/GD_shelly_01.png" alt="primer gadget de shelly"></div>
+                            <div class="contGadget2 shellyG2"><img src="../img/gadgets/shelly/GD_shelly_02.png" alt="segundo gadget de shelly"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 shellyInfog1">
+                        <h4>PASO AL FRENTE</h4>
+                        <p>Shelly arremete hacia adelante ¡con una velocidad envidiable! <br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 shellyInfog2">
+                        <h4>TIRO AL PLATO</h4>
+                        <p>Durante los siguientes 5 segundos, ataque principal de Shelly se centra en disparar a una zona más reducida con un alcance más largo. <br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 shellyE1"><img src="../img/estelares/shelly/SP_shelly_01.png" alt="primera habilidad estelar de shelly"></div>
+                            <div class="contEstelar2 shellyE2"><img src="../img/estelares/shelly/SP_shelly_02.png" alt="segunda habilidad estelar de shelly"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 shellyInfoe1">
+                        <h4>CHOQUE MATE</h4>
+                        <p>¡Las superbalas de Shelly ralentizan a los enemigos durante 4,5 segundos!</p>
+                    </div>
+                    <div class="infoEstelar2 shellyInfoe2">
+                        <h4>PRIMERO AUXILIOS</h4>
+                        <p>Cuando la salud de Shelly está por debajo del 40%, recupera 2000 puntos de salud automáticamente. La habilidad tarda 15 segundos en recargarse.</p>
+                    </div>
+                    <script>
+                        const gadgetShelly1 = document.querySelector('.shellyG1')
+                        const gadgetShelly2 = document.querySelector('.shellyG2')
+                        const estelarShelly1 = document.querySelector('.shellyE1')
+                        const estelarShelly2 = document.querySelector('.shellyE2')
+                        const infogShelly1 = document.querySelector('.shellyInfog1')
+                        const infogShelly2 = document.querySelector('.shellyInfog2')
+                        const infoeShelly1 = document.querySelector('.shellyInfoe1')
+                        const infoeShelly2 = document.querySelector('.shellyInfoe2')
+                
+                        gadgetShelly1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetShelly1.classList.toggle('open')
+                            infogShelly1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetShelly2.classList.remove('open')
+                            infogShelly2.classList.remove('open')
+                            estelarShelly1.classList.remove('open')
+                            infoeShelly1.classList.remove('open')
+                            estelarShelly2.classList.remove('open')
+                            infoeShelly2.classList.remove('open')
+                
+                            const isOpen1 = infogShelly1.classList.contains('open')
+                            const isOpen2 = gadgetShelly1.classList.contains('open')
+                        }
+                
+                        gadgetShelly2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetShelly2.classList.toggle('open')
+                            infogShelly2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetShelly1.classList.remove('open')
+                            infogShelly1.classList.remove('open')
+                            estelarShelly1.classList.remove('open')
+                            infoeShelly1.classList.remove('open')
+                            estelarShelly2.classList.remove('open')
+                            infoeShelly2.classList.remove('open')
+                
+                            const isOpen1 = infogShelly2.classList.contains('open')
+                            const isOpen2 = gadgetShelly2.classList.contains('open')
+                        }
+                
+                        estelarShelly1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarShelly1.classList.toggle('open')
+                            infoeShelly1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetShelly1.classList.remove('open')
+                            infogShelly1.classList.remove('open')
+                            gadgetShelly2.classList.remove('open')
+                            infogShelly2.classList.remove('open')
+                            estelarShelly2.classList.remove('open')
+                            infoeShelly2.classList.remove('open')
+                
+                            const isOpen1 = infoeShelly1.classList.contains('open')
+                            const isOpen2 = estelarShelly1.classList.contains('open')
+                        }
+                
+                        estelarShelly2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarShelly2.classList.toggle('open')
+                            infoeShelly2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetShelly1.classList.remove('open')
+                            infogShelly1.classList.remove('open')
+                            gadgetShelly2.classList.remove('open')
+                            infogShelly2.classList.remove('open')
+                            estelarShelly1.classList.remove('open')
+                            infoeShelly1.classList.remove('open')
+                
+                            const isOpen1 = infoeShelly2.classList.contains('open')
+                            const isOpen2 = estelarShelly2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">PERDIGONES</h4></div>
@@ -281,6 +406,118 @@
                             <p>Normal</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 nitaG1"><img src="../img/gadgets/nita/GD_nita_01.png" alt="primer gadget de nita"></div>
+                            <div class="contGadget2 nitaG2"><img src="../img/gadgets/nita/GD_nita_02.png" alt="segundo gadget de nita"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 nitaInfog1">
+                        <h4>GARRAS DE OSO</h4>
+                        <p>El oso de Nita monta en cólera y se tira al suelo. Al hacerlo, aturde a los rivales que se encuentren en el área de efecto.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 nitaInfog2">
+                        <h4>PIEL PROTECTORA</h4>
+                        <p>El oso de Nita consigue un escudo que lo protege un 35% de daño durante 3 segundos.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 nitaE1"><img src="../img/estelares/nita/SP_nita_01.png" alt="primera habilidad estelar de nita"></div>
+                            <div class="contEstelar2 nitaE2"><img src="../img/estelares/nita/SP_nita_02.png" alt="segunda habilidad estelar de nita"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 nitaInfoe1">
+                        <h4>HERMANO OSO</h4>
+                        <p>Nita recupera 800 puntos de salud cuando su oso golpea a un brawler enemigo. Cuando es Nita quien inflinge el daño, su oso recupera 800 puntos de salud.</p>
+                    </div>
+                    <div class="infoEstelar2 nitaInfoe2">
+                        <h4>ZARPAZO VELOZ</h4>
+                        <p>El oso de Nita ataca más rápido. El tiempo entre los zarpazos se reduce en un 60%.</p>
+                    </div>
+                    <script>
+                        const gadgetNita1 = document.querySelector('.nitaG1')
+                        const gadgetNita2 = document.querySelector('.nitaG2')
+                        const estelarNita1 = document.querySelector('.nitaE1')
+                        const estelarNita2 = document.querySelector('.nitaE2')
+                        const infogNita1 = document.querySelector('.nitaInfog1')
+                        const infogNita2 = document.querySelector('.nitaInfog2')
+                        const infoeNita1 = document.querySelector('.nitaInfoe1')
+                        const infoeNita2 = document.querySelector('.nitaInfoe2')
+                
+                        gadgetNita1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetNita1.classList.toggle('open')
+                            infogNita1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetNita2.classList.remove('open')
+                            infogNita2.classList.remove('open')
+                            estelarNita1.classList.remove('open')
+                            infoeNita1.classList.remove('open')
+                            estelarNita2.classList.remove('open')
+                            infoeNita2.classList.remove('open')
+                
+                            const isOpen1 = infogNita1.classList.contains('open')
+                            const isOpen2 = gadgetNita1.classList.contains('open')
+                        }
+                
+                        gadgetNita2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetNita2.classList.toggle('open')
+                            infogNita2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetNita1.classList.remove('open')
+                            infogNita1.classList.remove('open')
+                            estelarNita1.classList.remove('open')
+                            infoeNita1.classList.remove('open')
+                            estelarNita2.classList.remove('open')
+                            infoeNita2.classList.remove('open')
+                
+                            const isOpen1 = infogNita2.classList.contains('open')
+                            const isOpen2 = gadgetNita2.classList.contains('open')
+                        }
+                
+                        estelarNita1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarNita1.classList.toggle('open')
+                            infoeNita1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetNita1.classList.remove('open')
+                            infogNita1.classList.remove('open')
+                            gadgetNita2.classList.remove('open')
+                            infogNita2.classList.remove('open')
+                            estelarNita2.classList.remove('open')
+                            infoeNita2.classList.remove('open')
+                
+                            const isOpen1 = infoeNita1.classList.contains('open')
+                            const isOpen2 = estelarNita1.classList.contains('open')
+                        }
+                
+                        estelarNita2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarNita2.classList.toggle('open')
+                            infoeNita2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetNita1.classList.remove('open')
+                            infogNita1.classList.remove('open')
+                            gadgetNita2.classList.remove('open')
+                            infogNita2.classList.remove('open')
+                            estelarNita1.classList.remove('open')
+                            infoeNita1.classList.remove('open')
+                
+                            const isOpen1 = infoeNita2.classList.contains('open')
+                            const isOpen2 = estelarNita2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1">
                             <h4 class="titleAtaque1">ATAQUE</h4>
@@ -341,6 +578,118 @@
                             <p>Normal</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 coltG1"><img src="../img/gadgets/colt/GD_colt_01.png" alt="primer gadget de colt"></div>
+                            <div class="contGadget2 coltG2"><img src="../img/gadgets/colt/GD_colt_02.png" alt="segundo gadget de colt"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 coltInfog1">
+                        <h4>RECARGA RAPIDA</h4>
+                        <p>Colt recarga 2 de munición automaticaménte.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 coltInfog2">
+                        <h4>BALA DE PLATA</h4>
+                        <p>El siguiente ataque de Colt es un tiro certero que atraviesa tanto obstáculos como a rivales e inflinge la misma cantidad de daño que 2 de sus balas normales.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 coltE1"><img src="../img/estelares/colt/SP_colt_01.png" alt="primer gadget de colt"></div>
+                            <div class="contEstelar2 coltE2"><img src="../img/estelares/colt/SP_colt_02.png" alt="segundo gadget de colt"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 coltInfoe1">
+                        <h4>BOTAS VELOCES</h4>
+                        <p>La velocidad de movimiento de Colt aumenta en un 13%.</p>
+                    </div>
+                    <div class="infoEstelar2 coltInfoe2">
+                        <h4>PISTOLETAZO</h4>
+                        <p>La velocidad de las balas y el alcance del ataque de Colt aumenta un 11%.</p>
+                    </div>
+                    <script>
+                        const gadgetColt1 = document.querySelector('.coltG1')
+                        const gadgetColt2 = document.querySelector('.coltG2')
+                        const estelarColt1 = document.querySelector('.coltE1')
+                        const estelarColt2 = document.querySelector('.coltE2')
+                        const infogColt1 = document.querySelector('.coltInfog1')
+                        const infogColt2 = document.querySelector('.coltInfog2')
+                        const infoeColt1 = document.querySelector('.coltInfoe1')
+                        const infoeColt2 = document.querySelector('.coltInfoe2')
+                
+                        gadgetColt1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetColt1.classList.toggle('open')
+                            infogColt1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetColt2.classList.remove('open')
+                            infogColt2.classList.remove('open')
+                            estelarColt1.classList.remove('open')
+                            infoeColt1.classList.remove('open')
+                            estelarColt2.classList.remove('open')
+                            infoeColt2.classList.remove('open')
+                
+                            const isOpen1 = infogColt1.classList.contains('open')
+                            const isOpen2 = gadgetColt1.classList.contains('open')
+                        }
+                
+                        gadgetColt2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetColt2.classList.toggle('open')
+                            infogColt2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetColt1.classList.remove('open')
+                            infogColt1.classList.remove('open')
+                            estelarColt1.classList.remove('open')
+                            infoeColt1.classList.remove('open')
+                            estelarColt2.classList.remove('open')
+                            infoeColt2.classList.remove('open')
+                
+                            const isOpen1 = infogColt2.classList.contains('open')
+                            const isOpen2 = gadgetColt2.classList.contains('open')
+                        }
+                
+                        estelarColt1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarColt1.classList.toggle('open')
+                            infoeColt1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetColt1.classList.remove('open')
+                            infogColt1.classList.remove('open')
+                            gadgetColt2.classList.remove('open')
+                            infogColt2.classList.remove('open')
+                            estelarColt2.classList.remove('open')
+                            infoeColt2.classList.remove('open')
+                
+                            const isOpen1 = infoeColt1.classList.contains('open')
+                            const isOpen2 = estelarColt1.classList.contains('open')
+                        }
+                
+                        estelarColt2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarColt2.classList.toggle('open')
+                            infoeColt2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetColt1.classList.remove('open')
+                            infogColt1.classList.remove('open')
+                            gadgetColt2.classList.remove('open')
+                            infogColt2.classList.remove('open')
+                            estelarColt1.classList.remove('open')
+                            infoeColt1.classList.remove('open')
+                
+                            const isOpen1 = infoeColt2.classList.contains('open')
+                            const isOpen2 = estelarColt2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">REVÓLVERES</h4></div>
@@ -397,6 +746,118 @@
                             <p>Rápida</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 bullG1"><img src="../img/gadgets/bull/GD_bull_01.png" alt="primer gadget de bull"></div>
+                            <div class="contGadget2 bullG2"><img src="../img/gadgets/bull/GD_bull_02.png" alt="segundo gadget de bull"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 bullInfog1">
+                        <h4>VIGORIZADOR</h4>
+                        <p>Bull automaticaménte recupera 1500 puntos de salud.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 bullInfog2">
+                        <h4>PISOTEADOR</h4>
+                        <p>Bull detiene la carga de su súper y ralentiza a todos los rivales que se encuentren a su alrededor con un gran pisoteo durante 1,5 segundos.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 bullE1"><img src="../img/estelares/bull/SP_bull_01.png" alt="primera habilidad estelar de bull"></div>
+                            <div class="contEstelar2 bullE2"><img src="../img/estelares/bull/SP_bull_02.png" alt="segunda habilidad estelar de bull"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 bullInfoe1">
+                        <h4>TORO FURIOSO</h4>
+                        <p>Cuando Bull tiene menos del 60% de salud, es capaz de recargar su arma el doble de rápido.</p>
+                    </div>
+                    <div class="infoEstelar2 bullInfoe2">
+                        <h4>TIPO DURO</h4>
+                        <p>Cuando Bull tiene menos del 40% de salud, adquiere un escudo que reduce todo el daño recibido en un 30%.</p>
+                    </div>
+                    <script>
+                        const gadgetBull1 = document.querySelector('.bullG1')
+                        const gadgetBull2 = document.querySelector('.bullG2')
+                        const estelarBull1 = document.querySelector('.bullE1')
+                        const estelarBull2 = document.querySelector('.bullE2')
+                        const infogBull1 = document.querySelector('.bullInfog1')
+                        const infogBull2 = document.querySelector('.bullInfog2')
+                        const infoeBull1 = document.querySelector('.bullInfoe1')
+                        const infoeBull2 = document.querySelector('.bullInfoe2')
+                
+                        gadgetBull1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetBull1.classList.toggle('open')
+                            infogBull1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetBull2.classList.remove('open')
+                            infogBull2.classList.remove('open')
+                            estelarBull1.classList.remove('open')
+                            infoeBull1.classList.remove('open')
+                            estelarBull2.classList.remove('open')
+                            infoeBull2.classList.remove('open')
+                
+                            const isOpen1 = infogBull1.classList.contains('open')
+                            const isOpen2 = gadgetBull1.classList.contains('open')
+                        }
+                
+                        gadgetBull2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetBull2.classList.toggle('open')
+                            infogBull2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetBull1.classList.remove('open')
+                            infogBull1.classList.remove('open')
+                            estelarBull1.classList.remove('open')
+                            infoeBull1.classList.remove('open')
+                            estelarBull2.classList.remove('open')
+                            infoeBull2.classList.remove('open')
+                
+                            const isOpen1 = infogBull2.classList.contains('open')
+                            const isOpen2 = gadgetBull2.classList.contains('open')
+                        }
+                
+                        estelarBull1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarBull1.classList.toggle('open')
+                            infoeBull1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetBull1.classList.remove('open')
+                            infogBull1.classList.remove('open')
+                            gadgetBull2.classList.remove('open')
+                            infogBull2.classList.remove('open')
+                            estelarBull2.classList.remove('open')
+                            infoeBull2.classList.remove('open')
+                
+                            const isOpen1 = infoeBull1.classList.contains('open')
+                            const isOpen2 = estelarBull1.classList.contains('open')
+                        }
+                
+                        estelarBull2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarBull2.classList.toggle('open')
+                            infoeBull2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetBull1.classList.remove('open')
+                            infogBull1.classList.remove('open')
+                            gadgetBull2.classList.remove('open')
+                            infogBull2.classList.remove('open')
+                            estelarBull1.classList.remove('open')
+                            infoeBull1.classList.remove('open')
+                
+                            const isOpen1 = infoeBull2.classList.contains('open')
+                            const isOpen2 = estelarBull2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">A DOS CAÑONES</h4></div>
@@ -453,6 +914,118 @@
                             <p>Normal</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 brockG1"><img src="../img/gadgets/brock/GD_brock_01.png" alt="primer gadget de brock"></div>
+                            <div class="contGadget2 brockG2"><img src="../img/gadgets/brock/GD_brock_02.png" alt="segundo gadget de brock"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 brockInfog1">
+                        <h4>ZAPATILLAS EXPLOSIVAS</h4>
+                        <p>Brock da un salto y despega del suelo como un cohete, incendiando el suelo a su pies. La explosión inflinge 500 puntos de daño a los rivales que se encuentren cerca.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 brockInfog2">
+                        <h4>MEGACOHETE</h4>
+                        <p>El siguiente ataque de Brock es un megacohete mucho más grande, rápido y letal, capaz de destruir muros.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 brockE1"><img src="../img/estelares/brock/SP_brock_01.png" alt="primera habilidad estelar de brock"></div>
+                            <div class="contEstelar2 brockE2"><img src="../img/estelares/brock/SP_brock_02.png" alt="segunda habilidad estelar de brock"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 brockInfoe1">
+                        <h4>¡MÁS COHETES!</h4>
+                        <p>En Lluvia explosiva ahora caen un 44% más de cohetes.</p>
+                    </div>
+                    <div class="infoEstelar2 brockInfoe2">
+                        <h4>CUARTO COHETE</h4>
+                        <p>Brock carga un cuarto cohete en su lanzacohetes, aumentando así su munición. Eso sí, ahora no tendrá dónde guardar el termo.</p>
+                    </div>
+                    <script>
+                        const gadgetBrock1 = document.querySelector('.brockG1')
+                        const gadgetBrock2 = document.querySelector('.brockG2')
+                        const estelarBrock1 = document.querySelector('.brockE1')
+                        const estelarBrock2 = document.querySelector('.brockE2')
+                        const infogBrock1 = document.querySelector('.brockInfog1')
+                        const infogBrock2 = document.querySelector('.brockInfog2')
+                        const infoeBrock1 = document.querySelector('.brockInfoe1')
+                        const infoeBrock2 = document.querySelector('.brockInfoe2')
+                
+                        gadgetBrock1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetBrock1.classList.toggle('open')
+                            infogBrock1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetBrock2.classList.remove('open')
+                            infogBrock2.classList.remove('open')
+                            estelarBrock1.classList.remove('open')
+                            infoeBrock1.classList.remove('open')
+                            estelarBrock2.classList.remove('open')
+                            infoeBrock2.classList.remove('open')
+                
+                            const isOpen1 = infogBrock1.classList.contains('open')
+                            const isOpen2 = gadgetBrock1.classList.contains('open')
+                        }
+                
+                        gadgetBrock2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetBrock2.classList.toggle('open')
+                            infogBrock2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetBrock1.classList.remove('open')
+                            infogBrock1.classList.remove('open')
+                            estelarBrock1.classList.remove('open')
+                            infoeBrock1.classList.remove('open')
+                            estelarBrock2.classList.remove('open')
+                            infoeBrock2.classList.remove('open')
+                
+                            const isOpen1 = infogBrock2.classList.contains('open')
+                            const isOpen2 = gadgetBrock2.classList.contains('open')
+                        }
+                
+                        estelarBrock1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarBrock1.classList.toggle('open')
+                            infoeBrock1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetBrock1.classList.remove('open')
+                            infogBrock1.classList.remove('open')
+                            gadgetBrock2.classList.remove('open')
+                            infogBrock2.classList.remove('open')
+                            estelarBrock2.classList.remove('open')
+                            infoeBrock2.classList.remove('open')
+                
+                            const isOpen1 = infoeBrock1.classList.contains('open')
+                            const isOpen2 = estelarBrock1.classList.contains('open')
+                        }
+                
+                        estelarBrock2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarBrock2.classList.toggle('open')
+                            infoeBrock2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetBrock1.classList.remove('open')
+                            infogBrock1.classList.remove('open')
+                            gadgetBrock2.classList.remove('open')
+                            infogBrock2.classList.remove('open')
+                            estelarBrock1.classList.remove('open')
+                            infoeBrock1.classList.remove('open')
+                
+                            const isOpen1 = infoeBrock2.classList.contains('open')
+                            const isOpen2 = estelarBrock2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">COHETE</h4></div>
@@ -509,6 +1082,118 @@
                             <p>Rápida</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 primoG1"><img src="../img/gadgets/primo/GD_elprimo_01.png" alt="primer gadget de el primo"></div>
+                            <div class="contGadget2 primoG2"><img src="../img/gadgets/primo/GD_elprimo_02.png" alt="segundo gadget de el primo"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 primoInfog1">
+                        <h4>VUELTA DE TUERCA</h4>
+                        <p>El Primo agarra al enemigo más cercano y lo lanza por el aire como si fuera una tortilla.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 primoInfog2">
+                        <h4>CINTURÓN DE ASTEROIDES</h4>
+                        <p>El Primo invoca un pequeño meteorito que aterriza sobre el enemigo más cercano. Este meteorito inflinge 2000 puntos de daño y destruye los muros.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 primoE1"><img src="../img/estelares/primo/SP_elprimo_01.png" alt="primera habilidad estelar de el primo"></div>
+                            <div class="contEstelar2 primoE2"><img src="../img/estelares/primo/SP_elprimo_02.png" alt="segunda habilidad estelar de el primo"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 primoInfoe1">
+                        <h4>EL FUEGO</h4>
+                        <p>Cuando El Primo realiza su superataque, los enemigos que se encuentren dentro de su alcance arden durante 4 segundos y reciben 1200 puntos de daño.</p>
+                    </div>
+                    <div class="infoEstelar2 primoInfoe2">
+                        <h4>DEPRISA Y CORRIENDO</h4>
+                        <p>Tras usar su súper, la velocidad de El Primo aumenta un 25% durante 4 segundos.</p>
+                    </div>
+                    <script>
+                        const gadgetPrimo1 = document.querySelector('.primoG1')
+                        const gadgetPrimo2 = document.querySelector('.primoG2')
+                        const estelarPrimo1 = document.querySelector('.primoE1')
+                        const estelarPrimo2 = document.querySelector('.primoE2')
+                        const infogPrimo1 = document.querySelector('.primoInfog1')
+                        const infogPrimo2 = document.querySelector('.primoInfog2')
+                        const infoePrimo1 = document.querySelector('.primoInfoe1')
+                        const infoePrimo2 = document.querySelector('.primoInfoe2')
+                
+                        gadgetPrimo1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetPrimo1.classList.toggle('open')
+                            infogPrimo1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetPrimo2.classList.remove('open')
+                            infogPrimo2.classList.remove('open')
+                            estelarPrimo1.classList.remove('open')
+                            infoePrimo1.classList.remove('open')
+                            estelarPrimo2.classList.remove('open')
+                            infoePrimo2.classList.remove('open')
+                
+                            const isOpen1 = infogPrimo1.classList.contains('open')
+                            const isOpen2 = gadgetPrimo1.classList.contains('open')
+                        }
+                
+                        gadgetPrimo2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetPrimo2.classList.toggle('open')
+                            infogPrimo2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetPrimo1.classList.remove('open')
+                            infogPrimo1.classList.remove('open')
+                            estelarPrimo1.classList.remove('open')
+                            infoePrimo1.classList.remove('open')
+                            estelarPrimo2.classList.remove('open')
+                            infoePrimo2.classList.remove('open')
+                
+                            const isOpen1 = infogPrimo2.classList.contains('open')
+                            const isOpen2 = gadgetPrimo2.classList.contains('open')
+                        }
+                
+                        estelarPrimo1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarPrimo1.classList.toggle('open')
+                            infoePrimo1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetPrimo1.classList.remove('open')
+                            infogPrimo1.classList.remove('open')
+                            gadgetPrimo2.classList.remove('open')
+                            infogPrimo2.classList.remove('open')
+                            estelarPrimo2.classList.remove('open')
+                            infoePrimo2.classList.remove('open')
+                
+                            const isOpen1 = infoePrimo1.classList.contains('open')
+                            const isOpen2 = estelarPrimo1.classList.contains('open')
+                        }
+                
+                        estelarPrimo2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarPrimo2.classList.toggle('open')
+                            infoePrimo2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetPrimo1.classList.remove('open')
+                            infogPrimo1.classList.remove('open')
+                            gadgetPrimo2.classList.remove('open')
+                            infogPrimo2.classList.remove('open')
+                            estelarPrimo1.classList.remove('open')
+                            infoePrimo1.classList.remove('open')
+                
+                            const isOpen1 = infoePrimo2.classList.contains('open')
+                            const isOpen2 = estelarPrimo2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">PUÑOS DE FURIA</h4></div>
@@ -565,6 +1250,118 @@
                             <p>Normal</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 barleyG1"><img src="../img/gadgets/barley/GD_barley_01.png" alt="primer gadget de barley"></div>
+                            <div class="contGadget2 barleyG2"><img src="../img/gadgets/barley/GD_barley_02.png" alt="segundo gadget de barley"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 barleyInfog1">
+                        <h4>MENJUNJE PEGAJOSO</h4>
+                        <p>Barley rompe una botella que contiene un menjunje pegajoso y deja un charco que ralentiza a todos los rivales que entren en contacto con él<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 barleyInfog2">
+                        <h4>TÓNICO DE HIERBAS</h4>
+                        <p>Barley lanza un brebaje curativo a los aliados que se encuentren cerca, generando una zona de curación que regenera 500 puntos de salud por segundo<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 barleyE1"><img src="../img/estelares/barley/SP_barley_01.png" alt="primera habilidad estelar de barley"></div>
+                            <div class="contEstelar2 barleyE2"><img src="../img/estelares/barley/SP_barley_02.png" alt="segunda habilidad estelar de barley"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 barleyInfoe1">
+                        <h4>LICOR CURATIVO</h4>
+                        <p>Barley recupera 400 puntos de salud con cada uno de sus ataques.</p>
+                    </div>
+                    <div class="infoEstelar2 barleyInfoe2">
+                        <h4>LICOR EXTRANOCIVO</h4>
+                        <p>El ataque de Barley inflinge 200 puntos más de daño por segundo.</p>
+                    </div>
+                    <script>
+                        const gadgetBarley1 = document.querySelector('.barleyG1')
+                        const gadgetBarley2 = document.querySelector('.barleyG2')
+                        const estelarBarley1 = document.querySelector('.barleyE1')
+                        const estelarBarley2 = document.querySelector('.barleyE2')
+                        const infogBarley1 = document.querySelector('.barleyInfog1')
+                        const infogBarley2 = document.querySelector('.barleyInfog2')
+                        const infoeBarley1 = document.querySelector('.barleyInfoe1')
+                        const infoeBarley2 = document.querySelector('.barleyInfoe2')
+                
+                        gadgetBarley1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetBarley1.classList.toggle('open')
+                            infogBarley1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetBarley2.classList.remove('open')
+                            infogBarley2.classList.remove('open')
+                            estelarBarley1.classList.remove('open')
+                            infoeBarley1.classList.remove('open')
+                            estelarBarley2.classList.remove('open')
+                            infoeBarley2.classList.remove('open')
+                
+                            const isOpen1 = infogBarley1.classList.contains('open')
+                            const isOpen2 = gadgetBarley1.classList.contains('open')
+                        }
+                
+                        gadgetBarley2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetBarley2.classList.toggle('open')
+                            infogBarley2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetBarley1.classList.remove('open')
+                            infogBarley1.classList.remove('open')
+                            estelarBarley1.classList.remove('open')
+                            infoeBarley1.classList.remove('open')
+                            estelarBarley2.classList.remove('open')
+                            infoeBarley2.classList.remove('open')
+                
+                            const isOpen1 = infogBarley2.classList.contains('open')
+                            const isOpen2 = gadgetBarley2.classList.contains('open')
+                        }
+                
+                        estelarBarley1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarBarley1.classList.toggle('open')
+                            infoeBarley1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetBarley1.classList.remove('open')
+                            infogBarley1.classList.remove('open')
+                            gadgetBarley2.classList.remove('open')
+                            infogBarley2.classList.remove('open')
+                            estelarBarley2.classList.remove('open')
+                            infoeBarley2.classList.remove('open')
+                
+                            const isOpen1 = infoeBarley1.classList.contains('open')
+                            const isOpen2 = estelarBarley1.classList.contains('open')
+                        }
+                
+                        estelarBarley2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarBarley2.classList.toggle('open')
+                            infoeBarley2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetBarley1.classList.remove('open')
+                            infogBarley1.classList.remove('open')
+                            gadgetBarley2.classList.remove('open')
+                            infogBarley2.classList.remove('open')
+                            estelarBarley1.classList.remove('open')
+                            infoeBarley1.classList.remove('open')
+                
+                            const isOpen1 = infoeBarley2.classList.contains('open')
+                            const isOpen2 = estelarBarley2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">DESPARRAME</h4></div>
@@ -621,6 +1418,118 @@
                             <p>Normal</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 pocoG1"><img src="../img/gadgets/poco/GD_poco_01.png" alt="primer gadget de poco"></div>
+                            <div class="contGadget2 pocoG2"><img src="../img/gadgets/poco/GD_poco_02.png" alt="segundo gadget de poco"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 pocoInfog1">
+                        <h4>DIAPASÓN</h4>
+                        <p>Poco y todos los aliados cercanos recuperan 400 puntos de salud por segundo durante 5 segundos.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 pocoInfog2">
+                        <h4>CANCIÓN PROTECTORA</h4>
+                        <p>Elimina los efectos adversos activos de los brawlers aliados en una superficie extensa y los inmuniza durante 2 segundos.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 pocoE1"><img src="../img/estelares/poco/SP_poco_01.png" alt="primera habilidad estelar de poco"></div>
+                            <div class="contEstelar2 pocoE2"><img src="../img/estelares/poco/SP_poco_02.png" alt="segunda habilidad estelar de poco"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 pocoInfoe1">
+                        <h4>MUSICOTERAPIA</h4>
+                        <p>Cuando el ataque de Poco alcanza a los brawlers aliados estos recuperan 700 puntos de salud.</p>
+                    </div>
+                    <div class="infoEstelar2 pocoInfoe2">
+                        <h4>SIN PLAYBACK</h4>
+                        <p>El súper de Poco también inflinge 1000 puntos de daño a los enemigos.</p>
+                    </div>
+                    <script>
+                        const gadgetPoco1 = document.querySelector('.pocoG1')
+                        const gadgetPoco2 = document.querySelector('.pocoG2')
+                        const estelarPoco1 = document.querySelector('.pocoE1')
+                        const estelarPoco2 = document.querySelector('.pocoE2')
+                        const infogPoco1 = document.querySelector('.pocoInfog1')
+                        const infogPoco2 = document.querySelector('.pocoInfog2')
+                        const infoePoco1 = document.querySelector('.pocoInfoe1')
+                        const infoePoco2 = document.querySelector('.pocoInfoe2')
+                
+                        gadgetPoco1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetPoco1.classList.toggle('open')
+                            infogPoco1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetPoco2.classList.remove('open')
+                            infogPoco2.classList.remove('open')
+                            estelarPoco1.classList.remove('open')
+                            infoePoco1.classList.remove('open')
+                            estelarPoco2.classList.remove('open')
+                            infoePoco2.classList.remove('open')
+                
+                            const isOpen1 = infogPoco1.classList.contains('open')
+                            const isOpen2 = gadgetPoco1.classList.contains('open')
+                        }
+                
+                        gadgetPoco2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetPoco2.classList.toggle('open')
+                            infogPoco2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetPoco1.classList.remove('open')
+                            infogPoco1.classList.remove('open')
+                            estelarPoco1.classList.remove('open')
+                            infoePoco1.classList.remove('open')
+                            estelarPoco2.classList.remove('open')
+                            infoePoco2.classList.remove('open')
+                
+                            const isOpen1 = infogPoco2.classList.contains('open')
+                            const isOpen2 = gadgetPoco2.classList.contains('open')
+                        }
+                
+                        estelarPoco1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarPoco1.classList.toggle('open')
+                            infoePoco1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetPoco1.classList.remove('open')
+                            infogPoco1.classList.remove('open')
+                            gadgetPoco2.classList.remove('open')
+                            infogPoco2.classList.remove('open')
+                            estelarPoco2.classList.remove('open')
+                            infoePoco2.classList.remove('open')
+                
+                            const isOpen1 = infoePoco1.classList.contains('open')
+                            const isOpen2 = estelarPoco1.classList.contains('open')
+                        }
+                
+                        estelarPoco2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarPoco2.classList.toggle('open')
+                            infoePoco2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetPoco1.classList.remove('open')
+                            infogPoco1.classList.remove('open')
+                            gadgetPoco2.classList.remove('open')
+                            infogPoco2.classList.remove('open')
+                            estelarPoco1.classList.remove('open')
+                            infoePoco1.classList.remove('open')
+                
+                            const isOpen1 = infoePoco2.classList.contains('open')
+                            const isOpen2 = estelarPoco2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">SERENATA</h4></div>
@@ -677,6 +1586,118 @@
                             <p>Rápida</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 rosaG1"><img src="../img/gadgets/rosa/GD_rosa_01.png" alt="primer gadget de rosa"></div>
+                            <div class="contGadget2 rosaG2"><img src="../img/gadgets/rosa/GD_rosa_02.png" alt="segundo gadget de rosa"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 rosaInfog1">
+                        <h4>ARBUSTOS ROBUSTOS</h4>
+                        <p>Rosa abona el suelo a su alrededor y hace crecer arbusto que la ayudan a protegerse.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 rosaInfog2">
+                        <h4>ORTIGAS</h4>
+                        <p>Todos los rivales que se escondan en los arbustos recibirán 100 puntos de daño y se ralentizarán durante 3 segundos.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 rosaE1"><img src="../img/estelares/rosa/SP_rosa_01.png" alt="primera habilidad estelar de rosa"></div>
+                            <div class="contEstelar2 rosaE2"><img src="../img/estelares/rosa/SP_rosa_02.png" alt="segunda habilidad estelar de rosa"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 rosaInfoe1">
+                        <h4>NATURALEZA VIVA</h4>
+                        <p>Rosa recupera 200 puntos de salud por segundo cuando se esconde entre los arbustos.</p>
+                    </div>
+                    <div class="infoEstelar2 rosaInfoe2">
+                        <h4>GUANTES PUNZANTES</h4>
+                        <p>Los puñetazos de Rosa inflingen 220 puntos más de daño mientras su súper está activo.</p>
+                    </div>
+                    <script>
+                        const gadgetRosa1 = document.querySelector('.rosaG1')
+                        const gadgetRosa2 = document.querySelector('.rosaG2')
+                        const estelarRosa1 = document.querySelector('.rosaE1')
+                        const estelarRosa2 = document.querySelector('.rosaE2')
+                        const infogRosa1 = document.querySelector('.rosaInfog1')
+                        const infogRosa2 = document.querySelector('.rosaInfog2')
+                        const infoeRosa1 = document.querySelector('.rosaInfoe1')
+                        const infoeRosa2 = document.querySelector('.rosaInfoe2')
+                
+                        gadgetRosa1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetRosa1.classList.toggle('open')
+                            infogRosa1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetRosa2.classList.remove('open')
+                            infogRosa2.classList.remove('open')
+                            estelarRosa1.classList.remove('open')
+                            infoeRosa1.classList.remove('open')
+                            estelarRosa2.classList.remove('open')
+                            infoeRosa2.classList.remove('open')
+                
+                            const isOpen1 = infogRosa1.classList.contains('open')
+                            const isOpen2 = gadgetRosa1.classList.contains('open')
+                        }
+                
+                        gadgetRosa2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetRosa2.classList.toggle('open')
+                            infogRosa2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetRosa1.classList.remove('open')
+                            infogRosa1.classList.remove('open')
+                            estelarRosa1.classList.remove('open')
+                            infoeRosa1.classList.remove('open')
+                            estelarRosa2.classList.remove('open')
+                            infoeRosa2.classList.remove('open')
+                
+                            const isOpen1 = infogRosa2.classList.contains('open')
+                            const isOpen2 = gadgetRosa2.classList.contains('open')
+                        }
+                
+                        estelarRosa1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarRosa1.classList.toggle('open')
+                            infoeRosa1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetRosa1.classList.remove('open')
+                            infogRosa1.classList.remove('open')
+                            gadgetRosa2.classList.remove('open')
+                            infogRosa2.classList.remove('open')
+                            estelarRosa2.classList.remove('open')
+                            infoeRosa2.classList.remove('open')
+                
+                            const isOpen1 = infoeRosa1.classList.contains('open')
+                            const isOpen2 = estelarRosa1.classList.contains('open')
+                        }
+                
+                        estelarRosa2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarRosa2.classList.toggle('open')
+                            infoeRosa2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetRosa1.classList.remove('open')
+                            infogRosa1.classList.remove('open')
+                            gadgetRosa2.classList.remove('open')
+                            infogRosa2.classList.remove('open')
+                            estelarRosa1.classList.remove('open')
+                            infoeRosa1.classList.remove('open')
+                
+                            const isOpen1 = infoeRosa2.classList.contains('open')
+                            const isOpen2 = estelarRosa2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">MANOS DE PIEDRA</h4></div>
@@ -738,6 +1759,118 @@
                             <p>Normal</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 jessieG1"><img src="../img/gadgets/jessie/GD_jessie_01.png" alt="primer gadget de jessie"></div>
+                            <div class="contGadget2 jessieG2"><img src="../img/gadgets/jessie/GD_jessie_02.png" alt="segundo gadget de jessie"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 jessieInfog1">
+                        <h4>BUJÍA</h4>
+                        <p>La torreta de Jessie lanza una onda sísmica que ralentiza a todos los rivales que se encuentren dentro de área de efecto.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 jessieInfog2">
+                        <h4>INTENSIFICADOR</h4>
+                        <p>La velocidad de ataque de la chatarreta se duplica durante 5 segundos.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 jessieE1"><img src="../img/estelares/jessie/SP_jessie_01.png" alt="primera habilidad estelar de jessie"></div>
+                            <div class="contEstelar2 jessieE2"><img src="../img/estelares/jessie/SP_jessie_02.png" alt="segunda habilidad estelar de jessie"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 jessieInfoe1">
+                        <h4>ENERGIZANTE</h4>
+                        <p>Jessie puede recuperar 896 puntos de la salud de su torreta con solo dispararle.</p>
+                    </div>
+                    <div class="infoEstelar2 jessieInfoe2">
+                        <h4>REBOTE ELECTRIZANTE</h4>
+                        <p>La chatarreta dispara esferas de energía que rebotan entre los enemigos. Tras cada rebote, el alcance de las esferas aumenta un 51% del normal.</p>
+                    </div>
+                    <script>
+                        const gadgetJessie1 = document.querySelector('.jessieG1')
+                        const gadgetJessie2 = document.querySelector('.jessieG2')
+                        const estelarJessie1 = document.querySelector('.jessieE1')
+                        const estelarJessie2 = document.querySelector('.jessieE2')
+                        const infogJessie1 = document.querySelector('.jessieInfog1')
+                        const infogJessie2 = document.querySelector('.jessieInfog2')
+                        const infoeJessie1 = document.querySelector('.jessieInfoe1')
+                        const infoeJessie2 = document.querySelector('.jessieInfoe2')
+                
+                        gadgetJessie1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetJessie1.classList.toggle('open')
+                            infogJessie1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetJessie2.classList.remove('open')
+                            infogJessie2.classList.remove('open')
+                            estelarJessie1.classList.remove('open')
+                            infoeJessie1.classList.remove('open')
+                            estelarJessie2.classList.remove('open')
+                            infoeJessie2.classList.remove('open')
+                
+                            const isOpen1 = infogJessie1.classList.contains('open')
+                            const isOpen2 = gadgetJessie1.classList.contains('open')
+                        }
+                
+                        gadgetJessie2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetJessie2.classList.toggle('open')
+                            infogJessie2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetJessie1.classList.remove('open')
+                            infogJessie1.classList.remove('open')
+                            estelarJessie1.classList.remove('open')
+                            infoeJessie1.classList.remove('open')
+                            estelarJessie2.classList.remove('open')
+                            infoeJessie2.classList.remove('open')
+                
+                            const isOpen1 = infogJessie2.classList.contains('open')
+                            const isOpen2 = gadgetJessie2.classList.contains('open')
+                        }
+                
+                        estelarJessie1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarJessie1.classList.toggle('open')
+                            infoeJessie1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetJessie1.classList.remove('open')
+                            infogJessie1.classList.remove('open')
+                            gadgetJessie2.classList.remove('open')
+                            infogJessie2.classList.remove('open')
+                            estelarJessie2.classList.remove('open')
+                            infoeJessie2.classList.remove('open')
+                
+                            const isOpen1 = infoeJessie1.classList.contains('open')
+                            const isOpen2 = estelarJessie1.classList.contains('open')
+                        }
+                
+                        estelarJessie2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarJessie2.classList.toggle('open')
+                            infoeJessie2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetJessie1.classList.remove('open')
+                            infogJessie1.classList.remove('open')
+                            gadgetJessie2.classList.remove('open')
+                            infogJessie2.classList.remove('open')
+                            estelarJessie1.classList.remove('open')
+                            infoeJessie1.classList.remove('open')
+                
+                            const isOpen1 = infoeJessie2.classList.contains('open')
+                            const isOpen2 = estelarJessie2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">RIFLE ATURDIDOR</h4></div>
@@ -794,6 +1927,118 @@
                             <p>Rápida</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 mikeG1"><img src="../img/gadgets/mike/GD_dynamike_01.png" alt="primer gadget de dynamike"></div>
+                            <div class="contGadget2 mikeG2"><img src="../img/gadgets/mike/GD_dynamike_02.png" alt="segundo gadget de dynamike"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 mikeInfog1">
+                        <h4>GIROS EXPLOSIVOS</h4>
+                        <p>Dynamike gira furiosamente con una velocidad de movimiento aumentada y tira cartuchos de dinamita a su alrededor. Cada cartucho inflinge 1200 puntos de daño a los rivales.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 mikeInfog2">
+                        <h4>PÓLVORA ATURDIDORA</h4>
+                        <p>El siguiente ataque principal aturde a los enemigos durante 1,5 segundos.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 mikeE1"><img src="../img/estelares/mike/SP_dynamike_01.png" alt="primera habilidad estelar de dynamike"></div>
+                            <div class="contEstelar2 mikeE2"><img src="../img/estelares/mike/SP_dynamike_02.png" alt="segunda habilidad estelar de dynamike"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 mikeInfoe1">
+                        <h4>DINASALTO</h4>
+                        <p>Dynamike aprovecha la onda expansiva de sus explosivos para saltar los obstáculos.</p>
+                    </div>
+                    <div class="infoEstelar2 mikeInfoe2">
+                        <h4>DEMOLICIÓN</h4>
+                        <p>Dynamike inflinge 1000 puntos más de daño al usar su súper.</p>
+                    </div>
+                    <script>
+                        const gadgetMike1 = document.querySelector('.mikeG1')
+                        const gadgetMike2 = document.querySelector('.mikeG2')
+                        const estelarMike1 = document.querySelector('.mikeE1')
+                        const estelarMike2 = document.querySelector('.mikeE2')
+                        const infogMike1 = document.querySelector('.mikeInfog1')
+                        const infogMike2 = document.querySelector('.mikeInfog2')
+                        const infoeMike1 = document.querySelector('.mikeInfoe1')
+                        const infoeMike2 = document.querySelector('.mikeInfoe2')
+                
+                        gadgetMike1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetMike1.classList.toggle('open')
+                            infogMike1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetMike2.classList.remove('open')
+                            infogMike2.classList.remove('open')
+                            estelarMike1.classList.remove('open')
+                            infoeMike1.classList.remove('open')
+                            estelarMike2.classList.remove('open')
+                            infoeMike2.classList.remove('open')
+                
+                            const isOpen1 = infogMike1.classList.contains('open')
+                            const isOpen2 = gadgetMike1.classList.contains('open')
+                        }
+                
+                        gadgetMike2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetMike2.classList.toggle('open')
+                            infogMike2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetMike1.classList.remove('open')
+                            infogMike1.classList.remove('open')
+                            estelarMike1.classList.remove('open')
+                            infoeMike1.classList.remove('open')
+                            estelarMike2.classList.remove('open')
+                            infoeMike2.classList.remove('open')
+                
+                            const isOpen1 = infogMike2.classList.contains('open')
+                            const isOpen2 = gadgetMike2.classList.contains('open')
+                        }
+                
+                        estelarMike1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarMike1.classList.toggle('open')
+                            infoeMike1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetMike1.classList.remove('open')
+                            infogMike1.classList.remove('open')
+                            gadgetMike2.classList.remove('open')
+                            infogMike2.classList.remove('open')
+                            estelarMike2.classList.remove('open')
+                            infoeMike2.classList.remove('open')
+                
+                            const isOpen1 = infoeMike1.classList.contains('open')
+                            const isOpen2 = estelarMike1.classList.contains('open')
+                        }
+                
+                        estelarMike2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarMike2.classList.toggle('open')
+                            infoeMike2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetMike1.classList.remove('open')
+                            infogMike1.classList.remove('open')
+                            gadgetMike2.classList.remove('open')
+                            infogMike2.classList.remove('open')
+                            estelarMike1.classList.remove('open')
+                            infoeMike1.classList.remove('open')
+                
+                            const isOpen1 = infoeMike2.classList.contains('open')
+                            const isOpen2 = estelarMike2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">MECHA CORTA</h4></div>
@@ -850,6 +2095,118 @@
                             <p>Normal</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 tickG1"><img src="../img/gadgets/tick/GD_tick_01.png" alt="primer gadget de tick"></div>
+                            <div class="contGadget2 tickG2"><img src="../img/gadgets/tick/GD_tick_02.png" alt="segundo gadget de tick"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 tickInfog1">
+                        <h4>DERROCHE DE MINAS</h4>
+                        <p>El siguiente ataque de Tick lanza 6 minas.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 tickInfog2">
+                        <h4>ÚLTIMAS PALABRAS</h4>
+                        <p>Tick consigue un escudo que reduce el daño que recibe en un 50% durante 1,0 segundo.Después, este sale despedido e inflinge 1000 puntos de daño<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 tickE1"><img src="../img/estelares/tick/SP_tick_01.png" alt="primera habilidad estelar de tick"></div>
+                            <div class="contEstelar2 tickE2"><img src="../img/estelares/tick/SP_tick_02.png" alt="segunda habilidad estelar de tick"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 tickInfoe1">
+                        <h4>AUTORREPARACIÓN</h4>
+                        <p>Cuando Tick no recibe daño ni ataca, su salud se regenera 2 segundos más rápido de lo normal.</p>
+                    </div>
+                    <div class="infoEstelar2 tickInfoe2">
+                        <h4>TIC, TAC, TIC, TAC</h4>
+                        <p>El tiempo de recarga de tick es un 9% mas corto.</p>
+                    </div>
+                    <script>
+                        const gadgetTick1 = document.querySelector('.tickG1')
+                        const gadgetTick2 = document.querySelector('.tickG2')
+                        const estelarTick1 = document.querySelector('.tickE1')
+                        const estelarTick2 = document.querySelector('.tickE2')
+                        const infogTick1 = document.querySelector('.tickInfog1')
+                        const infogTick2 = document.querySelector('.tickInfog2')
+                        const infoeTick1 = document.querySelector('.tickInfoe1')
+                        const infoeTick2 = document.querySelector('.tickInfoe2')
+                
+                        gadgetTick1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetTick1.classList.toggle('open')
+                            infogTick1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetTick2.classList.remove('open')
+                            infogTick2.classList.remove('open')
+                            estelarTick1.classList.remove('open')
+                            infoeTick1.classList.remove('open')
+                            estelarTick2.classList.remove('open')
+                            infoeTick2.classList.remove('open')
+                
+                            const isOpen1 = infogTick1.classList.contains('open')
+                            const isOpen2 = gadgetTick1.classList.contains('open')
+                        }
+                
+                        gadgetTick2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetTick2.classList.toggle('open')
+                            infogTick2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetTick1.classList.remove('open')
+                            infogTick1.classList.remove('open')
+                            estelarTick1.classList.remove('open')
+                            infoeTick1.classList.remove('open')
+                            estelarTick2.classList.remove('open')
+                            infoeTick2.classList.remove('open')
+                
+                            const isOpen1 = infogTick2.classList.contains('open')
+                            const isOpen2 = gadgetTick2.classList.contains('open')
+                        }
+                
+                        estelarTick1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarTick1.classList.toggle('open')
+                            infoeTick1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetTick1.classList.remove('open')
+                            infogTick1.classList.remove('open')
+                            gadgetTick2.classList.remove('open')
+                            infogTick2.classList.remove('open')
+                            estelarTick2.classList.remove('open')
+                            infoeTick2.classList.remove('open')
+                
+                            const isOpen1 = infoeTick1.classList.contains('open')
+                            const isOpen2 = estelarTick1.classList.contains('open')
+                        }
+                
+                        estelarTick2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarTick2.classList.toggle('open')
+                            infoeTick2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetTick1.classList.remove('open')
+                            infogTick1.classList.remove('open')
+                            gadgetTick2.classList.remove('open')
+                            infogTick2.classList.remove('open')
+                            estelarTick1.classList.remove('open')
+                            infoeTick1.classList.remove('open')
+                
+                            const isOpen1 = infoeTick2.classList.contains('open')
+                            const isOpen2 = estelarTick2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">MINIMINAS</h4></div>
@@ -906,6 +2263,118 @@
                             <p>Muy Lenta</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 ochobitG1"><img src="../img/gadgets/8bit/GD_8bit_01.png" alt="primer gadget de 8bit"></div>
+                            <div class="contGadget2 ochobitG2"><img src="../img/gadgets/8bit/GD_8bit_02.png" alt="segundo gadget de 8bit"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 ochobitInfog1">
+                        <h4>CARTUCHO TELETRANSPORTADOR</h4>
+                        <p>8-BIT se teletransporta a su amplificadaño.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 ochobitInfog2">
+                        <h4>PUNTOS EXTRA</h4>
+                        <p>El siguiente ataque de 8-BIT lanza un total de 18 proyectiles.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 ochobitE1"><img src="../img/estelares/8bit/SP_8bit_01.png" alt="primera habilidad estelar de 8bit"></div>
+                            <div class="contEstelar2 ochobitE2"><img src="../img/estelares/8bit/SP_8bit_02.png" alt="segunda habilidad estelar de 8bit"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 ochobitInfoe1">
+                        <h4>AMPLIFICADAÑO POTENCIADO</h4>
+                        <p>Aumenta el alcance del aplificadaño en un 50% y potencia el daño un 15% más.</p>
+                    </div>
+                    <div class="infoEstelar2 ochobitInfoe2">
+                        <h4>ENCHUFADO</h4>
+                        <p>Cuando 8-BIT esté cerca de su amplificador, se enchufará a él e incrementará su velocidad de movimiento.</p>
+                    </div>
+                    <script>
+                        const gadgetOchobit1 = document.querySelector('.ochobitG1')
+                        const gadgetOchobit2 = document.querySelector('.ochobitG2')
+                        const estelarOchobit1 = document.querySelector('.ochobitE1')
+                        const estelarOchobit2 = document.querySelector('.ochobitE2')
+                        const infogOchobit1 = document.querySelector('.ochobitInfog1')
+                        const infogOchobit2 = document.querySelector('.ochobitInfog2')
+                        const infoeOchobit1 = document.querySelector('.ochobitInfoe1')
+                        const infoeOchobit2 = document.querySelector('.ochobitInfoe2')
+                
+                        gadgetOchobit1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetOchobit1.classList.toggle('open')
+                            infogOchobit1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetOchobit2.classList.remove('open')
+                            infogOchobit2.classList.remove('open')
+                            estelarOchobit1.classList.remove('open')
+                            infoeOchobit1.classList.remove('open')
+                            estelarOchobit2.classList.remove('open')
+                            infoeOchobit2.classList.remove('open')
+                
+                            const isOpen1 = infogOchobit1.classList.contains('open')
+                            const isOpen2 = gadgetOchobit1.classList.contains('open')
+                        }
+                
+                        gadgetOchobit2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetOchobit2.classList.toggle('open')
+                            infogOchobit2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetOchobit1.classList.remove('open')
+                            infogOchobit1.classList.remove('open')
+                            estelarOchobit1.classList.remove('open')
+                            infoeOchobit1.classList.remove('open')
+                            estelarOchobit2.classList.remove('open')
+                            infoeOchobit2.classList.remove('open')
+                
+                            const isOpen1 = infogOchobit2.classList.contains('open')
+                            const isOpen2 = gadgetOchobit2.classList.contains('open')
+                        }
+                
+                        estelarOchobit1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarOchobit1.classList.toggle('open')
+                            infoeOchobit1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetOchobit1.classList.remove('open')
+                            infogOchobit1.classList.remove('open')
+                            gadgetOchobit2.classList.remove('open')
+                            infogOchobit2.classList.remove('open')
+                            estelarOchobit2.classList.remove('open')
+                            infoeOchobit2.classList.remove('open')
+                
+                            const isOpen1 = infoeOchobit1.classList.contains('open')
+                            const isOpen2 = estelarOchobit1.classList.contains('open')
+                        }
+                
+                        estelarOchobit2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarOchobit2.classList.toggle('open')
+                            infoeOchobit2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetOchobit1.classList.remove('open')
+                            infogOchobit1.classList.remove('open')
+                            gadgetOchobit2.classList.remove('open')
+                            infogOchobit2.classList.remove('open')
+                            estelarOchobit1.classList.remove('open')
+                            infoeOchobit1.classList.remove('open')
+                
+                            const isOpen1 = infoeOchobit2.classList.contains('open')
+                            const isOpen2 = estelarOchobit2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">RAYOS ABRASIVOS</h4></div>
@@ -962,6 +2431,118 @@
                             <p>Normal</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 ricoG1"><img src="../img/gadgets/rico/GD_rico_01.png" alt="primer gadget de rico"></div>
+                            <div class="contGadget2 ricoG2"><img src="../img/gadgets/rico/GD_rico_02.png" alt="segundo gadget de rico"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 ricoInfog1">
+                        <h4>PARQUE DE BOLAS</h4>
+                        <p>Rico dispara ráfaga de balas rebotadoras en todas direcciones.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 ricoInfog2">
+                        <h4>CASTILLO HINCHABLE</h4>
+                        <p>El siguiente ataque de Rico le curará 200 puntos de salud por cada rebote de proyectil.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 ricoE1"><img src="../img/estelares/rico/SP_rico_01.png" alt="primera habilidad estelar de rico"></div>
+                            <div class="contEstelar2 ricoE2"><img src="../img/estelares/rico/SP_rico_02.png" alt="segunda habilidad estelar de rico"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 ricoInfoe1">
+                        <h4>SUPERREBOTE</h4>
+                        <p>Las balas del ataque y del súper de Rico se sobrecargan tras rebotar por primera vez e inflingen 124 puntos más de daño.</p>
+                    </div>
+                    <div class="infoEstelar2 ricoInfoe2">
+                        <h4>RETIRADA ROBÓTICA</h4>
+                        <p>Cuando la salud de Rico está por debajo del 40%, corre un 34% mas rápido.</p>
+                    </div>
+                    <script>
+                        const gadgetRico1 = document.querySelector('.ricoG1')
+                        const gadgetRico2 = document.querySelector('.ricoG2')
+                        const estelarRico1 = document.querySelector('.ricoE1')
+                        const estelarRico2 = document.querySelector('.ricoE2')
+                        const infogRico1 = document.querySelector('.ricoInfog1')
+                        const infogRico2 = document.querySelector('.ricoInfog2')
+                        const infoeRico1 = document.querySelector('.ricoInfoe1')
+                        const infoeRico2 = document.querySelector('.ricoInfoe2')
+                
+                        gadgetRico1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetRico1.classList.toggle('open')
+                            infogRico1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetRico2.classList.remove('open')
+                            infogRico2.classList.remove('open')
+                            estelarRico1.classList.remove('open')
+                            infoeRico1.classList.remove('open')
+                            estelarRico2.classList.remove('open')
+                            infoeRico2.classList.remove('open')
+                
+                            const isOpen1 = infogRico1.classList.contains('open')
+                            const isOpen2 = gadgetRico1.classList.contains('open')
+                        }
+                
+                        gadgetRico2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetRico2.classList.toggle('open')
+                            infogRico2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetRico1.classList.remove('open')
+                            infogRico1.classList.remove('open')
+                            estelarRico1.classList.remove('open')
+                            infoeRico1.classList.remove('open')
+                            estelarRico2.classList.remove('open')
+                            infoeRico2.classList.remove('open')
+                
+                            const isOpen1 = infogRico2.classList.contains('open')
+                            const isOpen2 = gadgetRico2.classList.contains('open')
+                        }
+                
+                        estelarRico1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarRico1.classList.toggle('open')
+                            infoeRico1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetRico1.classList.remove('open')
+                            infogRico1.classList.remove('open')
+                            gadgetRico2.classList.remove('open')
+                            infogRico2.classList.remove('open')
+                            estelarRico2.classList.remove('open')
+                            infoeRico2.classList.remove('open')
+                
+                            const isOpen1 = infoeRico1.classList.contains('open')
+                            const isOpen2 = estelarRico1.classList.contains('open')
+                        }
+                
+                        estelarRico2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarRico2.classList.toggle('open')
+                            infoeRico2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetRico1.classList.remove('open')
+                            infogRico1.classList.remove('open')
+                            gadgetRico2.classList.remove('open')
+                            infogRico2.classList.remove('open')
+                            estelarRico1.classList.remove('open')
+                            infoeRico1.classList.remove('open')
+                
+                            const isOpen1 = infoeRico2.classList.contains('open')
+                            const isOpen2 = estelarRico2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2 rico"><h4 class="titleAtaque2">BALAS REBOTADORAS</h4></div>
@@ -1018,6 +2599,118 @@
                             <p>Rápida</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 darrylG1"><img src="../img/gadgets/darryl/GD_darryl_01.png" alt="primer gadget de darryl"></div>
+                            <div class="contGadget2 darrylG2"><img src="../img/gadgets/darryl/GD_darryl_02.png" alt="segundo gadget de darryl"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 darrylInfog1">
+                        <h4>DISPAROS 360</h4>
+                        <p>Darryl rueda y dispara una ráfaga de tiros en todas las direcciones. Cada disparo inflige 400 puntos de daño y recarga su súper un 25% si golpea a los enemigos.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 darrylInfog2">
+                        <h4>BARRIL DE ALQUITRÁN</h4>
+                        <p>Darryl crea una zona a su alrededor que ralentiza a los enemigos durante 5 segundos.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 darrylE1"><img src="../img/estelares/darryl/SP_darryl_01.png" alt="primera habilidad estelar de darryl"></div>
+                            <div class="contEstelar2 darrylE2"><img src="../img/estelares/darryl/SP_darryl_02.png" alt="segunda habilidad estelar de darryl"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 darrylInfoe1">
+                        <h4>AROS DE ACERO</h4>
+                        <p>Darryl recibe un escudo que reduce el 25% de daño durante 2 segundos luego de usar su Súper.</p>
+                    </div>
+                    <div class="infoEstelar2 darrylInfoe2">
+                        <h4>RECARGA RODADORA</h4>
+                        <p>Cuando Darryl despliega su súper, duplica la velocidad de su recarga durante 5 segundos.</p>
+                    </div>
+                    <script>
+                        const gadgetDarryl1 = document.querySelector('.darrylG1')
+                        const gadgetDarryl2 = document.querySelector('.darrylG2')
+                        const estelarDarryl1 = document.querySelector('.darrylE1')
+                        const estelarDarryl2 = document.querySelector('.darrylE2')
+                        const infogDarryl1 = document.querySelector('.darrylInfog1')
+                        const infogDarryl2 = document.querySelector('.darrylInfog2')
+                        const infoeDarryl1 = document.querySelector('.darrylInfoe1')
+                        const infoeDarryl2 = document.querySelector('.darrylInfoe2')
+                
+                        gadgetDarryl1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetDarryl1.classList.toggle('open')
+                            infogDarryl1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetDarryl2.classList.remove('open')
+                            infogDarryl2.classList.remove('open')
+                            estelarDarryl1.classList.remove('open')
+                            infoeDarryl1.classList.remove('open')
+                            estelarDarryl2.classList.remove('open')
+                            infoeDarryl2.classList.remove('open')
+                
+                            const isOpen1 = infogDarryl1.classList.contains('open')
+                            const isOpen2 = gadgetDarryl1.classList.contains('open')
+                        }
+                
+                        gadgetDarryl2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetDarryl2.classList.toggle('open')
+                            infogDarryl2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetDarryl1.classList.remove('open')
+                            infogDarryl1.classList.remove('open')
+                            estelarDarryl1.classList.remove('open')
+                            infoeDarryl1.classList.remove('open')
+                            estelarDarryl2.classList.remove('open')
+                            infoeDarryl2.classList.remove('open')
+                
+                            const isOpen1 = infogDarryl2.classList.contains('open')
+                            const isOpen2 = gadgetDarryl2.classList.contains('open')
+                        }
+                
+                        estelarDarryl1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarDarryl1.classList.toggle('open')
+                            infoeDarryl1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetDarryl1.classList.remove('open')
+                            infogDarryl1.classList.remove('open')
+                            gadgetDarryl2.classList.remove('open')
+                            infogDarryl2.classList.remove('open')
+                            estelarDarryl2.classList.remove('open')
+                            infoeDarryl2.classList.remove('open')
+                
+                            const isOpen1 = infoeDarryl1.classList.contains('open')
+                            const isOpen2 = estelarDarryl1.classList.contains('open')
+                        }
+                
+                        estelarDarryl2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarDarryl2.classList.toggle('open')
+                            infoeDarryl2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetDarryl1.classList.remove('open')
+                            infogDarryl1.classList.remove('open')
+                            gadgetDarryl2.classList.remove('open')
+                            infogDarryl2.classList.remove('open')
+                            estelarDarryl1.classList.remove('open')
+                            infoeDarryl1.classList.remove('open')
+                
+                            const isOpen1 = infoeDarryl2.classList.contains('open')
+                            const isOpen2 = estelarDarryl2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">CARGA DOBLE</h4></div>
@@ -1074,6 +2767,118 @@
                             <p>Normal</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 pennyG1"><img src="../img/gadgets/penny/GD_penny_01.png" alt="primer gadget de penny"></div>
+                            <div class="contGadget2 pennyG2"><img src="../img/gadgets/penny/GD_penny_02.png" alt="segundo gadget de penny"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 pennyInfog1">
+                        <h4>BARRIL DE SAL</h4>
+                        <p>Penny suelta un barril de sal que bloquea los proyectiles enemigos. También puede usarlo para hacer explotar sus propias bolsas de oro.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 pennyInfog2">
+                        <h4>CATALEJO DE CONFIANZA</h4>
+                        <p>El cañón de Penny dispara a todos los enemigos visibles a su alcance.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 pennyE1"><img src="../img/estelares/penny/SP_penny_01.png" alt="primera habilidad estelar de penny"></div>
+                            <div class="contEstelar2 pennyE2"><img src="../img/estelares/penny/SP_penny_02.png" alt="segunda habilidad estelar de penny"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 pennyInfoe1">
+                        <h4>ARCAS LLENAS</h4>
+                        <p>El cono de la explosión de las bolsas de oro de Penny es un 100% más ancho después de cada golpe.</p>
+                    </div>
+                    <div class="infoEstelar2 pennyInfoe2">
+                        <h4>TIROTEO MASIVO</h4>
+                        <p>El cañón de Penny inflige 1000 puntos de daño y empuja a los enemigos cercanos al aterrizar.</p>
+                    </div>
+                    <script>
+                        const gadgetPenny1 = document.querySelector('.pennyG1')
+                        const gadgetPenny2 = document.querySelector('.pennyG2')
+                        const estelarPenny1 = document.querySelector('.pennyE1')
+                        const estelarPenny2 = document.querySelector('.pennyE2')
+                        const infogPenny1 = document.querySelector('.pennyInfog1')
+                        const infogPenny2 = document.querySelector('.pennyInfog2')
+                        const infoePenny1 = document.querySelector('.pennyInfoe1')
+                        const infoePenny2 = document.querySelector('.pennyInfoe2')
+                
+                        gadgetPenny1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetPenny1.classList.toggle('open')
+                            infogPenny1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetPenny2.classList.remove('open')
+                            infogPenny2.classList.remove('open')
+                            estelarPenny1.classList.remove('open')
+                            infoePenny1.classList.remove('open')
+                            estelarPenny2.classList.remove('open')
+                            infoePenny2.classList.remove('open')
+                
+                            const isOpen1 = infogPenny1.classList.contains('open')
+                            const isOpen2 = gadgetPenny1.classList.contains('open')
+                        }
+                
+                        gadgetPenny2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetPenny2.classList.toggle('open')
+                            infogPenny2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetPenny1.classList.remove('open')
+                            infogPenny1.classList.remove('open')
+                            estelarPenny1.classList.remove('open')
+                            infoePenny1.classList.remove('open')
+                            estelarPenny2.classList.remove('open')
+                            infoePenny2.classList.remove('open')
+                
+                            const isOpen1 = infogPenny2.classList.contains('open')
+                            const isOpen2 = gadgetPenny2.classList.contains('open')
+                        }
+                
+                        estelarPenny1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarPenny1.classList.toggle('open')
+                            infoePenny1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetPenny1.classList.remove('open')
+                            infogPenny1.classList.remove('open')
+                            gadgetPenny2.classList.remove('open')
+                            infogPenny2.classList.remove('open')
+                            estelarPenny2.classList.remove('open')
+                            infoePenny2.classList.remove('open')
+                
+                            const isOpen1 = infoePenny1.classList.contains('open')
+                            const isOpen2 = estelarPenny1.classList.contains('open')
+                        }
+                
+                        estelarPenny2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarPenny2.classList.toggle('open')
+                            infoePenny2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetPenny1.classList.remove('open')
+                            infogPenny1.classList.remove('open')
+                            gadgetPenny2.classList.remove('open')
+                            infogPenny2.classList.remove('open')
+                            estelarPenny1.classList.remove('open')
+                            infoePenny1.classList.remove('open')
+                
+                            const isOpen1 = infoePenny2.classList.contains('open')
+                            const isOpen2 = estelarPenny2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">LANZAMONEDAS</h4></div>
@@ -1130,6 +2935,118 @@
                             <p>Normal</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 carlG1"><img src="../img/gadgets/carl/GD_carl_01.png" alt="primer gadget de carl"></div>
+                            <div class="contGadget2 carlG2"><img src="../img/gadgets/carl/GD_carl_02.png" alt="segundo gadget de carl"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 carlInfog1">
+                        <h4>ROCAS VOLCÁNICAS</h4>
+                        <p>El siguiente ataque de Carl hace que su piqueta deje caer un montón de rocas calientes que infligen daño a los enemigos que las toquen.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 carlInfog2">
+                        <h4>GANCHO REMOLCADOR</h4>
+                        <p>El siguiente ataque de Carl hace que su piqueta lo arrastre hacia el punto más lejano del ataque.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 carlE1"><img src="../img/estelares/carl/SP_carl_01.png" alt="primera habilidad estelar de carl"></div>
+                            <div class="contEstelar2 carlE2"><img src="../img/estelares/carl/SP_carl_02.png" alt="segunda habilidad estelar de carl"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 carlInfoe1">
+                        <h4>LANZAMIENTO VELOZ</h4>
+                        <p>Carl lanza su piqueta un 12% más rápido, por lo que vuelve a sus manos mucho antes.</p>
+                    </div>
+                    <div class="infoEstelar2 carlInfoe2">
+                        <h4>PIRUETA PROTECTORA</h4>
+                        <p>El daño que recibe Carl mientras su súper está activado se reduce en un 30%.</p>
+                    </div>
+                    <script>
+                        const gadgetCarl1 = document.querySelector('.carlG1')
+                        const gadgetCarl2 = document.querySelector('.carlG2')
+                        const estelarCarl1 = document.querySelector('.carlE1')
+                        const estelarCarl2 = document.querySelector('.carlE2')
+                        const infogCarl1 = document.querySelector('.carlInfog1')
+                        const infogCarl2 = document.querySelector('.carlInfog2')
+                        const infoeCarl1 = document.querySelector('.carlInfoe1')
+                        const infoeCarl2 = document.querySelector('.carlInfoe2')
+                
+                        gadgetCarl1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetCarl1.classList.toggle('open')
+                            infogCarl1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetCarl2.classList.remove('open')
+                            infogCarl2.classList.remove('open')
+                            estelarCarl1.classList.remove('open')
+                            infoeCarl1.classList.remove('open')
+                            estelarCarl2.classList.remove('open')
+                            infoeCarl2.classList.remove('open')
+                
+                            const isOpen1 = infogCarl1.classList.contains('open')
+                            const isOpen2 = gadgetCarl1.classList.contains('open')
+                        }
+                
+                        gadgetCarl2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetCarl2.classList.toggle('open')
+                            infogCarl2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetCarl1.classList.remove('open')
+                            infogCarl1.classList.remove('open')
+                            estelarCarl1.classList.remove('open')
+                            infoeCarl1.classList.remove('open')
+                            estelarCarl2.classList.remove('open')
+                            infoeCarl2.classList.remove('open')
+                
+                            const isOpen1 = infogCarl2.classList.contains('open')
+                            const isOpen2 = gadgetCarl2.classList.contains('open')
+                        }
+                
+                        estelarCarl1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarCarl1.classList.toggle('open')
+                            infoeCarl1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetCarl1.classList.remove('open')
+                            infogCarl1.classList.remove('open')
+                            gadgetCarl2.classList.remove('open')
+                            infogCarl2.classList.remove('open')
+                            estelarCarl2.classList.remove('open')
+                            infoeCarl2.classList.remove('open')
+                
+                            const isOpen1 = infoeCarl1.classList.contains('open')
+                            const isOpen2 = estelarCarl1.classList.contains('open')
+                        }
+                
+                        estelarCarl2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarCarl2.classList.toggle('open')
+                            infoeCarl2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetCarl1.classList.remove('open')
+                            infogCarl1.classList.remove('open')
+                            gadgetCarl2.classList.remove('open')
+                            infogCarl2.classList.remove('open')
+                            estelarCarl1.classList.remove('open')
+                            infoeCarl1.classList.remove('open')
+                
+                            const isOpen1 = infoeCarl2.classList.contains('open')
+                            const isOpen2 = estelarCarl2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">PIQUETA</h4></div>
@@ -1186,6 +3103,118 @@
                             <p>Rápida</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 jackyG1"><img src="../img/gadgets/jacky/GD_jacky_01.png" alt="primer gadget de jacky"></div>
+                            <div class="contGadget2 jackyG2"><img src="../img/gadgets/jacky/GD_jacky_02.png" alt="segundo gadget de jacky"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 jackyInfog1">
+                        <h4>SUBIDÓN NEUMÁTICO</h4>
+                        <p>Jacky recibe un subidón de energía y se mueve un 20% más rápido durante 3 segundos.<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 jackyInfog2">
+                        <h4>RECONSTRUCCIÓN</h4>
+                        <p>Jacky reconstruye el entorno en un pequeño radio a su alrededor.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 jackyE1"><img src="../img/estelares/jacky/SP_jacky_01.png" alt="primera habilidad estelar de jacky"></div>
+                            <div class="contEstelar2 jackyE2"><img src="../img/estelares/jacky/SP_jacky_02.png" alt="segunda habilidad estelar de jacky"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 jackyInfoe1">
+                        <h4>NO HAY DE QUÉ</h4>
+                        <p>Al recibir daño, Jacky devuelve el favor y transfiere un 33% del daño en un contraataque que dejará a los rivales temblando.</p>
+                    </div>
+                    <div class="infoEstelar2 jackyInfoe2">
+                        <h4>CASCO BLINDADO</h4>
+                        <p>El casco blindado de Jacky la protege reduciendo el daño que recibe en un 15%.</p>
+                    </div>
+                    <script>
+                        const gadgetJacky1 = document.querySelector('.jackyG1')
+                        const gadgetJacky2 = document.querySelector('.jackyG2')
+                        const estelarJacky1 = document.querySelector('.jackyE1')
+                        const estelarJacky2 = document.querySelector('.jackyE2')
+                        const infogJacky1 = document.querySelector('.jackyInfog1')
+                        const infogJacky2 = document.querySelector('.jackyInfog2')
+                        const infoeJacky1 = document.querySelector('.jackyInfoe1')
+                        const infoeJacky2 = document.querySelector('.jackyInfoe2')
+                
+                        gadgetJacky1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetJacky1.classList.toggle('open')
+                            infogJacky1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetJacky2.classList.remove('open')
+                            infogJacky2.classList.remove('open')
+                            estelarJacky1.classList.remove('open')
+                            infoeJacky1.classList.remove('open')
+                            estelarJacky2.classList.remove('open')
+                            infoeJacky2.classList.remove('open')
+                
+                            const isOpen1 = infogJacky1.classList.contains('open')
+                            const isOpen2 = gadgetJacky1.classList.contains('open')
+                        }
+                
+                        gadgetJacky2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetJacky2.classList.toggle('open')
+                            infogJacky2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetJacky1.classList.remove('open')
+                            infogJacky1.classList.remove('open')
+                            estelarJacky1.classList.remove('open')
+                            infoeJacky1.classList.remove('open')
+                            estelarJacky2.classList.remove('open')
+                            infoeJacky2.classList.remove('open')
+                
+                            const isOpen1 = infogJacky2.classList.contains('open')
+                            const isOpen2 = gadgetJacky2.classList.contains('open')
+                        }
+                
+                        estelarJacky1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarJacky1.classList.toggle('open')
+                            infoeJacky1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetJacky1.classList.remove('open')
+                            infogJacky1.classList.remove('open')
+                            gadgetJacky2.classList.remove('open')
+                            infogJacky2.classList.remove('open')
+                            estelarJacky2.classList.remove('open')
+                            infoeJacky2.classList.remove('open')
+                
+                            const isOpen1 = infoeJacky1.classList.contains('open')
+                            const isOpen2 = estelarJacky1.classList.contains('open')
+                        }
+                
+                        estelarJacky2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarJacky2.classList.toggle('open')
+                            infoeJacky2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetJacky1.classList.remove('open')
+                            infogJacky1.classList.remove('open')
+                            gadgetJacky2.classList.remove('open')
+                            infogJacky2.classList.remove('open')
+                            estelarJacky1.classList.remove('open')
+                            infoeJacky1.classList.remove('open')
+                
+                            const isOpen1 = infoeJacky2.classList.contains('open')
+                            const isOpen2 = estelarJacky2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2 jacky1"><h4 class="titleAtaque2">MARTILLO MECÁNICO</h4></div>
@@ -1242,6 +3271,118 @@
                             <p>Normal</p>
                         </div>
                     </div>
+                    <div class="gadgets">
+                        <div class="contTitleg"><h4>Gadgets</h4></div>
+                        <div class="contGadgets">
+                            <div class="contGadget1 gusG1"><img src="../img/gadgets/gus/GD_gus_01.png" alt="primer gadget de gus"></div>
+                            <div class="contGadget2 gusG2"><img src="../img/gadgets/gus/GD_gus_02.png" alt="segundo gadget de gus"></div>
+                        </div>
+                    </div>
+                    <div class="infoGeneral">
+                        <p>Selecciona un Gadget o Habilidad Estelar para ver su información</p>
+                    </div>
+                    <div class="infoGadget1 gusInfog1">
+                        <h4>EXPLOSIÓN ESPIRITUAL</h4>
+                        <p>Todos los espíritus que no han sido recolectados explotan e infligen 1800 puntos de daño a los enemigos cercanos<br> Municiones por partida: 3</p>
+                    </div>
+                    <div class="infoGadget2 gusInfog2">
+                        <h4>CAMBIO DE ALMA</h4>
+                        <p>Gus pierde un 30% de salud y gana un 100% de espíritu al instante.<br>Municiones por partida: 3</p>
+                    </div>
+                    <div class="estelares">
+                        <div class="contTitle"><h4>Estelares</h4></div>
+                        <div class="contEstelar">
+                            <div class="contEstelar1 gusE1"><img src="../img/estelares/gus/SP_gus_01.png" alt="primera habilidad estelar de gus"></div>
+                            <div class="contEstelar2 gusE2"><img src="../img/estelares/gus/SP_gus_02.png" alt="segunda habilidad estelar de gus"></div>
+                        </div>
+                    </div>
+                    <div class="infoEstelar1 gusInfoe1">
+                        <h4>SALUD ABUNDANTE</h4>
+                        <p>La salud recuperada gracias a Globos locos aumenta en un 100%.</p>
+                    </div>
+                    <div class="infoEstelar2 gusInfoe2">
+                        <h4>GUÍA ESPIRITUAL</h4>
+                        <p>Tenebrosa aumenta el daño que inflige un aliado en un 25% durante 5 segundos.</p>
+                    </div>
+                    <script>
+                        const gadgetGus1 = document.querySelector('.gusG1')
+                        const gadgetGus2 = document.querySelector('.gusG2')
+                        const estelarGus1 = document.querySelector('.gusE1')
+                        const estelarGus2 = document.querySelector('.gusE2')
+                        const infogGus1 = document.querySelector('.gusInfog1')
+                        const infogGus2 = document.querySelector('.gusInfog2')
+                        const infoeGus1 = document.querySelector('.gusInfoe1')
+                        const infoeGus2 = document.querySelector('.gusInfoe2')
+                
+                        gadgetGus1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetGus1.classList.toggle('open')
+                            infogGus1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetGus2.classList.remove('open')
+                            infogGus2.classList.remove('open')
+                            estelarGus1.classList.remove('open')
+                            infoeGus1.classList.remove('open')
+                            estelarGus2.classList.remove('open')
+                            infoeGus2.classList.remove('open')
+                
+                            const isOpen1 = infogGus1.classList.contains('open')
+                            const isOpen2 = gadgetGus1.classList.contains('open')
+                        }
+                
+                        gadgetGus2.onclick = function (){
+                
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            gadgetGus2.classList.toggle('open')
+                            infogGus2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetGus1.classList.remove('open')
+                            infogGus1.classList.remove('open')
+                            estelarGus1.classList.remove('open')
+                            infoeGus1.classList.remove('open')
+                            estelarGus2.classList.remove('open')
+                            infoeGus2.classList.remove('open')
+                
+                            const isOpen1 = infogGus2.classList.contains('open')
+                            const isOpen2 = gadgetGus2.classList.contains('open')
+                        }
+                
+                        estelarGus1.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarGus1.classList.toggle('open')
+                            infoeGus1.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetGus1.classList.remove('open')
+                            infogGus1.classList.remove('open')
+                            gadgetGus2.classList.remove('open')
+                            infogGus2.classList.remove('open')
+                            estelarGus2.classList.remove('open')
+                            infoeGus2.classList.remove('open')
+                
+                            const isOpen1 = infoeGus1.classList.contains('open')
+                            const isOpen2 = estelarGus1.classList.contains('open')
+                        }
+                
+                        estelarGus2.onclick = function (){
+                            /*-------AGREGA 'OPEN' A LAS CLASES-------*/
+                            estelarGus2.classList.toggle('open')
+                            infoeGus2.classList.toggle('open')
+                
+                            /*-------REMUEVE 'OPEN' DE LAS CLASES-------*/
+                            gadgetGus1.classList.remove('open')
+                            infogGus1.classList.remove('open')
+                            gadgetGus2.classList.remove('open')
+                            infogGus2.classList.remove('open')
+                            estelarGus1.classList.remove('open')
+                            infoeGus1.classList.remove('open')
+                
+                            const isOpen1 = infoeGus2.classList.contains('open')
+                            const isOpen2 = estelarGus2.classList.contains('open')
+                        }
+                    </script>
                     <div class="ataque">
                         <div class="contAtaque1"><h4 class="titleAtaque1">ATAQUE</h4></div>
                         <div class="contAtaque2"><h4 class="titleAtaque2">GLOBOS LOCOS</h4></div>
