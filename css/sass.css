@@ -577,40 +577,70 @@ header {
 .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud p {
   font-size: 13px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .gadgets, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares {
-  grid-column: 1/2;
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP {
+  grid-column: 1/3;
   grid-row: 2/3;
+  height: 90%;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .gadgets, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares {
   height: 100%;
-  width: 90%;
+  width: 100%;
   background-color: rgb(9, 136, 243);
   border-radius: 5px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .gadgets .contTitleg, .contenedorPersonajes .contBrawl .estadisticasBrawl .gadgets .estelares .contTitle, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .gadgets .contTitle, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contTitleg, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contTitle {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .gadgets .contTitleg, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .gadgets .estelares .contTitle, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .gadgets .contTitle, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contTitleg, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contTitle {
   font-size: 22px;
   color: rgb(247, 251, 251);
   -webkit-text-stroke: 0.2px black;
   position: relative;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .gadgets .contGadgets, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contGadgets {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .gadgets .contGadgets, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contGadgets {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 70%;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .gadgets .contGadgets .contGadget1, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contGadgets .contGadget1, .contenedorPersonajes .contBrawl .estadisticasBrawl .gadgets .contGadgets .contGadget2, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contGadgets .contGadget2 {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .gadgets .contGadgets .contGadget1, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contGadgets .contGadget1, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .gadgets .contGadgets .contGadget2, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contGadgets .contGadget2 {
   height: 50px;
   width: 50px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .gadgets .contGadgets .contGadget1 img, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contGadgets .contGadget1 img, .contenedorPersonajes .contBrawl .estadisticasBrawl .gadgets .contGadgets .contGadget2 img, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contGadgets .contGadget2 img {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .gadgets .contGadgets .contGadget1 img, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contGadgets .contGadget1 img, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .gadgets .contGadgets .contGadget2 img, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contGadgets .contGadget2 img {
   height: 100%;
   width: 100%;
   cursor: pointer;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .gadgets .contGadgets .contGadget1.open, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contGadgets .contGadget1.open, .contenedorPersonajes .contBrawl .estadisticasBrawl .gadgets .contGadgets .open.contGadget2, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contGadgets .open.contGadget2 {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .gadgets .contGadgets .contGadget1.open, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contGadgets .contGadget1.open, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .gadgets .contGadgets .open.contGadget2, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contGadgets .open.contGadget2 {
   height: 55px;
   width: 55px;
 }
-.contenedorPersonajes .contBrawl .estadisticasBrawl .gadgets .contGadgets .contGadget2.open, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contGadgets .contGadget2.open {
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .gadgets .contGadgets .contGadget2.open, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contGadgets .contGadget2.open {
+  height: 55px;
+  width: 55px;
+}
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contEstelar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70%;
+}
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contEstelar .contEstelar1, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contEstelar .contEstelar2 {
+  height: 50px;
+  width: 50px;
+}
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contEstelar .contEstelar1 img, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contEstelar .contEstelar2 img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contEstelar .contEstelar1.open, .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contEstelar .open.contEstelar2 {
+  height: 55px;
+  width: 55px;
+}
+.contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP .estelares .contEstelar .contEstelar2.open {
   height: 55px;
   width: 55px;
 }
@@ -624,6 +654,7 @@ header {
   color: rgb(247, 251, 251);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .contenedorPersonajes .contBrawl .estadisticasBrawl .infoGadget1, .contenedorPersonajes .contBrawl .estadisticasBrawl .infoEstelar1, .contenedorPersonajes .contBrawl .estadisticasBrawl .infoEstelar2, .contenedorPersonajes .contBrawl .estadisticasBrawl .infoGadget2 {
   grid-column: 1/3;
@@ -649,35 +680,6 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-.contenedorPersonajes .contBrawl .estadisticasBrawl .estelares {
-  grid-column: 2/3;
-  width: 100%;
-  position: relative;
-  right: 7px;
-}
-.contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contEstelar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 70%;
-}
-.contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contEstelar .contEstelar1, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contEstelar .contEstelar2 {
-  height: 50px;
-  width: 50px;
-}
-.contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contEstelar .contEstelar1 img, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contEstelar .contEstelar2 img {
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-}
-.contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contEstelar .contEstelar1.open, .contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contEstelar .open.contEstelar2 {
-  height: 55px;
-  width: 55px;
-}
-.contenedorPersonajes .contBrawl .estadisticasBrawl .estelares .contEstelar .contEstelar2.open {
-  height: 55px;
-  width: 55px;
 }
 .contenedorPersonajes .contBrawl .estadisticasBrawl .infoEstelar1.open, .contenedorPersonajes .contBrawl .estadisticasBrawl .infoEstelar2.open {
   display: block;
@@ -1095,7 +1097,7 @@ header {
   /*-------PERSONAJES-------*/
   .contenedorPersonajes .contBrawl .estadisticasBrawl {
     grid-template-columns: 40% 1fr;
-    grid-template-rows: 130px 290px 215px;
+    grid-template-rows: 130px 100px 170px 290px 215px;
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque, .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
     grid-template-rows: 20px 20px 90px 20px 50px 20px 50px;
@@ -1103,7 +1105,7 @@ header {
   .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
     grid-template-rows: 20px 20px 80px 20px 50px;
   }
-  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .jacky {
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .super .jacky2 {
     top: -10px;
   }
   /*-------MULTIMEDIA-------*/
@@ -1245,7 +1247,7 @@ header {
   /*-------PERSONAJES-------*/
   .contenedorPersonajes .contBrawl .estadisticasBrawl {
     grid-template-columns: 50% 1fr;
-    grid-template-rows: 200px auto;
+    grid-template-rows: 200px 100px 150px auto;
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .salud {
     grid-template-rows: repeat(4, auto);
@@ -1259,9 +1261,12 @@ header {
   .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud p {
     font-size: 15px;
   }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP, .contenedorPersonajes .contBrawl .estadisticasBrawl .infoGeneral, .contenedorPersonajes .contBrawl .estadisticasBrawl .infoGadget1, .contenedorPersonajes .contBrawl .estadisticasBrawl .infoEstelar1, .contenedorPersonajes .contBrawl .estadisticasBrawl .infoEstelar2 {
+    width: 97%;
+  }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque, .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 4/5;
     grid-template-rows: 20px 20px 130px 20px 50px 20px 50px;
     margin: 20px 0;
   }
@@ -1270,7 +1275,7 @@ header {
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 4/5;
     grid-template-rows: 20px 20px 200px 20px 50px;
     margin: 20px 0;
   }
@@ -1459,20 +1464,32 @@ header {
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl {
     grid-template-columns: 25% 1fr 1fr;
-    grid-template-rows: 160px auto;
+    grid-template-rows: 160px auto 200px;
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .salud {
     grid-column: 1/2;
     grid-row: 2/3;
-    height: 79%;
+    height: 100%;
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud {
     height: 150%;
     margin-top: -30px;
   }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .contGYSP {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    flex-direction: column;
+    width: 90%;
+  }
+  .contenedorPersonajes .contBrawl .estadisticasBrawl .infoGeneral, .contenedorPersonajes .contBrawl .estadisticasBrawl .infoGadget1, .contenedorPersonajes .contBrawl .estadisticasBrawl .infoEstelar1, .contenedorPersonajes .contBrawl .estadisticasBrawl .infoEstelar2, .contenedorPersonajes .contBrawl .estadisticasBrawl .infoGadget2 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    height: 90%;
+  }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque, .contenedorPersonajes .contBrawl .estadisticasBrawl .super {
     grid-column: 2/3;
     grid-row: 1/3;
+    margin-bottom: 0;
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .jacky1, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .jacky1, .contenedorPersonajes .contBrawl .estadisticasBrawl .ataque .rico, .contenedorPersonajes .contBrawl .estadisticasBrawl .super .rico {
     top: 5px;
@@ -1634,6 +1651,13 @@ header {
   }
   .menuDesplegable {
     display: none;
+  }
+  /*-------SUMARIO-------*/
+  .barraSumario {
+    right: 2%;
+  }
+  .sumarioDesplegable {
+    right: 2rem;
   }
   /*-------INICIO-------*/
   .contenedorMain {
@@ -1864,9 +1888,12 @@ header {
     align-items: center;
     grid-template-columns: 1fr 1fr;
   }
+  .contenedorPersonajes .contBrawl {
+    width: 95%;
+  }
   .contenedorPersonajes .contBrawl .estadisticasBrawl {
     grid-template-columns: 20% 1fr 1fr;
-    grid-template-rows: 110px auto;
+    grid-template-rows: 110px auto 200px;
   }
   .contenedorPersonajes .contBrawl .estadisticasBrawl .salud .infoSalud {
     margin-top: -60px;

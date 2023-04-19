@@ -29,13 +29,13 @@
         .contBrawl{
             .estadisticasBrawl{
                 grid-template-columns: 40% 1fr;
-                grid-template-rows: 130px 290px 215px;
+                grid-template-rows: 130px 100px 170px 290px 215px;
                 .ataque{
                     grid-template-rows: 20px 20px 90px 20px 50px 20px 50px;
                 }
                 .super{
                     grid-template-rows: 20px 20px 80px 20px 50px;
-                    .jacky{
+                    .jacky2{
                         top: -10px;
                     }
                 }

@@ -22,9 +22,10 @@
         align-items: center;
         grid-template-columns: 1fr 1fr; 
         .contBrawl{
+            width: 95%;
             .estadisticasBrawl{
                 grid-template-columns: 20% 1fr 1fr;
-                grid-template-rows: 110px auto;
+                grid-template-rows: 110px auto 200px;
                 .salud{
                     .infoSalud{
                         margin-top: -60px;

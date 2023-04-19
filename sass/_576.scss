@@ -44,7 +44,7 @@
         .contBrawl{
             .estadisticasBrawl{
                 grid-template-columns: 50% 1fr;
-                grid-template-rows: 200px auto;
+                grid-template-rows: 200px 100px 150px auto;
                 .salud{
                     grid-template-rows: repeat(4, auto);
                     .contSalud1{
@@ -59,9 +59,12 @@
                         }
                     }
                 }
+                .contGYSP, .infoGeneral, .infoGadget1{
+                    width: 97%;
+                }
                 .ataque{
                     grid-column: 1/2;
-                    grid-row: 2/3;
+                    grid-row: 4/5;
                     grid-template-rows: 20px 20px 130px 20px 50px 20px 50px;
                     margin: 20px 0;
                     .jacky1{
@@ -70,7 +73,7 @@
                 }
                 .super{
                     grid-column: 2/3;
-                    grid-row: 2/3;
+                    grid-row: 4/5;
                     grid-template-rows: 20px 20px 200px 20px 50px;
                     margin: 20px 0;
                     .barley, .carl, .jacky2, .gus{

@@ -23,6 +23,14 @@
         display: none;
     }
 
+    /*-------SUMARIO-------*/
+    .barraSumario{
+        right: 2%;
+    }
+    .sumarioDesplegable{
+        right: 2rem;
+    }
+
     /*-------INICIO-------*/
     .contenedorMain{
         grid-template-columns: 1fr 1fr;
