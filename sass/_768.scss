@@ -206,52 +206,23 @@
     /*-------TEMPORADAS-------*/
     .contTemporadas{
         gap: 40px;
+        grid-template-rows: 350px;
         .contTemp{
-            .imageTemp{
-                margin-left: 50px;
-            }
-        }
-        .diecisiete{
-            .imageTemp{
-                .banner{
-                    width: 97%;
-                    margin-left: -8px;
-                }
-            }
+            grid-template-rows: 340px;
         }
         .dieciseis, .catorce{
             .imageTemp{
                 grid-column: 2/3;
-                grid-row: 1/2;
-                
             }
-            .infoTemp, .infoTemp2{
+            .infoTemp{
                 grid-column: 1/2;
                 grid-row: 1/2;
-                margin-left: 120px;
-                border-left: 2px solid black;
-                padding-right: 20px;
+                margin-left: 55px;
                 p{
-                    padding: 8px 41px 8px 8px;
+                    padding: 8px 40px 8px 8px;
                 }
             }
-        }
-        .quince{
-            .imageTemp{
-                .banner{
-                    width: 97%;
-                    margin-left: -11px;
-                }
-            }
-        }
-        .catorce{
-            .imageTemp{
-                .banner{
-                    width: 98%;
-                    margin-left: -14px;
-                }
-            }
-        }
+        } 
     }
 
     /*-------ACTUALIZACIONES-------*/

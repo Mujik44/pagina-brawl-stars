@@ -52,22 +52,19 @@
     .contTemporadas{
         .contTemp{
             .imageTemp{
-                .carga{
-                    img{
-                        margin-left: -15.5px;
-                    }
+                .tituloTemp{
+                    top: 75px;
+                    right: 45px;
                 }
-                .carga2{
-                    img{
-                        margin-left: -19.5px;
-                    }
+                .banner{
+                    width: 85%;
                 }
             }
             .infoTemp{
-                margin-left: -26px;
-            }
-            .infoTemp2{
-                margin-left: -30px;
+                margin-left: -52px;
+                p{
+                    padding-left: 4.7rem;
+                }
             }
         }
     }

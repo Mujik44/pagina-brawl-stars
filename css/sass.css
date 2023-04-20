@@ -163,6 +163,7 @@ header {
   transition: max-height 0.5s linear;
   z-index: 150;
   overflow-y: auto;
+  list-style-type: none;
 }
 .sumarioDesplegable li {
   padding: 0.7rem;
@@ -192,6 +193,11 @@ header {
 
 .sumarioDesplegable.open {
   max-height: 300px;
+}
+
+/*-------AGREGA MARGIN TOP PARA EL SUMARIO-------*/
+:target {
+  scroll-margin-top: 90px;
 }
 
 .menuDesplegable {
@@ -226,24 +232,26 @@ header {
   max-height: 350px;
 }
 
-.allRedes {
+footer {
+  z-index: 190;
+}
+footer .allRedes {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.allRedes .redes1 {
+footer .allRedes .redes1 {
   padding: 10px;
   width: 65px;
 }
-.allRedes .redes2 {
+footer .allRedes .redes2 {
   padding: 10px;
   width: 45px;
 }
-
-.descargar {
+footer .descargar {
   display: grid;
   justify-items: center;
 }
-.descargar .descargas {
+footer .descargar .descargas {
   height: 40px;
   margin: 10px;
 }
@@ -479,7 +487,8 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .mainPersonajes .contParrafo1 p, .mainPersonajes .contParrafo2 p {
   height: 90%;
@@ -903,23 +912,11 @@ header {
 .contTemporadas .contTemp .imageTemp {
   margin-left: -6px;
 }
-.contTemporadas .contTemp .imageTemp .banner, .contTemporadas .contTemp .imageTemp .banner2 {
-  display: flex;
-  width: 95%;
-  position: relative;
-}
-.contTemporadas .contTemp .imageTemp .banner img, .contTemporadas .contTemp .imageTemp .banner2 img {
-  width: 99.8%;
-  filter: blur(2px);
-}
-.contTemporadas .contTemp .imageTemp .banner2 img {
-  transform: skewX(-4.6deg);
-}
 .contTemporadas .contTemp .imageTemp .tituloTemp {
   width: 90%;
   position: relative;
-  margin-top: -60px;
-  margin-bottom: 15px;
+  top: 65px;
+  z-index: 100;
 }
 .contTemporadas .contTemp .imageTemp .tituloTemp h4 {
   font-size: 18px;
@@ -930,34 +927,26 @@ header {
 .contTemporadas .contTemp .imageTemp .tituloTemp .nombreTemp {
   font-size: 22px;
 }
-.contTemporadas .contTemp .imageTemp .carga, .contTemporadas .contTemp .imageTemp .carga2 {
+.contTemporadas .contTemp .imageTemp .banner {
+  display: flex;
   width: 95%;
+  position: relative;
 }
-.contTemporadas .contTemp .imageTemp .carga img, .contTemporadas .contTemp .imageTemp .carga2 img {
-  border-top: 5px solid black;
-  margin-left: -12.5px;
-  margin-top: -3px;
+.contTemporadas .contTemp .imageTemp .banner img {
   width: 100%;
-  transform: skewX(-4.6deg);
+  transform: skew(-3deg);
 }
-.contTemporadas .contTemp .imageTemp .carga2 img {
-  margin-left: -15.5px;
-}
-.contTemporadas .contTemp .infoTemp, .contTemporadas .contTemp .infoTemp2 {
+.contTemporadas .contTemp .infoTemp {
   width: 95%;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 20px;
-  margin-left: -21px;
+  margin-left: -9px;
   margin-top: -20px;
 }
-.contTemporadas .contTemp .infoTemp p, .contTemporadas .contTemp .infoTemp2 p {
+.contTemporadas .contTemp .infoTemp p {
   text-align: center;
   padding: 30px;
-}
-.contTemporadas .contTemp .infoTemp2 {
-  margin-left: -24px;
 }
 
 /* -------ACTUALIZACIONES------- */
@@ -1113,17 +1102,18 @@ header {
     grid-template-rows: repeat(18, 220px);
   }
   /*-------TEMPORADAS-------*/
-  .contTemporadas .contTemp .imageTemp .carga img, .contTemporadas .contTemp .imageTemp .carga2 img {
-    margin-left: -15.5px;
+  .contTemporadas .contTemp .imageTemp .tituloTemp {
+    top: 75px;
+    right: 45px;
   }
-  .contTemporadas .contTemp .imageTemp .carga2 img {
-    margin-left: -19.5px;
+  .contTemporadas .contTemp .imageTemp .banner {
+    width: 85%;
   }
-  .contTemporadas .contTemp .infoTemp, .contTemporadas .contTemp .infoTemp2 {
-    margin-left: -26px;
+  .contTemporadas .contTemp .infoTemp {
+    margin-left: -52px;
   }
-  .contTemporadas .contTemp .infoTemp2 {
-    margin-left: -30px;
+  .contTemporadas .contTemp .infoTemp p {
+    padding-left: 4.7rem;
   }
   /*-------ACTUALIZACIONES-------*/
   .contActualizaciones .contAct .imageAct .cargaAct img, .contActualizaciones .contAct .imageAct .cargaAct2 img {
@@ -1301,8 +1291,13 @@ header {
     justify-items: center;
     align-items: center;
   }
-  .contTemporadas .contTemp .imageTemp .banner, .contTemporadas .contTemp .imageTemp .banner2 {
-    margin-left: -5px;
+  .contTemporadas .contTemp .imageTemp {
+    margin-left: 10px;
+    height: 100%;
+  }
+  .contTemporadas .contTemp .imageTemp .tituloTemp {
+    top: 20px;
+    right: -8px;
   }
   .contTemporadas .contTemp .imageTemp .tituloTemp h4 {
     font-size: 15px;
@@ -1310,7 +1305,14 @@ header {
   .contTemporadas .contTemp .imageTemp .tituloTemp .nombreTemp {
     font-size: 20px;
   }
-  .contTemporadas .contTemp .infoTemp, .contTemporadas .contTemp .infoTemp2, .contTemporadas .contTemp .infoTemp2 {
+  .contTemporadas .contTemp .imageTemp .banner {
+    margin-left: 6px;
+    height: 100%;
+    width: 95%;
+    position: relative;
+    bottom: 2.5rem;
+  }
+  .contTemporadas .contTemp .infoTemp {
     height: 85%;
     width: 110%;
     margin-left: -55px;
@@ -1320,7 +1322,7 @@ header {
     display: grid;
     align-items: center;
   }
-  .contTemporadas .contTemp .infoTemp p, .contTemporadas .contTemp .infoTemp2 p, .contTemporadas .contTemp .infoTemp2 p {
+  .contTemporadas .contTemp .infoTemp p {
     padding: 8px 8px 8px 41px;
   }
   /*-------ACTUALIZACION-------*/
@@ -1564,35 +1566,21 @@ header {
   /*-------TEMPORADAS-------*/
   .contTemporadas {
     gap: 40px;
+    grid-template-rows: 350px;
   }
-  .contTemporadas .contTemp .imageTemp {
-    margin-left: 50px;
-  }
-  .contTemporadas .diecisiete .imageTemp .banner, .contTemporadas .diecisiete .contTemp .imageTemp .banner2, .contTemporadas .contTemp .diecisiete .imageTemp .banner2 {
-    width: 97%;
-    margin-left: -8px;
+  .contTemporadas .contTemp {
+    grid-template-rows: 340px;
   }
   .contTemporadas .dieciseis .imageTemp, .contTemporadas .catorce .imageTemp {
     grid-column: 2/3;
-    grid-row: 1/2;
   }
-  .contTemporadas .dieciseis .infoTemp, .contTemporadas .dieciseis .contTemp .infoTemp2, .contTemporadas .contTemp .dieciseis .infoTemp2, .contTemporadas .dieciseis .infoTemp2, .contTemporadas .catorce .infoTemp, .contTemporadas .catorce .contTemp .infoTemp2, .contTemporadas .contTemp .catorce .infoTemp2, .contTemporadas .catorce .infoTemp2 {
+  .contTemporadas .dieciseis .infoTemp, .contTemporadas .catorce .infoTemp {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-left: 120px;
-    border-left: 2px solid black;
-    padding-right: 20px;
+    margin-left: 55px;
   }
-  .contTemporadas .dieciseis .infoTemp p, .contTemporadas .dieciseis .contTemp .infoTemp2 p, .contTemporadas .contTemp .dieciseis .infoTemp2 p, .contTemporadas .dieciseis .infoTemp2 p, .contTemporadas .catorce .infoTemp p, .contTemporadas .catorce .contTemp .infoTemp2 p, .contTemporadas .contTemp .catorce .infoTemp2 p, .contTemporadas .catorce .infoTemp2 p {
-    padding: 8px 41px 8px 8px;
-  }
-  .contTemporadas .quince .imageTemp .banner, .contTemporadas .quince .contTemp .imageTemp .banner2, .contTemporadas .contTemp .quince .imageTemp .banner2 {
-    width: 97%;
-    margin-left: -11px;
-  }
-  .contTemporadas .catorce .imageTemp .banner, .contTemporadas .catorce .contTemp .imageTemp .banner2, .contTemporadas .contTemp .catorce .imageTemp .banner2 {
-    width: 98%;
-    margin-left: -14px;
+  .contTemporadas .dieciseis .infoTemp p, .contTemporadas .catorce .infoTemp p {
+    padding: 8px 40px 8px 8px;
   }
   /*-------ACTUALIZACIONES-------*/
   .contActualizaciones {
@@ -1799,35 +1787,41 @@ header {
     grid-row: 6/8;
   }
   /*-------TEMPORADAS-------*/
-  .contTemporadas {
-    grid-template-rows: repeat(4, 350px);
-  }
-  .contTemporadas .diecisiete, .contTemporadas .quince {
-    grid-template-rows: 330px;
-  }
   .contTemporadas .diecisiete .imageTemp, .contTemporadas .quince .imageTemp {
-    margin-left: 100px;
-    height: 100%;
+    margin-left: 3rem;
   }
-  .contTemporadas .diecisiete .infoTemp, .contTemporadas .diecisiete .contTemp .infoTemp2, .contTemporadas .contTemp .diecisiete .infoTemp2, .contTemporadas .diecisiete .infoTemp2, .contTemporadas .quince .infoTemp, .contTemporadas .quince .contTemp .infoTemp2, .contTemporadas .contTemp .quince .infoTemp2, .contTemporadas .quince .infoTemp2 {
-    margin-left: -200px;
+  .contTemporadas .diecisiete .imageTemp .tituloTemp, .contTemporadas .quince .imageTemp .tituloTemp {
+    top: 40px;
   }
-  .contTemporadas .diecisiete .infoTemp p, .contTemporadas .diecisiete .contTemp .infoTemp2 p, .contTemporadas .contTemp .diecisiete .infoTemp2 p, .contTemporadas .diecisiete .infoTemp2 p, .contTemporadas .quince .infoTemp p, .contTemporadas .quince .contTemp .infoTemp2 p, .contTemporadas .contTemp .quince .infoTemp2 p, .contTemporadas .quince .infoTemp2 p {
-    padding: 8px 30px 8px 120px;
+  .contTemporadas .diecisiete .imageTemp .tituloTemp h4, .contTemporadas .quince .imageTemp .tituloTemp h4 {
+    font-size: 20px;
   }
-  .contTemporadas .dieciseis, .contTemporadas .catorce {
-    grid-template-rows: 330px;
+  .contTemporadas .diecisiete .imageTemp .tituloTemp .nombreTemp, .contTemporadas .quince .imageTemp .tituloTemp .nombreTemp {
+    font-size: 25px;
+  }
+  .contTemporadas .diecisiete .infoTemp, .contTemporadas .quince .infoTemp {
+    margin-left: -17rem;
+  }
+  .contTemporadas .diecisiete .infoTemp p, .contTemporadas .quince .infoTemp p {
+    padding: 8px 20px 8px 140px;
   }
   .contTemporadas .dieciseis .imageTemp, .contTemporadas .catorce .imageTemp {
-    margin-right: 100px;
-    margin-left: 0px;
-    height: 100%;
+    margin-right: 2rem;
   }
-  .contTemporadas .dieciseis .infoTemp, .contTemporadas .dieciseis .contTemp .infoTemp2, .contTemporadas .contTemp .dieciseis .infoTemp2, .contTemporadas .dieciseis .infoTemp2, .contTemporadas .catorce .infoTemp, .contTemporadas .catorce .contTemp .infoTemp2, .contTemporadas .contTemp .catorce .infoTemp2, .contTemporadas .catorce .infoTemp2 {
-    margin-right: -200px;
+  .contTemporadas .dieciseis .imageTemp .tituloTemp, .contTemporadas .catorce .imageTemp .tituloTemp {
+    top: 40px;
   }
-  .contTemporadas .dieciseis .infoTemp p, .contTemporadas .dieciseis .contTemp .infoTemp2 p, .contTemporadas .contTemp .dieciseis .infoTemp2 p, .contTemporadas .dieciseis .infoTemp2 p, .contTemporadas .catorce .infoTemp p, .contTemporadas .catorce .contTemp .infoTemp2 p, .contTemporadas .contTemp .catorce .infoTemp2 p, .contTemporadas .catorce .infoTemp2 p {
-    padding: 8px 200px 8px 30px;
+  .contTemporadas .dieciseis .imageTemp .tituloTemp h4, .contTemporadas .catorce .imageTemp .tituloTemp h4 {
+    font-size: 20px;
+  }
+  .contTemporadas .dieciseis .imageTemp .tituloTemp .nombreTemp, .contTemporadas .catorce .imageTemp .tituloTemp .nombreTemp {
+    font-size: 25px;
+  }
+  .contTemporadas .dieciseis .infoTemp, .contTemporadas .catorce .infoTemp {
+    margin-right: -14rem;
+  }
+  .contTemporadas .dieciseis .infoTemp p, .contTemporadas .catorce .infoTemp p {
+    padding: 8px 140px 8px 20px;
   }
   /*-------ACTUALIZACIONES-------*/
   .contActualizaciones {
@@ -1983,26 +1977,17 @@ header {
   .contTemporadas .diecisiete, .contTemporadas .quince, .contTemporadas .dieciseis, .contTemporadas .catorce {
     grid-template-rows: 460px;
   }
-  .contTemporadas .diecisiete .imageTemp .banner, .contTemporadas .diecisiete .imageTemp .banner2, .contTemporadas .quince .imageTemp .banner, .contTemporadas .quince .imageTemp .banner2, .contTemporadas .dieciseis .imageTemp .banner, .contTemporadas .dieciseis .imageTemp .banner2, .contTemporadas .catorce .imageTemp .banner, .contTemporadas .catorce .imageTemp .banner2 {
-    margin-left: -3px;
-  }
-  .contTemporadas .diecisiete .imageTemp .tituloTemp, .contTemporadas .quince .imageTemp .tituloTemp, .contTemporadas .dieciseis .imageTemp .tituloTemp, .contTemporadas .catorce .imageTemp .tituloTemp {
-    margin-top: -85px;
-  }
   .contTemporadas .diecisiete .imageTemp .tituloTemp h4, .contTemporadas .quince .imageTemp .tituloTemp h4, .contTemporadas .dieciseis .imageTemp .tituloTemp h4, .contTemporadas .catorce .imageTemp .tituloTemp h4 {
     font-size: 25px;
   }
   .contTemporadas .diecisiete .imageTemp .tituloTemp .nombreTemp, .contTemporadas .quince .imageTemp .tituloTemp .nombreTemp, .contTemporadas .dieciseis .imageTemp .tituloTemp .nombreTemp, .contTemporadas .catorce .imageTemp .tituloTemp .nombreTemp {
     font-size: 35px;
   }
-  .contTemporadas .diecisiete .infoTemp p, .contTemporadas .diecisiete .contTemp .infoTemp2 p, .contTemporadas .contTemp .diecisiete .infoTemp2 p, .contTemporadas .diecisiete .infoTemp2 p, .contTemporadas .quince .infoTemp p, .contTemporadas .quince .contTemp .infoTemp2 p, .contTemporadas .contTemp .quince .infoTemp2 p, .contTemporadas .quince .infoTemp2 p, .contTemporadas .dieciseis .infoTemp p, .contTemporadas .dieciseis .contTemp .infoTemp2 p, .contTemporadas .contTemp .dieciseis .infoTemp2 p, .contTemporadas .dieciseis .infoTemp2 p, .contTemporadas .catorce .infoTemp p, .contTemporadas .catorce .contTemp .infoTemp2 p, .contTemporadas .contTemp .catorce .infoTemp2 p, .contTemporadas .catorce .infoTemp2 p {
+  .contTemporadas .diecisiete .imageTemp .banner, .contTemporadas .quince .imageTemp .banner, .contTemporadas .dieciseis .imageTemp .banner, .contTemporadas .catorce .imageTemp .banner {
+    bottom: 4.5rem;
+  }
+  .contTemporadas .diecisiete .infoTemp p, .contTemporadas .quince .infoTemp p, .contTemporadas .dieciseis .infoTemp p, .contTemporadas .catorce .infoTemp p {
     font-size: 20px;
-  }
-  .contTemporadas .dieciseis .imageTemp .banner2 {
-    margin-left: 5px;
-  }
-  .contTemporadas .catorce .imageTemp .banner, .contTemporadas .catorce .contTemp .imageTemp .banner2, .contTemporadas .contTemp .catorce .imageTemp .banner2 {
-    margin-left: -7px;
   }
   /*-------ACTUALIZACIONES-------*/
   .contActualizaciones {

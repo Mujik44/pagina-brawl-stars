@@ -6,7 +6,8 @@
         @include sizes(100%, auto);
         display: flex;
         justify-content: center;
-        border: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
         p{
             @include sizes(90%, 90%);
             text-align: center;

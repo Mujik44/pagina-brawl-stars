@@ -159,6 +159,7 @@ header{
     transition: max-height 0.5s linear;
     z-index: 150;
     overflow-y: auto;
+    list-style-type: none;
     li{
         padding: 0.7rem;
         display: flex;
@@ -189,4 +190,9 @@ header{
 }
 .sumarioDesplegable.open{
     max-height: 300px;
+}
+
+/*-------AGREGA MARGIN TOP PARA EL SUMARIO-------*/
+:target {
+    scroll-margin-top: 90px;
 }

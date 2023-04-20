@@ -120,11 +120,7 @@
         .diecisiete, .quince, .dieciseis, .catorce{
             grid-template-rows: 460px;
             .imageTemp{
-                .banner, .banner2{
-                    margin-left: -3px;
-                }
                 .tituloTemp{
-                    margin-top: -85px;
                     h4{
                         font-size: 25px;
                     }
@@ -132,24 +128,13 @@
                         font-size: 35px;
                     }
                 }
+                .banner{
+                    bottom: 4.5rem
+                }
             }
-            .infoTemp, .infoTemp2{
+            .infoTemp{
                 p{
                     font-size: 20px;
-                }
-            }
-        }
-        .dieciseis{
-            .imageTemp{
-                .banner2{
-                    margin-left: 5px;
-                }
-            }
-        }
-        .catorce{
-            .imageTemp{
-                .banner{
-                    margin-left: -7px;
                 }
             }
         }

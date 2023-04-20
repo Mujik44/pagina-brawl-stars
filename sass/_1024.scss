@@ -191,31 +191,43 @@
 
     /*-------TEMPORADAS-------*/
     .contTemporadas{
-        grid-template-rows: repeat(4, 350px);
         .diecisiete, .quince{
-            grid-template-rows: 330px;
             .imageTemp{
-                margin-left: 100px;
-                height: 100%
+                margin-left: 3rem;
+                .tituloTemp{
+                    top: 40px;
+                    h4{
+                        font-size: 20px; 
+                    }
+                    .nombreTemp{
+                        font-size: 25px;
+                    }
+                }
             }
-            .infoTemp, .infoTemp2{
-                margin-left: -200px;
+            .infoTemp{
+                margin-left: -17rem;
                 p{
-                    padding: 8px 30px 8px 120px;
+                    padding: 8px 20px 8px 140px;
                 }
             }
         }
         .dieciseis, .catorce{
-            grid-template-rows: 330px;
             .imageTemp{
-                margin-right: 100px;
-                margin-left: 0px;
-                height: 100%
+                margin-right: 2rem;
+                .tituloTemp{
+                    top: 40px;
+                    h4{
+                        font-size: 20px; 
+                    }
+                    .nombreTemp{
+                        font-size: 25px;
+                    }
+                }
             }
-            .infoTemp, .infoTemp2{
-                margin-right: -200px;
+            .infoTemp{
+                margin-right: -14rem;
                 p{
-                    padding: 8px 200px 8px 30px;
+                    padding: 8px 140px 8px 20px;
                 }
             }
         }

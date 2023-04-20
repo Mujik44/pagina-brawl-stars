@@ -7,26 +7,11 @@
         flex-direction: column;
         .imageTemp{
             margin-left: -6px;
-            .banner{
-                display: flex;
-                width: 95%;
-                position: relative;
-                img{
-                    width: 99.8%;
-                    filter: blur(2px);
-                }
-            }
-            .banner2{
-                @extend .banner;
-                img{
-                    transform: skewX(-4.6deg);
-                }
-            }
             .tituloTemp{
                 width: 90%;
                 position: relative;
-                margin-top: -60px;
-                margin-bottom: 15px;
+                top: 65px;
+                z-index: 100;
                 h4{
                     font-size: 18px;
                     text-align: right;
@@ -37,39 +22,27 @@
                     font-size: 22px;
                 }
             }
-            .carga{
+            .banner{
+                display: flex;
                 width: 95%;
+                position: relative;
                 img{
-                    border-top: 5px solid black;
-                    margin-left: -12.5px;
-                    margin-top: -3px;
                     width: 100%;
-                    transform: skewX(-4.6deg);
-                }
-            }
-            .carga2{
-                @extend .carga;
-                img{
-                    margin-left: -15.5px;
+                    transform: skew(-3deg);
                 }
             }
         }
         .infoTemp{
             width: 95%;
-            border-right: 2px solid black;
-            border-bottom: 2px solid black;
+            border: 2px solid black;
             border-radius: 5px;
             margin-bottom: 20px;
-            margin-left: -21px;
+            margin-left: -9px;
             margin-top: -20px;
             p{
                 text-align: center;
                 padding: 30px;
             }
-        }
-        .infoTemp2{
-            @extend .infoTemp;
-            margin-left: -24px;
         }
     }
 }

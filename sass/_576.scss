@@ -102,10 +102,11 @@
             justify-items: center;
             align-items: center;
             .imageTemp{
-                .banner, .banner2{
-                    margin-left: -5px;
-                }
+                margin-left: 10px;
+                height: 100%;
                 .tituloTemp{
+                    top: 20px;
+                    right: -8px;
                     h4{
                         font-size: 15px;
                     }
@@ -113,8 +114,14 @@
                         font-size: 20px;
                     }
                 }
+                .banner{
+                    margin-left: 6px;
+                    @include sizes (95%, 100%);
+                    position: relative;
+                    bottom: 2.5rem;
+                }
             }
-            .infoTemp, .infoTemp2{
+            .infoTemp{
                 @include sizes(110%, 85%);
                 margin-left: -55px;
                 margin-top: 0;

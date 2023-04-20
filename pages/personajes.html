@@ -102,7 +102,8 @@
     </section>
     <!-- MENU DESPLEGABLE SUMARIO -->
     <div class="sumarioDesplegable">
-        <li>
+        <ul>
+            <li>
             <a href="#titlePrinc">BRAWLERS Y SUS CARACTERISTICAS</a>
         </li>
         <li>
@@ -172,6 +173,7 @@
                 </li>
             </ul>
         </li>
+        </ul>
     </div>
     <script>
         const botonSum = document.querySelector('.botonSumario')
@@ -189,7 +191,7 @@
     </script>
     <main>  
         <div class="contPortada"><img class="portada" src="../img/portada-personajes2.jpg" alt="portada de personajes"></div>
-        <div class="mainPersonajes">
+        <div class="mainPersonajes wow fadeInUp">
             <h1>
                 PERSONAJES
             </h1>
@@ -215,8 +217,8 @@
         </h2>
         <section class="contenedorPersonajes especiales">
             <div class="contBrawl shelly">
-                <div class="nombreBrawl">
-                    <h2 id="shelly">
+                <div id="shelly" class="nombreBrawl">
+                    <h2>
                         SHELLY<br>Destructora
                     </h2>
                 </div>
