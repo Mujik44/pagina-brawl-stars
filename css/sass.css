@@ -233,6 +233,7 @@ header {
 }
 
 footer {
+  position: relative;
   z-index: 190;
 }
 footer .allRedes {
@@ -451,27 +452,27 @@ footer .descargar .descargas {
   color: white;
 }
 .contenedorJuegos .atrapaGemas {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/map_4.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/map_4.png);
   background-position: -78% 0;
 }
 .contenedorJuegos .supervivencia {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/map_2.png.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/map_2.png.png);
   background-position: -58% 0;
 }
 .contenedorJuegos .balonBrawl {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/map_16.png.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/map_16.png.png);
   background-position: -100% 0;
 }
 .contenedorJuegos .cazaEstelar {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/map_15.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/map_15.png);
   background-position: 10% 0;
 }
 .contenedorJuegos .zonaRestringida {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/map_13.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/map_13.png);
   background-position: 38% 0;
 }
 .contenedorJuegos .atraco {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/map_5.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/map_5.png);
   background-position: 85% 0;
 }
 
@@ -941,7 +942,7 @@ footer .descargar .descargas {
   border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 20px;
-  margin-left: -9px;
+  margin-left: -11px;
   margin-top: -20px;
 }
 .contTemporadas .contTemp .infoTemp p {
@@ -991,7 +992,7 @@ footer .descargar .descargas {
   border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 20px;
-  margin-left: -38px;
+  margin-left: -41px;
   margin-top: -15px;
   padding: 15px;
   padding-top: 30px;
@@ -1079,7 +1080,7 @@ footer .descargar .descargas {
   }
   .contActualizaciones .contAct .infoAct {
     align-items: center;
-    margin-left: -81px;
+    margin-left: -83px;
   }
   .contActualizaciones .contAct .infoAct ul {
     padding-left: 7rem;
@@ -1190,6 +1191,15 @@ footer .descargar .descargas {
   }
   .contenedorMain .carouselMain {
     width: 530px;
+  }
+  /*-------NOSOTROS-------*/
+  .contenedorJuegos .atrapaGemas,
+  .contenedorJuegos .supervivencia,
+  .contenedorJuegos .balonBrawl,
+  .contenedorJuegos .cazaEstelar,
+  .contenedorJuegos .zonaRestringida,
+  .contenedorJuegos .atraco {
+    background-position: 55% 0;
   }
   /*-------PERSONAJES-------*/
   .contenedorPersonajes .contBrawl .estadisticasBrawl {

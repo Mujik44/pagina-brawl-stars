@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- HOVER.CSS -->
+    <link rel="stylesheet" href="../css/hover.css">
     <!-- CSS - SASS -->
     <link rel="stylesheet" href="../css/sass.css">
+    <!-- WOW.JS -->
+    <script src="../js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
     <title>Brawl Stars | Multimedia</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon-16x16.png">
     <meta name="description" content="Descarga Brawl Stars y conoce todo acerca del juego">
@@ -18,57 +26,27 @@
     <!-- BARRA DE NAVEGACION -->
     <header>
         <nav>
-            <div>
-                <a class="hvr-grow" href="../index.html"><img src="../img/logo-brawl-letras.png" alt="logo del juego brawl stars"></a>
-            </div>
-            <div>
-                <a class="hvr-grow" href="../index.html"><img class="logoBrawl" src="../img/logo-brawl.png" alt="logo del juego brawl stars"></a>
-            </div>
+            <div><a class="hvr-grow" href="../index.html"><img src="../img/logo-brawl-letras.png" alt="logo del juego brawl stars"></a></div>
+            <div><a class="hvr-grow" href="../index.html"><img class="logoBrawl" src="../img/logo-brawl.png" alt="logo del juego brawl stars"></a></div>
             <ul>
-                <li>
-                    <a class="hvr-grow" href="../index.html">INICIO</a>
-                </li>
-                <li>
-                    <a class="hvr-grow" href="./nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a class="hvr-grow" href="./personajes.html">PERSONAJES</a>
-                </li>
-                <li>
-                    <a class="hvr-grow" href="./multimedia.html">MULTIMEDIA</a>
-                </li>
-                <li>
-                    <a class="hvr-grow" href="./temporadas.html">TEMPORADAS</a>
-                </li>
-                <li>
-                    <a class="hvr-grow" href="./actualizaciones.html">ACTUALIZACIONES</a>
-                </li>
+                <li><a class="hvr-grow" id="op0" href="../index.html">INICIO</a></li>
+                <li><a class="hvr-grow" id="op1" href="./nosotros.html">NOSOTROS</a></li>
+                <li><a class="hvr-grow" id="op2" href="./personajes.html">PERSONAJES</a></li>
+                <li><a class="hvr-grow" id="op3" href="./multimedia.html">MULTIMEDIA</a></li>
+                <li><a class="hvr-grow" id="op4" href="./temporadas.html">TEMPORADAS</a></li>
+                <li><a class="hvr-grow" id="op5" href="./actualizaciones.html">ACTUALIZACIONES</a></li>
             </ul>
             <!-- BOTON HAMBURGUESA NAVBAR -->
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-            </div>
+            <div class="toggle_btn"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
         </nav>
         <!-- MENU DESPLEGABLE NAVBAR -->
         <div class="menuDesplegable">
-            <li>
-                <a href="../index.html">INICIO</a>
-            </li>
-            <li>
-                <a href="./nosotros.html">NOSOTROS</a>
-            </li>
-            <li>
-                <a href="./personajes.html">PERSONAJES</a>
-            </li>
-            <li>
-                <a href="./multimedia.html">MULTIMEDIA</a>
-            </li>
-            <li>
-                <a href="./temporadas.html">TEMPORADAS</a>
-            </li>
-            <li>
-                <a href="./actualizaciones.html">ACTUALIZACIONES</a>
-            </li>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="./nosotros.html">NOSOTROS</a></li>
+            <li><a href="./personajes.html">PERSONAJES</a></li>
+            <li><a href="./multimedia.html">MULTIMEDIA</a></li>
+            <li><a href="./temporadas.html">TEMPORADAS</a></li>
+            <li><a href="./actualizaciones.html">ACTUALIZACIONES</a></li>
         </div>
     </header>
     <script>
@@ -88,15 +66,11 @@
     <!-- SUMARIO -->
     <section class="barraSumario">
         <!-- BOTON DEL SUMARIO -->
-        <div class="botonSumario">
-            <i class="fa-solid fa-book" style="color: #ffffff;"></i>
-        </div>
+        <div class="botonSumario hvr-rectangle-out"><i class="fa-solid fa-book" style="color: #ffffff;"></i></div>
     </section>
     <!-- MENU DESPLEGABLE SUMARIO -->
     <div class="sumarioDesplegable">
-        <li>
-            <a href="#titlePrinc">GALERIA</a>
-        </li>
+        <li><a href="#titlePrinc">GALERIA</a></li>
     </div>
     <script>
         const botonSum = document.querySelector('.botonSumario')
@@ -114,57 +88,27 @@
     </script>
     <main>
         <div class="contPortada"><img class="portada" src="../img/portada-multimedia.jpg" alt=""portada multimedia></div>
-        <h1 id="titlePrinc">
-            GALERIA
-        </h1>
+        <h1 id="titlePrinc">GALERIA</h1>
         <section class="galeria">
-            <div class="gridFotos galeria1">
-                <img src="../img/galeria-1.jpg" alt="brawl basquet">
-            </div>
-            <div class="gridFotos galeria2">
-                <img src="../img/galeria-2.jpg" alt="meme jessy y rico">
-            </div>
-            <div class="gridFotos galeria3">
-                <img src="../img/galeria-3.jpg" alt="dia de san patricio">
-            </div>
-            <div class="gridFotos galeria4">
-                <img src="../img/galeria-4.jpg" alt="brawloween">
-            </div>
-            <div class="gridFotos galeria5">
-                <img src="../img/galeria-5.jpg" alt="personajes viejo oeste">
-            </div>
-            <div class="gridFotos galeria6">
-                <img src="../img/galeria-6.jpg" alt="persoanjes biodomo">
-            </div>
-            <div class="gridFotos galeria7">
-                <img src="../img/galeria-7.jpg" alt="baner personajes">
-            </div>
-            <div class="gridFotos galeria8">
-                <img src="../img/galeria-8.jpg" alt="sam y el primo">
-            </div>
-            <div class="gridFotos galeria9">
-                <img src="../img/galeria-9.jpg" alt="bull villano">
-            </div>
-            <div class="gridFotos galeria10">
-                <img src="../img/galeria-10.jpg" alt="spike scream">
-            </div>
-            <div class="gridFotos galeria11">
-                <img src="../img/galeria-11.jpg" alt="brawl like a girl">
-            </div>
-            <div class="gridFotos galeria12">
-                <img src="../img/galeria-12.png" alt="bibi cyberpunk">
-            </div>
-            <div class="gridFotos galeria13">
-                <img src="../img/galeria-13.jpg" alt="personajes erase una vez">
-            </div>
+            <div class="gridFotos galeria1"><img src="../img/galeria-1.jpg" alt="brawl basquet"></div>
+            <div class="gridFotos galeria2"><img src="../img/galeria-2.jpg" alt="meme jessy y rico"></div>
+            <div class="gridFotos galeria3"><img src="../img/galeria-3.jpg" alt="dia de san patricio"></div>
+            <div class="gridFotos galeria4"><img src="../img/galeria-4.jpg" alt="brawloween"></div>
+            <div class="gridFotos galeria5"><img src="../img/galeria-5.jpg" alt="personajes viejo oeste"></div>
+            <div class="gridFotos galeria6"><img src="../img/galeria-6.jpg" alt="persoanjes biodomo"></div>
+            <div class="gridFotos galeria7"><img src="../img/galeria-7.jpg" alt="baner personajes"></div>
+            <div class="gridFotos galeria8"><img src="../img/galeria-8.jpg" alt="sam y el primo"></div>
+            <div class="gridFotos galeria9"><img src="../img/galeria-9.jpg" alt="bull villano"></div>
+            <div class="gridFotos galeria10"><img src="../img/galeria-10.jpg" alt="spike scream"></div>
+            <div class="gridFotos galeria11"><img src="../img/galeria-11.jpg" alt="brawl like a girl"></div>
+            <div class="gridFotos galeria12"><img src="../img/galeria-12.png" alt="bibi cyberpunk"></div>
+            <div class="gridFotos galeria13"><img src="../img/galeria-13.jpg" alt="personajes erase una vez"></div>
         </section>
     </main>
 
     <footer>
         <article>
-            <h3>
-                Siguenos en:
-            </h3>
+            <h3>Siguenos en:</h3>
             <div class="allRedes">
                 <a target="_blank" href="https://www.youtube.com/@BrawlStars">
                     <img class="redes2" src="../img/logo-youtube-blanco.svg" alt="logo de youtube">
@@ -189,5 +133,10 @@
             </a>
         </article>
     </footer>
+    <script type="text/javascript">
+        window.onload = function(){
+            document.getElementById("op3").style.color = "#f01919";
+        }
+    </script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,57 +28,27 @@
     <!-- BARRA DE NAVEGACION -->
     <header>
         <nav>
-            <div>
-                <a class="hvr-grow" href="./index.html"><img src="./img/logo-brawl-letras.png" alt="logo del juego brawl stars"></a>
-            </div>
-            <div>
-                <a class="hvr-grow" href="./index.html"><img class="logoBrawl" src="./img/logo-brawl.png" alt="logo del juego brawl stars"></a>
-            </div>
+            <div><a class="hvr-grow" href="./index.html"><img src="./img/logo-brawl-letras.png" alt="logo del juego brawl stars"></a></div>
+            <div><a class="hvr-grow" href="./index.html"><img class="logoBrawl" src="./img/logo-brawl.png" alt="logo del juego brawl stars"></a></div>
             <ul>
-                <li>
-                    <a class="hvr-grow" href="index.html">INICIO</a>
-                </li>
-                <li>
-                    <a class="hvr-grow" href="./pages/nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a class="hvr-grow" href="./pages/personajes.html">PERSONAJES</a>
-                </li>
-                <li>
-                    <a class="hvr-grow" href="./pages/multimedia.html">MULTIMEDIA</a>
-                </li>
-                <li>
-                    <a class="hvr-grow" href="./pages/temporadas.html">TEMPORADAS</a>
-                </li>
-                <li>
-                    <a class="hvr-grow" href="./pages/actualizaciones.html">ACTUALIZACIONES</a>
-                </li>
+                <li><a class="hvr-grow" id="op0" href="index.html">INICIO</a></li>
+                <li><a class="hvr-grow" id="op1" href="./pages/nosotros.html">NOSOTROS</a></li>
+                <li><a class="hvr-grow" id="op2" href="./pages/personajes.html">PERSONAJES</a></li>
+                <li><a class="hvr-grow" id="op3" href="./pages/multimedia.html">MULTIMEDIA</a></li>
+                <li><a class="hvr-grow" id="op4" href="./pages/temporadas.html">TEMPORADAS</a></li>
+                <li><a class="hvr-grow" id="op5" href="./pages/actualizaciones.html">ACTUALIZACIONES</a></li>
             </ul>
             <!-- BOTON HAMBURGUESA NAVBAR -->
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-            </div>
+            <div class="toggle_btn"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
         </nav>
         <!-- MENU DESPLEGABLE NAVBAR -->
         <div class="menuDesplegable">
-            <li>
-                <a href="index.html">INICIO</a>
-            </li>
-            <li>
-                <a href="./pages/nosotros.html">NOSOTROS</a>
-            </li>
-            <li>
-                <a href="./pages/personajes.html">PERSONAJES</a>
-            </li>
-            <li>
-                <a href="./pages/multimedia.html">MULTIMEDIA</a>
-            </li>
-            <li>
-                <a href="./pages/temporadas.html">TEMPORADAS</a>
-            </li>
-            <li>
-                <a href="./pages/actualizaciones.html">ACTUALIZACIONES</a>
-            </li>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
+            <li><a href="./pages/personajes.html">PERSONAJES</a></li>
+            <li><a href="./pages/multimedia.html">MULTIMEDIA</a></li>
+            <li><a href="./pages/temporadas.html">TEMPORADAS</a></li>
+            <li><a href="./pages/actualizaciones.html">ACTUALIZACIONES</a></li>
         </div>
     </header>
     <script>
@@ -99,21 +68,13 @@
     <!-- SUMARIO -->
     <section class="barraSumario">
         <!-- BOTON DEL SUMARIO -->
-        <div class="botonSumario hvr-rectangle-out">
-            <i class="fa-solid fa-book" style="color: #ffffff;"></i>
-        </div>
+        <div class="botonSumario hvr-rectangle-out"><i class="fa-solid fa-book" style="color: #ffffff;"></i></div>
     </section>
     <!-- MENU DESPLEGABLE SUMARIO -->
     <div class="sumarioDesplegable">
-        <li>
-            <a href="#titlePrinc">3V3, BATLE ROYAL Y MAS ...</a>
-        </li>
-        <li>
-            <a href="#title2">SIEMPRE AL DIA</a>
-        </li>
-        <li>
-            <a href="#title3">CONOCE MAS</a>
-        </li>
+        <li><a href="#titlePrinc">3V3, BATLE ROYAL Y MAS ...</a></li>
+        <li><a href="#title2">SIEMPRE AL DIA</a></li>
+        <li><a href="#title3">CONOCE MAS</a></li>
     </div>
     <script>
         const botonSum = document.querySelector('.botonSumario')
@@ -133,9 +94,7 @@
     <main>
         <div class="contPortada"><img class="portada" src="./img/portada3-brawl.jpg" alt="portada del juego brawl stars"></div>
         <section class="contenedorMain wow fadeInUpBig">
-            <h1 id="titlePrinc" class="contMain tituloMain">
-                3V3, BATLE ROYAL Y MAS ...
-            </h1>
+            <h1 id="titlePrinc" class="contMain tituloMain">3V3, BATLE ROYAL Y MAS ...</h1>
             <section class="contMain contenidoMain">
                 <p class="parrafoMain">
                     ¡Únete a tus amigos y prepárate para un CAOS multijugador épico!
@@ -150,6 +109,7 @@
                     </a>
                 </p>
             </section>
+            <!-- CAROUSEL BOOTSTRAP -->
             <section class="contMain carouselMain">
                 <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -190,13 +150,9 @@
     </main>
 
     <section class="contenedorNews wow fadeInUpBig">
-        <div class="gimageNews">
-            <img class="imageNews" src="./img/news-brawl.webp" alt="noticias dentro del juego">
-        </div>
+        <div class="gimageNews"><img class="imageNews" src="./img/news-brawl.webp" alt="noticias dentro del juego"></div>
         <section class="textoNews">
-            <h2 id="title2" class="tituloNews">
-                SIEMPRE AL DIA
-            </h2>
+            <h2 id="title2" class="tituloNews">SIEMPRE AL DIA</h2>
             <p class="parrafoNews">
                 Para mantenerte al tanto de Brawl Stars, no pierdas de vista la sección de noticias del juego. 
                 Síguenos en las redes sociales para conocer las últimas charlas y 
@@ -208,9 +164,7 @@
     <article class="contenedorConoce wow fadeInUpBig">
         <img class="superCell" src="./img/supercell.webp" alt="portada de supercell">
         <div class="centrado">
-            <h2 id="title3" class="tituloConoce">
-                CONOCE MAS
-            </h2>
+            <h2 id="title3" class="tituloConoce">CONOCE MAS</h2>
             <p class="parrafoConoce">
                 Si quieres conoces mas juegos divertidos,
                 sigue en todas sus redes sociales a SuperCell y enterate de todo lo nuevo que desarrolla.
@@ -220,9 +174,7 @@
     </article>
     <footer>
         <article>
-            <h3>
-                Siguenos en:
-            </h3>
+            <h3>Siguenos en:</h3>
             <div class="allRedes">
                 <a target="_blank" href="https://www.youtube.com/@BrawlStars">
                     <img class="redes1" src="./img/logo-youtube-blanco.svg" alt="logo de youtube">
@@ -248,5 +200,10 @@
         </article>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            document.getElementById("op0").style.color = "#f01919";
+        }
+    </script>
 </body>
 </html>
