@@ -150,30 +150,31 @@
             justify-items: center;
             align-items: center;
             .imageAct{
-                .bannerAct, .bannerAct2{
-                    margin-left: -5px;
-                }
+                margin-left: 10px;
+                height: 100%;
                 .tituloAct{
+                    top: 20px;
+                    right: -8px;
                     h4{
-                        font-size: 14px;
+                        font-size: 15px;
                     }
                     .nombreAct{
                         font-size: 20px;
                     }
                 }
-                .cargaAct, .cargaAct2{
-                    img{
-                        margin-left: -13px;
-                    }
+                .bannerAct{
+                    margin-left: 6px;
+                    @include sizes (95%, 100%);
+                    position: relative;
+                    bottom: 2.5rem;
                 }
             }
-            .infoAct, .infoAct2{
+            .infoAct{
                 padding: 0%;
                 @include sizes(110%, 80%);
                 margin-left: -55px;
                 margin-top: 0;
                 margin-bottom: 0;
-                border-top: 2px solid black;
                 display: grid;
                 align-items: center;
                 justify-items: center;

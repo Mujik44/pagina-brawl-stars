@@ -146,11 +146,7 @@
         .diecisiete, .quince, .dieciseis, .catorce{
             grid-template-rows: 460px;
             .imageAct{
-                .bannerAct, .bannerAct2{
-                    margin-left: -1px;
-                }
                 .tituloAct{
-                    margin-top: -85px;
                     h4{
                         font-size: 25px;
                     }
@@ -158,8 +154,11 @@
                         font-size: 35px;
                     }
                 }
+                .bannerAct{
+                    bottom: 4.5rem
+                }
             }
-            .infoAct, .infoAct2{
+            .infoAct{
                 grid-template-rows: auto 55px;
                 ul{
                     li{
@@ -170,20 +169,6 @@
                     a{
                         font-size: 25px;
                     }
-                }
-            }
-        }
-        .dieciseis{
-            .imageAct{
-                .bannerAct2{
-                    margin-left: 5px;
-                }
-            }
-        }
-        .catorce{
-            .imageAct{
-                .bannerAct{
-                    margin-left: -2px;
                 }
             }
         }

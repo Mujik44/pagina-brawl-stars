@@ -235,15 +235,24 @@
 
     /*-------ACTUALIZACIONES-------*/
     .contActualizaciones{
-        grid-template-rows: repeat(4, 350px);
         .diecisiete, .quince{
-            grid-template-rows: 330px;
             .imageAct{
-                margin-left: 100px;
-                height: 100%
+                margin-left: 3rem;
+                .tituloAct{
+                    top: 40px;
+                    h4{
+                        font-size: 20px; 
+                    }
+                    .nombreAct{
+                        font-size: 25px;
+                    }
+                }
+                .bannerAct{
+                    bottom: 3.2rem;
+                }
             }
-            .infoAct, .infoAct2{
-                margin-left: -200px;
+            .infoAct{
+                margin-left: -17rem;
                 ul{
                     padding: 8px 30px 8px 120px;
                     li{
@@ -253,14 +262,23 @@
             }
         }
         .dieciseis, .catorce{
-            grid-template-rows: 330px;
             .imageAct{
-                margin-right: 100px;
-                margin-left: 0px;
-                height: 100%
+                margin-right: 2rem;
+                .tituloAct{
+                    top: 40px;
+                    h4{
+                        font-size: 20px; 
+                    }
+                    .nombreAct{
+                        font-size: 25px;
+                    }
+                }
+                .bannerAct{
+                    bottom: 3.2rem;
+                }
             }
-            .infoAct, .infoAct2{
-                margin-right: -200px;
+            .infoAct{
+                margin-right: -14rem;
                 ul{
                     padding: 8px 200px 8px 30px;
                     li{

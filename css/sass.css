@@ -962,23 +962,11 @@ footer .descargar .descargas {
 .contActualizaciones .contAct .imageAct {
   margin-left: -6px;
 }
-.contActualizaciones .contAct .imageAct .bannerAct, .contActualizaciones .contAct .imageAct .bannerAct2 {
-  display: flex;
-  width: 95%;
-  position: relative;
-}
-.contActualizaciones .contAct .imageAct .bannerAct img, .contActualizaciones .contAct .imageAct .bannerAct2 img {
-  width: 99.8%;
-  filter: blur(2px);
-}
-.contActualizaciones .contAct .imageAct .bannerAct2 img {
-  transform: skewX(-4.6deg);
-}
 .contActualizaciones .contAct .imageAct .tituloAct {
   width: 90%;
   position: relative;
-  margin-top: -60px;
-  margin-bottom: 15px;
+  top: 65px;
+  z-index: 100;
 }
 .contActualizaciones .contAct .imageAct .tituloAct h4 {
   font-size: 18px;
@@ -989,40 +977,36 @@ footer .descargar .descargas {
 .contActualizaciones .contAct .imageAct .tituloAct .nombreAct {
   font-size: 22px;
 }
-.contActualizaciones .contAct .imageAct .cargaAct, .contActualizaciones .contAct .imageAct .cargaAct2 {
+.contActualizaciones .contAct .imageAct .bannerAct {
+  display: flex;
   width: 95%;
+  position: relative;
 }
-.contActualizaciones .contAct .imageAct .cargaAct img, .contActualizaciones .contAct .imageAct .cargaAct2 img {
-  border-top: 5px solid black;
-  margin-left: -12.5px;
-  margin-top: -3px;
+.contActualizaciones .contAct .imageAct .bannerAct img {
   width: 100%;
-  transform: skewX(-4.6deg);
+  transform: skew(-3deg);
 }
-.contActualizaciones .contAct .imageAct .cargaAct2 img {
-  margin-left: -15.5px;
-}
-.contActualizaciones .contAct .infoAct, .contActualizaciones .contAct .infoAct2 {
+.contActualizaciones .contAct .infoAct {
   width: 95%;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 20px;
-  margin-left: -51px;
+  margin-left: -38px;
   margin-top: -15px;
   padding: 15px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.contActualizaciones .contAct .infoAct ul li, .contActualizaciones .contAct .infoAct2 ul li {
+.contActualizaciones .contAct .infoAct ul li {
   text-align: left;
 }
-.contActualizaciones .contAct .infoAct .contButton, .contActualizaciones .contAct .infoAct2 .contButton {
+.contActualizaciones .contAct .infoAct .contButton {
   padding: 20px;
   /*-------ANIMACION DESLIZAR HACIA LA DERECHA-------*/
 }
-.contActualizaciones .contAct .infoAct .contButton .button, .contActualizaciones .contAct .infoAct2 .contButton .button {
+.contActualizaciones .contAct .infoAct .contButton .button {
   cursor: pointer;
   display: inline-block;
   color: white;
@@ -1030,39 +1014,9 @@ footer .descargar .descargas {
   padding: 0.2rem 1rem;
   border-radius: 0.25rem;
 }
-.contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  transition-property: color;
-  transition-duration: 0.3s;
-}
-.contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:before, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:before {
   background: #f01919;
   border-radius: 0.25rem;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-.contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:hover, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:hover, .contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:focus, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:focus, .contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:active, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:active {
-  color: white;
-}
-.contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:hover:before, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:hover:before, .contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:focus:before, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:focus:before, .contActualizaciones .contAct .infoAct .contButton .hvr-sweep-to-right:active:before, .contActualizaciones .contAct .infoAct2 .contButton .hvr-sweep-to-right:active:before {
-  transform: scaleX(1);
-}
-.contActualizaciones .contAct .infoAct2 {
-  margin-left: -54px;
 }
 
 /* -------RESPONSIVE-------*/
@@ -1116,19 +1070,22 @@ footer .descargar .descargas {
     padding-left: 4.7rem;
   }
   /*-------ACTUALIZACIONES-------*/
-  .contActualizaciones .contAct .imageAct .cargaAct img, .contActualizaciones .contAct .imageAct .cargaAct2 img {
-    margin-left: -15.5px;
+  .contActualizaciones .contAct .imageAct .tituloAct {
+    top: 75px;
+    right: 45px;
   }
-  .contActualizaciones .contAct .imageAct .cargaAct2 img {
-    margin-left: -19.5px;
+  .contActualizaciones .contAct .imageAct .bannerAct {
+    width: 85%;
   }
-  .contActualizaciones .contAct .infoAct, .contActualizaciones .contAct .infoAct2 {
+  .contActualizaciones .contAct .infoAct {
     align-items: center;
-    margin-left: -56px;
+    margin-left: -81px;
   }
-  .contActualizaciones .contAct .infoAct2 {
-    margin-left: -59px;
-    align-items: center;
+  .contActualizaciones .contAct .infoAct ul {
+    padding-left: 7rem;
+  }
+  .contActualizaciones .contAct .infoAct .contButton {
+    padding-left: 14rem;
   }
 }
 @media screen and (min-width: 455px) {
@@ -1340,38 +1297,46 @@ footer .descargar .descargas {
     justify-items: center;
     align-items: center;
   }
-  .contActualizaciones .contAct .imageAct .bannerAct, .contActualizaciones .contAct .imageAct .bannerAct2 {
-    margin-left: -5px;
+  .contActualizaciones .contAct .imageAct {
+    margin-left: 10px;
+    height: 100%;
+  }
+  .contActualizaciones .contAct .imageAct .tituloAct {
+    top: 20px;
+    right: -8px;
   }
   .contActualizaciones .contAct .imageAct .tituloAct h4 {
-    font-size: 14px;
+    font-size: 15px;
   }
   .contActualizaciones .contAct .imageAct .tituloAct .nombreAct {
     font-size: 20px;
   }
-  .contActualizaciones .contAct .imageAct .cargaAct img, .contActualizaciones .contAct .imageAct .cargaAct2 img {
-    margin-left: -13px;
+  .contActualizaciones .contAct .imageAct .bannerAct {
+    margin-left: 6px;
+    height: 100%;
+    width: 95%;
+    position: relative;
+    bottom: 2.5rem;
   }
-  .contActualizaciones .contAct .infoAct, .contActualizaciones .contAct .infoAct2, .contActualizaciones .contAct .infoAct2 {
+  .contActualizaciones .contAct .infoAct {
     padding: 0%;
     height: 80%;
     width: 110%;
     margin-left: -55px;
     margin-top: 0;
     margin-bottom: 0;
-    border-top: 2px solid black;
     display: grid;
     align-items: center;
     justify-items: center;
     grid-template-rows: auto 30px;
   }
-  .contActualizaciones .contAct .infoAct ul, .contActualizaciones .contAct .infoAct2 ul, .contActualizaciones .contAct .infoAct2 ul {
+  .contActualizaciones .contAct .infoAct ul {
     padding: 8px 8px 8px 41px;
   }
-  .contActualizaciones .contAct .infoAct ul li, .contActualizaciones .contAct .infoAct2 ul li, .contActualizaciones .contAct .infoAct2 ul li {
+  .contActualizaciones .contAct .infoAct ul li {
     font-size: 14px;
   }
-  .contActualizaciones .contAct .infoAct .contButton, .contActualizaciones .contAct .infoAct2 .contButton {
+  .contActualizaciones .contAct .infoAct .contButton {
     padding: 0;
   }
 }
@@ -1585,38 +1550,21 @@ footer .descargar .descargas {
   /*-------ACTUALIZACIONES-------*/
   .contActualizaciones {
     gap: 40px;
+    grid-template-rows: 350px;
   }
-  .contActualizaciones .contAct .imageAct {
-    margin-left: 50px;
+  .contActualizaciones .contAct {
+    grid-template-rows: 340px;
   }
-  .contActualizaciones .diecisiete .imageAct .bannerAct, .contActualizaciones .diecisiete .contAct .imageAct .bannerAct2, .contActualizaciones .contAct .diecisiete .imageAct .bannerAct2 {
-    width: 97%;
-    margin-left: -7px;
+  .contActualizaciones .contAct .infoAct ul li {
+    font-size: 17px;
   }
   .contActualizaciones .dieciseis .imageAct, .contActualizaciones .catorce .imageAct {
     grid-column: 2/3;
-    grid-row: 1/2;
   }
-  .contActualizaciones .dieciseis .infoAct, .contActualizaciones .dieciseis .contAct .infoAct2, .contActualizaciones .contAct .dieciseis .infoAct2, .contActualizaciones .dieciseis .infoAct2, .contActualizaciones .catorce .infoAct, .contActualizaciones .catorce .contAct .infoAct2, .contActualizaciones .contAct .catorce .infoAct2, .contActualizaciones .catorce .infoAct2 {
+  .contActualizaciones .dieciseis .infoAct, .contActualizaciones .catorce .infoAct {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-left: 120px;
-    border-left: 2px solid black;
-    padding-right: 20px;
-  }
-  .contActualizaciones .dieciseis .infoAct p, .contActualizaciones .dieciseis .contAct .infoAct2 p, .contActualizaciones .contAct .dieciseis .infoAct2 p, .contActualizaciones .dieciseis .infoAct2 p, .contActualizaciones .catorce .infoAct p, .contActualizaciones .catorce .contAct .infoAct2 p, .contActualizaciones .contAct .catorce .infoAct2 p, .contActualizaciones .catorce .infoAct2 p {
-    padding: 8px 41px 8px 8px;
-  }
-  .contActualizaciones .dieciseis .imageAct .bannerAct2 {
-    margin-left: -4px;
-  }
-  .contActualizaciones .quince .imageAct .bannerAct, .contActualizaciones .quince .contAct .imageAct .bannerAct2, .contActualizaciones .contAct .quince .imageAct .bannerAct2 {
-    width: 98%;
-    margin-left: -8px;
-  }
-  .contActualizaciones .catorce .imageAct .bannerAct, .contActualizaciones .catorce .contAct .imageAct .bannerAct2, .contActualizaciones .contAct .catorce .imageAct .bannerAct2 {
-    width: 98%;
-    margin-left: -8px;
+    margin-left: 55px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1824,40 +1772,52 @@ footer .descargar .descargas {
     padding: 8px 140px 8px 20px;
   }
   /*-------ACTUALIZACIONES-------*/
-  .contActualizaciones {
-    grid-template-rows: repeat(4, 350px);
-  }
-  .contActualizaciones .diecisiete, .contActualizaciones .quince {
-    grid-template-rows: 330px;
-  }
   .contActualizaciones .diecisiete .imageAct, .contActualizaciones .quince .imageAct {
-    margin-left: 100px;
-    height: 100%;
+    margin-left: 3rem;
   }
-  .contActualizaciones .diecisiete .infoAct, .contActualizaciones .diecisiete .contAct .infoAct2, .contActualizaciones .contAct .diecisiete .infoAct2, .contActualizaciones .diecisiete .infoAct2, .contActualizaciones .quince .infoAct, .contActualizaciones .quince .contAct .infoAct2, .contActualizaciones .contAct .quince .infoAct2, .contActualizaciones .quince .infoAct2 {
-    margin-left: -200px;
+  .contActualizaciones .diecisiete .imageAct .tituloAct, .contActualizaciones .quince .imageAct .tituloAct {
+    top: 40px;
   }
-  .contActualizaciones .diecisiete .infoAct ul, .contActualizaciones .diecisiete .contAct .infoAct2 ul, .contActualizaciones .contAct .diecisiete .infoAct2 ul, .contActualizaciones .diecisiete .infoAct2 ul, .contActualizaciones .quince .infoAct ul, .contActualizaciones .quince .contAct .infoAct2 ul, .contActualizaciones .contAct .quince .infoAct2 ul, .contActualizaciones .quince .infoAct2 ul {
-    padding: 8px 30px 8px 120px;
-  }
-  .contActualizaciones .diecisiete .infoAct ul li, .contActualizaciones .diecisiete .contAct .infoAct2 ul li, .contActualizaciones .contAct .diecisiete .infoAct2 ul li, .contActualizaciones .diecisiete .infoAct2 ul li, .contActualizaciones .quince .infoAct ul li, .contActualizaciones .quince .contAct .infoAct2 ul li, .contActualizaciones .contAct .quince .infoAct2 ul li, .contActualizaciones .quince .infoAct2 ul li {
+  .contActualizaciones .diecisiete .imageAct .tituloAct h4, .contActualizaciones .quince .imageAct .tituloAct h4 {
     font-size: 20px;
   }
-  .contActualizaciones .dieciseis, .contActualizaciones .catorce {
-    grid-template-rows: 330px;
+  .contActualizaciones .diecisiete .imageAct .tituloAct .nombreAct, .contActualizaciones .quince .imageAct .tituloAct .nombreAct {
+    font-size: 25px;
+  }
+  .contActualizaciones .diecisiete .imageAct .bannerAct, .contActualizaciones .quince .imageAct .bannerAct {
+    bottom: 3.2rem;
+  }
+  .contActualizaciones .diecisiete .infoAct, .contActualizaciones .quince .infoAct {
+    margin-left: -17rem;
+  }
+  .contActualizaciones .diecisiete .infoAct ul, .contActualizaciones .quince .infoAct ul {
+    padding: 8px 30px 8px 120px;
+  }
+  .contActualizaciones .diecisiete .infoAct ul li, .contActualizaciones .quince .infoAct ul li {
+    font-size: 20px;
   }
   .contActualizaciones .dieciseis .imageAct, .contActualizaciones .catorce .imageAct {
-    margin-right: 100px;
-    margin-left: 0px;
-    height: 100%;
+    margin-right: 2rem;
   }
-  .contActualizaciones .dieciseis .infoAct, .contActualizaciones .dieciseis .contAct .infoAct2, .contActualizaciones .contAct .dieciseis .infoAct2, .contActualizaciones .dieciseis .infoAct2, .contActualizaciones .catorce .infoAct, .contActualizaciones .catorce .contAct .infoAct2, .contActualizaciones .contAct .catorce .infoAct2, .contActualizaciones .catorce .infoAct2 {
-    margin-right: -200px;
+  .contActualizaciones .dieciseis .imageAct .tituloAct, .contActualizaciones .catorce .imageAct .tituloAct {
+    top: 40px;
   }
-  .contActualizaciones .dieciseis .infoAct ul, .contActualizaciones .dieciseis .contAct .infoAct2 ul, .contActualizaciones .contAct .dieciseis .infoAct2 ul, .contActualizaciones .dieciseis .infoAct2 ul, .contActualizaciones .catorce .infoAct ul, .contActualizaciones .catorce .contAct .infoAct2 ul, .contActualizaciones .contAct .catorce .infoAct2 ul, .contActualizaciones .catorce .infoAct2 ul {
+  .contActualizaciones .dieciseis .imageAct .tituloAct h4, .contActualizaciones .catorce .imageAct .tituloAct h4 {
+    font-size: 20px;
+  }
+  .contActualizaciones .dieciseis .imageAct .tituloAct .nombreAct, .contActualizaciones .catorce .imageAct .tituloAct .nombreAct {
+    font-size: 25px;
+  }
+  .contActualizaciones .dieciseis .imageAct .bannerAct, .contActualizaciones .catorce .imageAct .bannerAct {
+    bottom: 3.2rem;
+  }
+  .contActualizaciones .dieciseis .infoAct, .contActualizaciones .catorce .infoAct {
+    margin-right: -14rem;
+  }
+  .contActualizaciones .dieciseis .infoAct ul, .contActualizaciones .catorce .infoAct ul {
     padding: 8px 200px 8px 30px;
   }
-  .contActualizaciones .dieciseis .infoAct ul li, .contActualizaciones .dieciseis .contAct .infoAct2 ul li, .contActualizaciones .contAct .dieciseis .infoAct2 ul li, .contActualizaciones .dieciseis .infoAct2 ul li, .contActualizaciones .catorce .infoAct ul li, .contActualizaciones .catorce .contAct .infoAct2 ul li, .contActualizaciones .contAct .catorce .infoAct2 ul li, .contActualizaciones .catorce .infoAct2 ul li {
+  .contActualizaciones .dieciseis .infoAct ul li, .contActualizaciones .catorce .infoAct ul li {
     font-size: 20px;
   }
   .contActualizaciones .dieciseis .contButton, .contActualizaciones .catorce .contButton {
@@ -1996,31 +1956,22 @@ footer .descargar .descargas {
   .contActualizaciones .diecisiete, .contActualizaciones .quince, .contActualizaciones .dieciseis, .contActualizaciones .catorce {
     grid-template-rows: 460px;
   }
-  .contActualizaciones .diecisiete .imageAct .bannerAct, .contActualizaciones .diecisiete .imageAct .bannerAct2, .contActualizaciones .quince .imageAct .bannerAct, .contActualizaciones .quince .imageAct .bannerAct2, .contActualizaciones .dieciseis .imageAct .bannerAct, .contActualizaciones .dieciseis .imageAct .bannerAct2, .contActualizaciones .catorce .imageAct .bannerAct, .contActualizaciones .catorce .imageAct .bannerAct2 {
-    margin-left: -1px;
-  }
-  .contActualizaciones .diecisiete .imageAct .tituloAct, .contActualizaciones .quince .imageAct .tituloAct, .contActualizaciones .dieciseis .imageAct .tituloAct, .contActualizaciones .catorce .imageAct .tituloAct {
-    margin-top: -85px;
-  }
   .contActualizaciones .diecisiete .imageAct .tituloAct h4, .contActualizaciones .quince .imageAct .tituloAct h4, .contActualizaciones .dieciseis .imageAct .tituloAct h4, .contActualizaciones .catorce .imageAct .tituloAct h4 {
     font-size: 25px;
   }
   .contActualizaciones .diecisiete .imageAct .tituloAct .nombreAct, .contActualizaciones .quince .imageAct .tituloAct .nombreAct, .contActualizaciones .dieciseis .imageAct .tituloAct .nombreAct, .contActualizaciones .catorce .imageAct .tituloAct .nombreAct {
     font-size: 35px;
   }
-  .contActualizaciones .diecisiete .infoAct, .contActualizaciones .diecisiete .contAct .infoAct2, .contActualizaciones .contAct .diecisiete .infoAct2, .contActualizaciones .diecisiete .infoAct2, .contActualizaciones .quince .infoAct, .contActualizaciones .quince .contAct .infoAct2, .contActualizaciones .contAct .quince .infoAct2, .contActualizaciones .quince .infoAct2, .contActualizaciones .dieciseis .infoAct, .contActualizaciones .dieciseis .contAct .infoAct2, .contActualizaciones .contAct .dieciseis .infoAct2, .contActualizaciones .dieciseis .infoAct2, .contActualizaciones .catorce .infoAct, .contActualizaciones .catorce .contAct .infoAct2, .contActualizaciones .contAct .catorce .infoAct2, .contActualizaciones .catorce .infoAct2 {
+  .contActualizaciones .diecisiete .imageAct .bannerAct, .contActualizaciones .quince .imageAct .bannerAct, .contActualizaciones .dieciseis .imageAct .bannerAct, .contActualizaciones .catorce .imageAct .bannerAct {
+    bottom: 4.5rem;
+  }
+  .contActualizaciones .diecisiete .infoAct, .contActualizaciones .quince .infoAct, .contActualizaciones .dieciseis .infoAct, .contActualizaciones .catorce .infoAct {
     grid-template-rows: auto 55px;
   }
-  .contActualizaciones .diecisiete .infoAct ul li, .contActualizaciones .diecisiete .contAct .infoAct2 ul li, .contActualizaciones .contAct .diecisiete .infoAct2 ul li, .contActualizaciones .diecisiete .infoAct2 ul li, .contActualizaciones .quince .infoAct ul li, .contActualizaciones .quince .contAct .infoAct2 ul li, .contActualizaciones .contAct .quince .infoAct2 ul li, .contActualizaciones .quince .infoAct2 ul li, .contActualizaciones .dieciseis .infoAct ul li, .contActualizaciones .dieciseis .contAct .infoAct2 ul li, .contActualizaciones .contAct .dieciseis .infoAct2 ul li, .contActualizaciones .dieciseis .infoAct2 ul li, .contActualizaciones .catorce .infoAct ul li, .contActualizaciones .catorce .contAct .infoAct2 ul li, .contActualizaciones .contAct .catorce .infoAct2 ul li, .contActualizaciones .catorce .infoAct2 ul li {
+  .contActualizaciones .diecisiete .infoAct ul li, .contActualizaciones .quince .infoAct ul li, .contActualizaciones .dieciseis .infoAct ul li, .contActualizaciones .catorce .infoAct ul li {
     font-size: 25px;
   }
-  .contActualizaciones .diecisiete .infoAct .contButton a, .contActualizaciones .diecisiete .infoAct2 .contButton a, .contActualizaciones .quince .infoAct .contButton a, .contActualizaciones .quince .infoAct2 .contButton a, .contActualizaciones .dieciseis .infoAct .contButton a, .contActualizaciones .dieciseis .infoAct2 .contButton a, .contActualizaciones .catorce .infoAct .contButton a, .contActualizaciones .catorce .infoAct2 .contButton a {
+  .contActualizaciones .diecisiete .infoAct .contButton a, .contActualizaciones .quince .infoAct .contButton a, .contActualizaciones .dieciseis .infoAct .contButton a, .contActualizaciones .catorce .infoAct .contButton a {
     font-size: 25px;
-  }
-  .contActualizaciones .dieciseis .imageAct .bannerAct2 {
-    margin-left: 5px;
-  }
-  .contActualizaciones .catorce .imageAct .bannerAct, .contActualizaciones .catorce .contAct .imageAct .bannerAct2, .contActualizaciones .contAct .catorce .imageAct .bannerAct2 {
-    margin-left: -2px;
   }
 }/*# sourceMappingURL=sass.css.map */

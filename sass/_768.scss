@@ -228,57 +228,25 @@
     /*-------ACTUALIZACIONES-------*/
     .contActualizaciones{
         gap: 40px;
+        grid-template-rows: 350px;
         .contAct{
-            .imageAct{
-                margin-left: 50px;
-            }
-        }
-        .diecisiete{
-            .imageAct{
-                .bannerAct{
-                    width: 97%;
-                    margin-left: -7px;
+            grid-template-rows: 340px;
+            .infoAct{
+                ul{
+                    li{
+                        font-size: 17px;
+                    }
                 }
             }
         }
         .dieciseis, .catorce{
             .imageAct{
                 grid-column: 2/3;
-                grid-row: 1/2;
-                
             }
-            .infoAct, .infoAct2{
+            .infoAct{
                 grid-column: 1/2;
                 grid-row: 1/2;
-                margin-left: 120px;
-                border-left: 2px solid black;
-                padding-right: 20px;
-                p{
-                    padding: 8px 41px 8px 8px;
-                }
-            }
-        }
-        .dieciseis{
-            .imageAct{
-                .bannerAct2{
-                    margin-left: -4px;
-                }
-            }
-        }
-        .quince{
-            .imageAct{
-                .bannerAct{
-                    width: 98%;
-                    margin-left: -8px;
-                }
-            }
-        }
-        .catorce{
-            .imageAct{
-                .bannerAct{
-                    width: 98%;
-                    margin-left: -8px;
-                }
+                margin-left: 55px;
             }
         }
     }

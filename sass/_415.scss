@@ -73,24 +73,23 @@
     .contActualizaciones{
         .contAct{
             .imageAct{
-                .cargaAct{
-                    img{
-                        margin-left: -15.5px;
-                    }
+                .tituloAct{
+                    top: 75px;
+                    right: 45px;
                 }
-                .cargaAct2{
-                    img{
-                        margin-left: -19.5px;
-                    }
+                .bannerAct{
+                    width: 85%;
                 }
             }
             .infoAct{
                 align-items: center;
-                margin-left: -56px;
-            }
-            .infoAct2{
-                margin-left: -59px;
-                align-items: center;
+                margin-left: -81px;
+                ul{
+                    padding-left: 7rem;
+                }
+                .contButton{
+                    padding-left: 14rem;
+                }
             }
         }
     }
