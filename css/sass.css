@@ -161,7 +161,7 @@ header {
           backdrop-filter: blur(10px);
   overflow: hidden;
   transition: max-height 0.5s linear;
-  z-index: 150;
+  z-index: 195;
   overflow-y: auto;
   list-style-type: none;
 }
